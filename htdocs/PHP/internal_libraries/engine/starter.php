@@ -1,0 +1,25 @@
+<?php
+
+// Check first if the maintenance mode is enabled and redirect accordingly
+require_once '../underwear/environment_variables/configuration.php';
+global $maintenance_mode;
+if ($maintenance_mode == true) {
+  header("Location: maintenance.php");
+  exit();
+}
+
+// Check if there is already an active session, if not start a new one
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+
+// Unset and destroy any session if the last activity was more than 10 minutes ago
+if (isset($_SESSION['session_last_activity']) && (time() - $_SESSION['session_last_activity'] > 600)) {
+    session_unset();
+    session_destroy();
+}
+
+// Update and store the last activity time
+$_SESSION['session_last_activity'] = time();
+
+?>

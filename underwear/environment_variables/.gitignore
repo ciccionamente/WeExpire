@@ -1,0 +1,5 @@
+# Ignore all files and subfolders in the environment_variables folder but keep including the .gitignore file
+
+*
+*/
+!.gitignore

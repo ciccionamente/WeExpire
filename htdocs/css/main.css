@@ -1,0 +1,67 @@
+/**
+* WeExpire CSS styling (simply overrides default Bootstrap CSS values)
+*/
+
+html,
+body {
+	cursor: default;
+}
+
+::-moz-selection {
+  color: #FFFFFF;
+  background: #000000;
+}
+
+::selection {
+  color: #FFFFFF;
+  background: #000000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.display-1,
+.display-2,
+.display-3,
+.display-4,
+.display-5,
+.display-6 {
+	font-weight: 800;
+}
+
+.min-content-height {
+	min-height: 65vh;
+}
+
+.form-label {
+	font-weight: 800;
+}
+
+.container {
+	max-width: 960px;
+}
+
+.logo {
+	height: 50px;
+	width: auto;
+	padding: 4px;
+}
+
+.btn {
+	border-radius: 30px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.form-control:focus {
+	border-color: #000000;
+	box-shadow: none;
+}
+
+#expiration_date {
+	max-height:38px;
+	padding-top:0.3rem;
+}

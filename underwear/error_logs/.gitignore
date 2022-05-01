@@ -1,0 +1,5 @@
+# Ignore all files and subfolders in the error_logs folder but keep including the .gitignore file
+
+*
+*/
+!.gitignore

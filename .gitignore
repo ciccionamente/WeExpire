@@ -1,0 +1,6 @@
+# Ignore the error_docs folder
+/error_docs/
+
+# Ignore DS_Store and htaccess files
+.DS_Store
+.htaccess

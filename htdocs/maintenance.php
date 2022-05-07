@@ -12,7 +12,7 @@ if ($maintenance_mode !== true) {
   exit();
 }
 ?>
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">

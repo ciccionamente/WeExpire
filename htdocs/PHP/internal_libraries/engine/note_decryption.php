@@ -16,8 +16,7 @@ if ($_SESSION["note_version"] = 1) {
 // Set the cipher method
 $ciphering = "AES-256-CTR";
 
-// Use OpenSSl Encryption method
-$iv_length = openssl_cipher_iv_length($ciphering);
+// Configure options variable for OpenSSl decryption method
 $options = 0;
 
 // Set the initialization vector for decryption

@@ -81,7 +81,7 @@ include_once 'PHP/internal_libraries/engine/page_language_switch.php';
     </div>
     <?php if ($test_mode == true) { ?>
       <!-- Display test information in case the test mode is enabled -->
-      <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+      <div class="position-fixed bottom-0 end-0 p-3">
         <div id="testModeToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
           <div class="toast-header">
             <strong class="me-auto">Test mode helper</strong>
@@ -93,11 +93,7 @@ include_once 'PHP/internal_libraries/engine/page_language_switch.php';
           </div>
         </div>
       </div>
-      <script>
-      var toastLiveExample = document.getElementById('testModeToast')
-      var toast = new bootstrap.Toast(toastLiveExample)
-      toast.show()
-      </script>
+      <script src="js/test_mode_toast.js"></script>
     <?php } ?>
     <?php include 'PHP/internal_libraries/page_templates/footer.php';?>
   </main>

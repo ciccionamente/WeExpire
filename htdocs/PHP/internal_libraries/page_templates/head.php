@@ -1,7 +1,3 @@
-<?php
-// X-XSS-Protection
-header("X-XSS-Protection: 1; mode=block");
-?>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -17,7 +13,10 @@ header("X-XSS-Protection: 1; mode=block");
 <meta name="title" property="og:title" content="WeExpire">
 <meta property="og:site_name" content="WeExpire">
 <meta property="og:url" content="https://www.weexpire.org/">
-<meta property="og:description" content="<?=$translation["meta_description"];?>">
+<meta property="og:description" content="<?=$translation["social_media_description"];?>">
+<meta property="og:locale" content="en_us">
+<meta property="og:locale:alternate" content="es_es">
+<meta property="og:locale:alternate" content="it_it">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://www.weexpire.org/img/social.jpg">
 <meta property="og:image:width" content="1200">

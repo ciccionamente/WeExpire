@@ -13,6 +13,9 @@ $translation["title"] = "WeExpire - Più semplice di un testamento, più sicuro 
 // Description for search engines (max 160 characters)
 $translation["meta_description"] = "WeExpire ti permette di creare note di emergenza che possono essere lette dai tuoi contatti fidati solo dopo la tua morte o se sei stato gravemente compromesso.";
 
+// Description for social media (max 100 characters)
+$translation["social_media_description"] = "Crea note di emergenza che possono essere lette dai tuoi contatti fidati solo dopo la tua morte.";
+
 // Footer section
 $translation["footer_language"] = "Lingua";
 $translation["footer_about"] = "Su di noi";

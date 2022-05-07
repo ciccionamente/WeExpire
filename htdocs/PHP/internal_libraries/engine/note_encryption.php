@@ -47,14 +47,13 @@ $note_to_encrypt = $note_verifier.'ï¿½'.$current_note_version.'ï¿½'.$subject.'ï¿
 // Set the cipher method
 $ciphering = "AES-256-CTR";
 
-// Use OpenSSl Encryption method
+// Configure variables for OpenSSl encryption method
 $iv_length = openssl_cipher_iv_length($ciphering);
 $options = 0;
 
 // Generate a random initialization vector for encryption
 // This initialization vector will be eventually used as access code for the emergency note
-$encryption_initialization_vector_bytes = random_bytes(8);
-$encryption_initialization_vector = bin2hex($encryption_initialization_vector_bytes);
+$encryption_initialization_vector = bin2hex(random_bytes(($iv_length)/2));
 
 // Generate the encryption key by hashing the WeExpire note key and the random initialization vector (access code)
 $encryption_key = hash('sha256', $note_key_1.$encryption_initialization_vector);

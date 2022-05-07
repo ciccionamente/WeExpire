@@ -13,6 +13,9 @@ $translation["title"] = "WeExpire - Más fácil que un testamento, más seguro q
 // Description for search engines (max 160 characters)
 $translation["meta_description"] = "WeExpire te permite crear mensajes de emergencia que pueden leer los contactos que tú elijas solo tras tu fallecimiento o en caso de incapacidad irreversible.";
 
+// Description for social media (max 100 characters)
+$translation["social_media_description"] = "Crea mensajes de emergencia que pueden leer los contactos que tú elijas solo tras tu fallecimiento.";
+
 // Footer section
 $translation["footer_language"] = "Idioma";
 $translation["footer_about"] = "Sobre nosotros";

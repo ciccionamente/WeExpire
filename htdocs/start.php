@@ -46,7 +46,7 @@ include_once 'PHP/internal_libraries/engine/page_language_switch.php';
               </div>
               <div class="col-12 col-md-8 offset-md-2 mt-3 mb-3">
                 <label class="form-label"><?=$translation["start_page_note_input_title"];?></label>
-                <textarea name="note" class="form-control" maxlength="1000" style="height: 200px;" required><?php if ($test_mode == true) { echo $test_mode_example_text; }?></textarea>
+                <textarea name="note" class="form-control" rows="10" maxlength="1000" required><?php if ($test_mode == true) { echo $test_mode_example_text; }?></textarea>
                 <span class="form-text">
                   <?=$translation["start_page_note_input_hint"];?>
                 </span>
@@ -143,36 +143,6 @@ include_once 'PHP/internal_libraries/engine/page_language_switch.php';
     <?php include 'PHP/internal_libraries/page_templates/footer.php';?>
   </main>
   <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-  <script>
-  // Enable/disable the expiration date input according to the expiration date switch status
-  $('#expiration_date_switch').on('change', function(event, state) {
-    var status = $('#expiration_date').prop('disabled');
-    $('#expiration_date').prop('disabled', !status);
-  });
-  // Change the default and minimum values for the expiration date input according to the inactivity time
-  $('#inactivity_time_select').on('change', function(event, state) {
-    var days_to_add = $('#inactivity_time_select').children("option:selected").val();
-    function addDays(current_date,days) {
-      return new Date(current_date.getTime() + days*24*60*60*1000);
-    }
-    var current_date = new Date();
-    var new_minimum_date = addDays(current_date,days_to_add);
-    var dd = String(new_minimum_date.getDate()).padStart(2, '0');
-    var mm = String(new_minimum_date.getMonth() + 1).padStart(2, '0'); // January is 0!
-    var yyyy = new_minimum_date.getFullYear();
-    new_minimum_date = yyyy + '-' + mm + '-' + dd;
-    document.getElementById("expiration_date").setAttribute("min", new_minimum_date);
-    document.getElementById("expiration_date").setAttribute("value", new_minimum_date);
-  });
-  // Verify that primary_email and secondary_email inputs don't have the same values
-  $('#secondary_email_input').keyup(function() {
-    if ($('#primary_email_input').val() === $('#secondary_email_input').val()) {
-      $('#secondary_email_input').addClass("is-invalid");
-      return false;
-    } else {
-      $('#secondary_email_input').removeClass("is-invalid");
-      return true;
-    }});
-  </script>
+  <script src="js/verify_inputs.js"></script>
 </body>
 </html>

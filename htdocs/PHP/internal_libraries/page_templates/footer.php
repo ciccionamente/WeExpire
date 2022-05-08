@@ -1,5 +1,5 @@
 <footer class="d-print-none pt-3 pb-3 text-center">
-  <hr class="mt-4 mt-sm-5 mb-3 mb-sm-5"></hr>
+  <hr class="mt-4 mt-sm-5 mb-3 mb-sm-5"/>
   <div class="row flex-fill d-block d-sm-none">
     <div class="col">
       <span class="px-2"><a class="link-secondary" href="mailto:support@weexpire.org"><?=$translation["footer_contact"];?></a></span>
@@ -23,7 +23,7 @@
           }
           ?>
         </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <ul class="dropdown-menu" aria-label="<?=$translation["footer_language"];?>">
           <li><a class="dropdown-item" href="index.php?l=en">English</a></li>
           <li><a class="dropdown-item" href="index.php?l=es">Español</a></li>
           <li><a class="dropdown-item" href="index.php?l=it">Italiano</a></li>

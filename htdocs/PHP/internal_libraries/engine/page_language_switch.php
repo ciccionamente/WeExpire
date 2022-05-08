@@ -27,7 +27,7 @@ else if(isset($_SESSION['l']))
 // If there is no language variable in the URL or session, then get the browser language
 else
 {
-  $page_language = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
+  $page_language = isset($_SERVER["HTTP_ACCEPT_LANGUAGE"]) ? substr($_SERVER["HTTP_ACCEPT_LANGUAGE"],0,2) : '';
   $accepted_languages = ['it', 'en', 'es'];
   $page_language = in_array($page_language, $accepted_languages) ? $page_language : 'en';
   $_SESSION['l'] = $page_language;

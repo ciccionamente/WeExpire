@@ -143,7 +143,7 @@ $translation["pdf_document_with_expiration"] = "
 <p>Para leer el siguiente mensaje de emergencia, escanea el código QR y a continuación introduce este código de acceso: <b>{$_SESSION["initialization_vector"]}</b></p>
 <p>Título del mensaje: <b>{$_SESSION["subject"]}</b>
 <p>Fecha de creación del mensaje: <b>".date("d/m/Y H:i:s", strtotime($_SESSION["creation_date_time"]))."</b> (DD/MM/AAAA, UTC+1)</p>
-<p>Data di scadenza della nota: <b>".date("d/m/Y", strtotime($_SESSION["expiration_date"]))."</b> (DD/MM/AAAA, UTC+1)</p>
+<p>Fecha de caducidad del mensaje: <b>".date("d/m/Y", strtotime($_SESSION["expiration_date"]))."</b> (DD/MM/AAAA, UTC+1)</p>
 <p></p><p></p>
 <p>Espacio para otros comentarios y/o firma:<br>
 ___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________</p>";

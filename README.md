@@ -31,9 +31,10 @@ Distributed under the GPLv3 License. See `LICENSE` for more information.
 A special thanks goes to the following people who helped this project:
 - [Rebeca Dieguez Merayo](https://www.linkedin.com/in/rebecadieguez/), Spanish translations
 
-Another special thanks goes to these opensource third-party libraries that have been used in this project:
+Another special thanks goes to these opensource third-party libraries and frameworks that have been used in this project:
  - [PHPMailer](https://github.com/PHPMailer/PHPMailer)
  - [TCPDF](https://github.com/tecnickcom/TCPDF)
+ - [Bootstrap](https://getbootstrap.com)
 
 ## Donate
 If you want to contribute with a simple donation, you can do it via **[Buy Me a Coffee](https://www.buymeacoffee.com/ciccionamente)**.

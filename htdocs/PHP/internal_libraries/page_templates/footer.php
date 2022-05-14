@@ -3,7 +3,7 @@
   <div class="row flex-fill d-block d-sm-none">
     <div class="col">
       <span class="px-2"><a class="link-secondary" href="mailto:support@weexpire.org"><?=$translation["footer_contact"];?></a></span>
-      <span class="px-2"><a class="link-secondary" href="donate.php"><?=$translation["footer_donate"];?></a></span>
+      <span class="px-2"><a class="link-secondary" href="https://www.buymeacoffee.com/ciccionamente"><?=$translation["footer_donate"];?></a></span>
       <span class="px-2"><a class="link-secondary" href="privacy.php"><?=$translation["footer_privacy"];?></a></span>
       <span class="px-2"><a class="link-secondary" href="terms.php"><?=$translation["footer_terms"];?></a></span>
     </div>

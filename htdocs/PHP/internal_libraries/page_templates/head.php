@@ -2,9 +2,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <link rel="alternate" hreflang="x-default" href="https://weexpire.org"/>
-<link rel="alternate" hreflang="en" href="https://weexpire.org/?l=en"/>
-<link rel="alternate" hreflang="es" href="https://weexpire.org/?l=es"/>
-<link rel="alternate" hreflang="it" href="https://weexpire.org/?l=it"/>
+<link rel="alternate" hreflang="en" href="https://weexpire.org/en/"/>
+<link rel="alternate" hreflang="es" href="https://weexpire.org/es/"/>
+<link rel="alternate" hreflang="it" href="https://weexpire.org/it/"/>
 
 <title><?=$translation["title"];?></title>
 <meta name="description" content="<?=$translation["meta_description"];?>">

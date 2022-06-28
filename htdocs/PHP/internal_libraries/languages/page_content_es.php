@@ -90,11 +90,11 @@ $translation["review_page_information_7"] = "Aceptas los <a href='/terms.php' ta
 $translation["done_page_title"] = "Ya está!";
 $translation["done_page_content"] = "
 <p class='text-center'>Tu mensaje de emergencia se ha creado. Puedes descargarlo en el botón de abajo e imprimirlo para entregárselo a tu contacto de confianza.</p>
-<p class='text-center'><b>¡Muy importante!</b> Incluye la dirección <b>support@weexpire.org</b> en tu lista de contacto seguros para evitar que cualquier notificación relativa al mensaje que acabas de crear termine en el spam.</p>";
+<p class='text-center'><b><mark>¡Muy importante!</mark></b> Incluye la dirección <b>support@weexpire.org</b> en tu lista de contacto seguros para evitar que cualquier notificación relativa al mensaje que acabas de crear termine en el spam.</p>";
 
 // Access page
 $translation["access_page_title"] = "Lee el mensaje";
-$translation["access_page_access_code_input_title"] = "Introduce el código de accesso";
+$translation["access_page_access_code_input_title"] = "Introduce el código de acceso";
 $translation["access_page_access_code_input_error"] = "El código de acceso que has introducido o el mensaje al que estás intentando acceder no son válidos.";
 
 // Note page
@@ -151,43 +151,43 @@ ________________________________________________________________________________
 
 // Privacy Policy page
 $translation["privacy_page_title"] = "Privacidad";
-$translation["privacy_page_content"] = "<p>Our guiding principle is to deeply respect user's privacy. WeExpire doesn't collect any personal data or personally identifiable information (PII) and this can be also verified by checking our <a href='https://github.com/ciccionamente/WeExpire' target='_blank'>opensource code</a>.</p>
-<p>We do use <a href='https://plausible.io/data-policy' target='_blank'>Plausible Analytics</a> which is a GDPR, CCPA and cookie law compliant site analytics. This service doesn't collect any personal data or personally identifiable information (PII), doesn't use cookies and respects the privacy of the website visitors.</p>
-<p>We do use persistent first-party session cookies, necessary only to use our application and for you to create your emergency note.</p>
-<p>All data is encrypted via SSL/TLS when transmitted from our servers to your browser.</p>
-<p>We may update this policy in the future as needed to comply with relevant regulations and reflect any new practices.</p>
-<p><a href='https://www.vhosting.net' target='_blank'>Our hosting provider</a> stores access and security logs for up to 30 days in order to monitor and maintain their servers security. We have no control on this data.</p>
-<p>Last updated: May 1, 2022</p>";
+$translation["privacy_page_content"] = "<p>Nuestro principio fundamental es respetar profundamente la privacidad del usuario. WeExpire no recopila ningún dato personal o información de identificación personal (PII) y esto también se puede corroborar verificando nuestro <a href='https://github.com/ciccionamente/WeExpire' target='_blank'>código abierto</a>.</p>
+<p>Usamos <a href='https://plausible.io/data-policy' target='_blank'>Plausible Analytics</a>, que es un análisis de sitio que cumple con GDPR, CCPA y la ley de cookies. Este servicio no recopila ningún dato personal o información de identificación personal (PII), no utiliza cookies y respeta la privacidad de los visitantes del sitio web.</p>
+<p>Usamos cookies persistentes de sesión, necesarios solo para usar nuestra aplicación y para que usted cree su nota de emergencia.</p>
+<p>Todos los datos se cifran a través de SSL/TLS cuando se transmiten desde nuestros servidores a su navegador.</p>
+<p><a href='https://www.vhosting.net' target='_blank'>Nuestro proveedor de hosting</a> almacena registros de acceso y seguridad hasta por 30 días para monitorear y mantener la seguridad de sus servidores. No tenemos ningún control sobre estos datos.</p>
+<p>Es posible que actualicemos esta política en el futuro según sea necesario para cumplir con las reglamentaciones pertinentes y reflejar cualquier práctica nueva.</p>
+<p>Última actualización: 28 de junio de 2022.</p>";
 
 // Terms of Service page
 $translation["terms_page_title"] = "Términos y condiciones de uso";
 $translation["terms_page_content"] = "
-<p>When we say 'WeExpire', 'We Expire', 'we', 'our', 'us', 'service' or 'services' in this document, we are referring to WeExpire.org. WeExpire.org is an opensource and non-profit service.</p>
-<p>The following Terms of Service apply to WeExpire.org and to any document or emergency note generated via our service. These Terms of Service might be updated in the future. If you do not agree to these Terms of Service, please do not use this service.</p>
-<p>When using our service, now or in the future, you are agreeing to the latest Terms of Service. This is also true for any of our existing and future products or features that we will be added to our service.</p>
-<p>We do not offer any official or legally recognized will writing services. We do not guarantee that the emergency notes generated via our service will be always accessible and readable.</p>
-<p>You or the others who own emergency notes are responsible for maintaining the security of your emergency notes. We cannot and will not be liable for any loss or damage from your failure to comply with this security obligation.</p>
-<p>You are responsible for any activity that occurs with your emergency notes, even by the others who own your emergency notes.</p>
-<p> You are responsible for the content of your emergency notes.</p>
-<p>You are responsible for the correctness and ownership of the email addresses you provide during the creation of the emergency note.</p>
-<p>You may not use our service for any illegal purpose or to violate any laws in your jurisdiction.</p>
-<p>You must be a human. Emergency notes generated by bots or other automated methods are not permitted.</p>
-<p>You own all right, title, and interest to your emergency notes. We obtain no rights from you to your emergency notes. We do not collect and analyze personal information from you and we do not use behavioral insights to sell advertisements.</p>
-<p>We will never collect or store any personally identifiable information and we will never abuse your visitor’s privacy. We will never sell or share your personal data to any third-parties.</p>
-<p>Your use of our service is at your sole risk. The service is provided on an 'as is' and 'as available' basis.</p>
-<p>We do not guarantee that our service will meet your specific requirements or expectations. We do not guarantee completely error-free or bug-free services.</p>
-<p>Technical support is provided by email. Email responses are provided on the reasonable effort basis without guaranteed response time.</p>
-<p>You expressly understand and agree that WeExpire.org shall not be liable, in law or in equity, to you or to any third party for any direct, indirect, incidental, lost profits, special, consequential, punitive or exemplary damages, including, but not limited to, damages for loss of profits, goodwill, use, data or other intangible losses (even if WeExpire.org has been advised of the possibility of such damages), resulting from:
+<p>Cuando decimos 'WeExpire', 'We Expire', 'nosotros', 'nuestro', 'nos', 'servicio' o 'servicios' en este documento, nos referimos a WeExpire.org. WeExpire.org es un servicio de código abierto y sin fines de lucro creado y mantenido por <a href='https://francescocalabretta.com' target='_blank'>Francesco Calabretta</a> en su tiempo libre.</p>
+<p>Los siguientes Términos de servicio se aplican a WeExpire.org y a cualquier documento o mensaje de emergencia generado a través de nuestro servicio. Estos Términos de servicio pueden actualizarse en el futuro. Si no está de acuerdo con estos Términos, le sugerimos que no utilice este servicio.</p>
+<p>Al utilizar nuestro servicio, ahora o en el futuro, Usted acepta los Términos de servicio más recientes. Esto también se aplica a cualquiera de nuestros productos o funciones existentes y futuros que agregaremos a nuestro servicio.</p>
+<p>No ofrecemos ningún servicio oficial o legalmente reconocido de redacción de testamentos. No garantizamos que las notas de emergencia generadas a través de nuestro servicio estén siempre accesibles y legibles.</p>
+<p>Usted o los demás propietarios de los mensajes de emergencia son responsables de mantener la seguridad de los mismos. No podemos y no seremos responsables de ninguna pérdida o daño por su incumplimiento de esta obligación de seguridad.</p>
+<p>Usted es responsable de cualquier actividad que ocurra con sus mensajes de emergencia, incluso por parte de los demás propietarios de los mensajes de emergencia.</p>
+<p> Usted es responsable del contenido de sus mensajes de emergencia.</p>
+<p>Usted es responsable de la corrección y propiedad de las direcciones de correo electrónico que proporcione durante la creación del mensaje de emergencia.</p>
+<p>No puede usar nuestro servicio para ningún propósito ilegal o para violar las leyes de su jurisdicción.</p>
+<p>Debes ser un ser humano. No se permiten notas de emergencia generadas por bots u otros métodos automatizados.</p>
+<p>Usted posee todos los derechos, títulos e intereses de sus pagarés de emergencia. No obtenemos derechos de Usted sobre sus mensajes de emergencia. No recopilamos ni analizamos su información personal y no utilizamos información sobre el comportamiento para vender anuncios.</p>
+<p>Nunca recopilaremos ni almacenaremos información de identificación personal y nunca abusaremos de la privacidad de sus visitantes. Nunca venderemos ni compartiremos sus datos personales con terceros.</p>
+<p>El uso de nuestro servicio es bajo su propia responsabilidad. El servicio se proporciona 'tal y como es' y sin garantías de ningún tipo.</p>
+<p>No garantizamos que nuestro servicio cumpla con sus requisitos o expectativas específicas. No garantizamos servicios completamente libres de errores o bug.</p>
+<p>El soporte técnico se proporciona por correo electrónico. Las respuestas por correo electrónico se proporcionan sobre la base de una tempistica razonable pero sin un límite de respuesta garantizado.</p>
+<p>Usted comprende y acepta expresamente que WeExpire.org no será responsable, en derecho o en equidad, ante Usted o cualquier tercero por cualquier daño directo, indirecto, incidental, pérdida de ganancias, especial, consecuente, punitivo o ejemplar, incluyendo, pero sin limitarse a, daños por pérdida de ganancias, buena voluntad, uso, datos u otras pérdidas intangibles (incluso si WeExpire.org ha sido advertido de la posibilidad de tales daños), que resulten de:
   <ol>
-  <li>the use or the inability to use the services;</li>
-  <li>the cost of procurement of substitute goods and services resulting from any goods, data, information or services purchased or obtained or messages received or transactions entered into through or from the services;</li>
-  <li>unauthorized access to or alteration of your transmissions or data;</li>
-  <li>statements or conduct of any third party on the service;</li>
-  <li>or any other matter relating to this Terms of Service or the services, whether as a breach of contract, tort (including negligence whether active or passive), or any other theory of liability.</li>
+  <li>el uso o la imposibilidad de uso de los servicios;</li>
+  <li>el costo de adquisición de bienes y servicios sustitutos que resulten de bienes, datos, información o servicios comprados u obtenidos o mensajes recibidos o transacciones realizadas a través o desde los servicios;</li>
+  <li>acceso no autorizado o alteración de sus transmisiones o datos;</li>
+  <li>declaraciones o conducta de cualquier tercero en el servicio;</li>
+  <li>o cualquier otro asunto relacionado con estos Términos de servicio o los servicios, ya sea como incumplimiento de contrato, agravio (incluida la negligencia, ya sea activa o pasiva), o cualquier otra teoría de responsabilidad.</li>
   </ol>
   </p>
-<p>This agreement shall be governed by the laws of Italy, and the courts of Italy shall have exclusive jurisdiction to hear and determine all issues that may arise under or in relation to this agreement.</p>
-<p>Last updated: May 1, 2022</p>
+<p>Este acuerdo se regirá por las leyes de Italia, y los tribunales de Italia tendrán jurisdicción exclusiva para conocer y determinar todas las cuestiones que puedan surgir en relación con este acuerdo.</p>
+<p>Última actualización: 28 de junio de 2022.</p>
 ";
 
 ?>

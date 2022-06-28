@@ -168,8 +168,8 @@ else {
   $expiration_date_timestamp = strtotime($expiration_date);
   $today_timestamp = strtotime($today_date);
 
-  // If today's timestamp is less or equal than the expiration date timestamp then query the database accordingly
-  if ($today_timestamp <= $expiration_date_timestamp) {
+  // If today's timestamp is less than the expiration date timestamp then query the database accordingly
+  if ($today_timestamp < $expiration_date_timestamp) {
     database_read_and_write();
 
   } else {

@@ -90,7 +90,7 @@ $translation["review_page_information_7"] = "You accept our <a href='/terms.php'
 $translation["done_page_title"] = "All done";
 $translation["done_page_content"] = "
 <p class='text-center'>Your emergency note has been created. You can download it by clicking the button below, then print it and deliver it to your trusted person.</p>
-<p class='text-center'><b>Very important!</b> Add the email address <b>support@weexpire.org</b> to your email provider's safe senders list to prevent any notification from us regarding the note you just created from mistakenly ending up in spam.</p>";
+<p class='text-center'><b><mark>Very important!</mark></b> Add the email address <b>support@weexpire.org</b> to your email provider's safe senders list to prevent any notification from us regarding the note you just created from mistakenly ending up in spam.</p>";
 
 // Access page
 $translation["access_page_title"] = "Read the note";
@@ -157,12 +157,12 @@ $translation["privacy_page_content"] = "<p>Our guiding principle is to deeply re
 <p>All data is encrypted via SSL/TLS when transmitted from our servers to your browser.</p>
 <p><a href='https://www.vhosting.net' target='_blank'>Our hosting provider</a> stores access and security logs for up to 30 days in order to monitor and maintain their servers security. We have no control on this data.</p>
 <p>We may update this policy in the future as needed to comply with relevant regulations and reflect any new practices.</p>
-<p>Last updated: May 1, 2022</p>";
+<p>Last updated: June 28th, 2022.</p>";
 
 // Terms of Service page
 $translation["terms_page_title"] = "Terms of Service";
 $translation["terms_page_content"] = "
-<p>When we say 'WeExpire', 'We Expire', 'we', 'our', 'us', 'service' or 'services' in this document, we are referring to WeExpire.org. WeExpire.org is an opensource and non-profit service.</p>
+<p>When we say 'WeExpire', 'We Expire', 'we', 'our', 'us', 'service' or 'services' in this document, we are referring to WeExpire.org. WeExpire.org is an opensource and non-profit service built and maintained by <a href='https://francescocalabretta.com' target='_blank'>Francesco Calabretta</a> as a side project.</p>
 <p>The following Terms of Service apply to WeExpire.org and to any document or emergency note generated via our service. These Terms of Service might be updated in the future. If you do not agree to these Terms of Service, please do not use this service.</p>
 <p>When using our service, now or in the future, you are agreeing to the latest Terms of Service. This is also true for any of our existing and future products or features that we will be added to our service.</p>
 <p>We do not offer any official or legally recognized will writing services. We do not guarantee that the emergency notes generated via our service will be always accessible and readable.</p>
@@ -187,7 +187,7 @@ $translation["terms_page_content"] = "
   </ol>
   </p>
 <p>This agreement shall be governed by the laws of Italy, and the courts of Italy shall have exclusive jurisdiction to hear and determine all issues that may arise under or in relation to this agreement.</p>
-<p>Last updated: May 1, 2022</p>
+<p>Last updated: June 28th, 2022.</p>
 ";
 
 ?>

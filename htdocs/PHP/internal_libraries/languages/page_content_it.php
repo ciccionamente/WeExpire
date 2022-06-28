@@ -90,7 +90,7 @@ $translation["review_page_information_7"] = "Accetti i <a href='/terms.php' targ
 $translation["done_page_title"] = "Tutto fatto";
 $translation["done_page_content"] = "
 <p class='text-center'>La tua nota d'emergenza è stata creata. Puoi scaricarla attraverso il pulsante sottostante e successivamente stamparla e consegnarla alla tua persona fidata.</p>
-<p class='text-center'><b>Molto importante!</b> Aggiungi l'indirizzo <b>support@weexpire.org</b> nella lista dei mittenti sicuri del tuo email provider per evitare che qualsiasi nostra notifica in riferimento alla nota che hai appena creato finisca erroneamente nello spam.</p>";
+<p class='text-center'><b><mark>Molto importante!</mark></b> Aggiungi l'indirizzo <b>support@weexpire.org</b> nella lista dei mittenti sicuri del tuo email provider per evitare che qualsiasi nostra notifica in riferimento alla nota che hai appena creato finisca erroneamente nello spam.</p>";
 
 // Access page
 $translation["access_page_title"] = "Leggi la nota";
@@ -151,43 +151,43 @@ ________________________________________________________________________________
 
 // Privacy Policy page
 $translation["privacy_page_title"] = "Privacy";
-$translation["privacy_page_content"] = "<p>Our guiding principle is to deeply respect user's privacy. WeExpire doesn't collect any personal data or personally identifiable information (PII) and this can be also verified by checking our <a href='https://github.com/ciccionamente/WeExpire' target='_blank'>opensource code</a>.</p>
-<p>We do use <a href='https://plausible.io/data-policy' target='_blank'>Plausible Analytics</a> which is a GDPR, CCPA and cookie law compliant site analytics. This service doesn't collect any personal data or personally identifiable information (PII), doesn't use cookies and respects the privacy of the website visitors.</p>
-<p>We do use persistent first-party session cookies, necessary only to use our application and for you to create your emergency note.</p>
-<p>All data is encrypted via SSL/TLS when transmitted from our servers to your browser.</p>
-<p>We may update this policy in the future as needed to comply with relevant regulations and reflect any new practices.</p>
-<p><a href='https://www.vhosting.net' target='_blank'>Our hosting provider</a> stores access and security logs for up to 30 days in order to monitor and maintain their servers security. We have no control on this data.</p>
-<p>Last updated: May 1, 2022</p>";
+$translation["privacy_page_content"] = "<p>Il nostro obiettivo principale è rispettare a pieno la privacy dell'utente. WeExpire non raccoglie alcun dato personale o informazione di identificazione personale (PII) e questo può essere verificato anche controllando il nostro <a href='https://github.com/ciccionamente/WeExpire' target='_blank'>codice opensource</a>.</p>
+<p>Utilizziamo <a href='https://plausible.io/data-policy' target='_blank'>Plausible Analytics</a> che è uno strumento che analizza dati di traffico del sito conforme a GDPR, CCPA e alla legge sui cookie. Questo servizio non raccoglie dati personali o informazioni di identificazione personale (PII), non utilizza cookie e rispetta la privacy dei visitatori del sito.</p>
+<p>Utilizziamo cookie di sessione persistenti, necessari solo per utilizzare la nostra applicazione e per creare la tua nota di emergenza.</p>
+<p>Tutti i dati vengono crittografati tramite SSL/TLS quando vengono trasmessi dai nostri server al tuo browser.</p>
+<p><a href='https://www.vhosting.net' target='_blank'>Il nostro hosting provider</a> archivia i registri di accesso e di sicurezza per un massimo di 30 giorni al fine di monitorare e mantenere la sicurezza dei propri server. Non abbiamo alcun controllo su questi dati.</p>
+<p>Potremmo aggiornare questa politica in futuro secondo le necessità per conformarci alle normative pertinenti e riflettere eventuali nuove pratiche.</p>
+<p>Ultimo aggiornamento: 28 Giugno 2022.</p>";
 
 // Terms of Service page
 $translation["terms_page_title"] = "Termini e condizioni d'uso";
 $translation["terms_page_content"] = "
-<p>When we say 'WeExpire', 'We Expire', 'we', 'our', 'us', 'service' or 'services' in this document, we are referring to WeExpire.org. WeExpire.org is an opensource and non-profit service.</p>
-<p>The following Terms of Service apply to WeExpire.org and to any document or emergency note generated via our service. These Terms of Service might be updated in the future. If you do not agree to these Terms of Service, please do not use this service.</p>
-<p>When using our service, now or in the future, you are agreeing to the latest Terms of Service. This is also true for any of our existing and future products or features that we will be added to our service.</p>
-<p>We do not offer any official or legally recognized will writing services. We do not guarantee that the emergency notes generated via our service will be always accessible and readable.</p>
-<p>You or the others who own emergency notes are responsible for maintaining the security of your emergency notes. We cannot and will not be liable for any loss or damage from your failure to comply with this security obligation.</p>
-<p>You are responsible for any activity that occurs with your emergency notes, even by the others who own your emergency notes.</p>
-<p> You are responsible for the content of your emergency notes.</p>
-<p>You are responsible for the correctness and ownership of the email addresses you provide during the creation of the emergency note.</p>
-<p>You may not use our service for any illegal purpose or to violate any laws in your jurisdiction.</p>
-<p>You must be a human. Emergency notes generated by bots or other automated methods are not permitted.</p>
-<p>You own all right, title, and interest to your emergency notes. We obtain no rights from you to your emergency notes. We do not collect and analyze personal information from you and we do not use behavioral insights to sell advertisements.</p>
-<p>We will never collect or store any personally identifiable information and we will never abuse your visitor’s privacy. We will never sell or share your personal data to any third-parties.</p>
-<p>Your use of our service is at your sole risk. The service is provided on an 'as is' and 'as available' basis.</p>
-<p>We do not guarantee that our service will meet your specific requirements or expectations. We do not guarantee completely error-free or bug-free services.</p>
-<p>Technical support is provided by email. Email responses are provided on the reasonable effort basis without guaranteed response time.</p>
-<p>You expressly understand and agree that WeExpire.org shall not be liable, in law or in equity, to you or to any third party for any direct, indirect, incidental, lost profits, special, consequential, punitive or exemplary damages, including, but not limited to, damages for loss of profits, goodwill, use, data or other intangible losses (even if WeExpire.org has been advised of the possibility of such damages), resulting from:
+<p>Quando diciamo 'WeExpire', 'We Expire', 'noi', 'nostro', 'noi', 'servizio' o 'servizi' in questo documento, ci riferiamo a WeExpire.org. WeExpire.org è un servizio opensource e senza scopo di lucro sviluppato e mantenuto da <a href='https://francescocalabretta.com' target='_blank'>Francesco Calabretta</a> durante il tempo libero.</p>
+<p>I seguenti Termini di servizio si applicano a WeExpire.org e a qualsiasi documento o nota di emergenza generata tramite il nostro servizio. Questi Termini di servizio potrebbero essere aggiornati in futuro. Se non accetti questi Termini di servizio, ti preghiamo di non utilizzare questo servizio.</p>
+<p>Quando utilizzi il nostro servizio, ora o in futuro, accetti i Termini di servizio più recenti. Questo vale anche per tutti i nostri prodotti o funzionalità esistenti e future che verranno aggiunti al nostro servizio.</p>
+<p>Non offriamo servizi di scrittura di testamenti ufficiali o legalmente riconosciuti. Non garantiamo che le note di emergenza generate tramite il nostro servizio siano sempre accessibili e leggibili.</p>
+<p>Tu o gli altri che possiedono note di emergenza siete i responsabili del mantenimento della sicurezza delle vostre note di emergenza. Non possiamo e non saremo responsabili per eventuali perdite o danni derivanti dal mancato rispetto di questo obbligo di sicurezza.</p>
+<p>Sei responsabile di qualsiasi attività che si verifica con le tue note di emergenza, anche da parte di chi riceve le tue note di emergenza.</p>
+<p> Sei responsabile del contenuto delle tue note di emergenza.</p>
+<p>Sei responsabile della correttezza e della proprietà degli indirizzi e-mail forniti durante la creazione della nota di emergenza.</p>
+<p>Non puoi utilizzare il nostro servizio per scopi illegali o per violare le leggi nella tua giurisdizione.</p>
+<p>Devi essere un essere umano. Non sono consentite note di emergenza generate da bot o da altri metodi automatizzati.</p>
+<p>Possiedi tutti i diritti, il titolo e l'interesse per le tue note di emergenza. Non otteniamo alcun diritto da te sulle tue note di emergenza. Non raccogliamo e analizziamo le tue informazioni personali e non utilizziamo analisi comportamentali per vendere annunci pubblicitari.</p>
+<p>Non raccoglieremo né memorizzeremo mai alcuna informazione di identificazione personale e non abuseremo mai della tua privacy da visitatore e utilizzatore dei nostri servizi. Non venderemo né condivideremo mai i tuoi dati personali a terzi.</p>
+<p>L'utilizzo del nostro servizio è a tuo esclusivo rischio. Il servizio viene fornito 'così com’è' e senza garanzia di alcun tipo.</p>
+<p>Non garantiamo che il nostro servizio soddisfi i tuoi requisiti o aspettative specifici. Non garantiamo servizi completamente privi di errori o bug.</p>
+<p>Il supporto tecnico è fornito tramite e-mail. Le risposte e-mail vengono fornite i maniera ragionevole e senza tempi di risposta garantiti.</p>
+<p>Comprendi e accetti espressamente che WeExpire.org non sarà responsabile, per legge o in equità, nei tuoi confronti o nei confronti di terzi per eventuali danni diretti, indiretti, incidentali, mancati di profitto, danni speciali, consequenziali, punitivi o esemplari, inclusi, ma non limitati a, danni per mancato guadagno, perdita di avviamento, mancato utilizzo, perdita di dati o altre perdite immateriali (anche se WeExpire.org è stato avvisato della possibilità di tali danni), risultanti da:
   <ol>
-  <li>the use or the inability to use the services;</li>
-  <li>the cost of procurement of substitute goods and services resulting from any goods, data, information or services purchased or obtained or messages received or transactions entered into through or from the services;</li>
-  <li>unauthorized access to or alteration of your transmissions or data;</li>
-  <li>statements or conduct of any third party on the service;</li>
-  <li>or any other matter relating to this Terms of Service or the services, whether as a breach of contract, tort (including negligence whether active or passive), or any other theory of liability.</li>
+  <li>l’utilizzo o l'impossibilità di usufruire dei servizi;;</li>
+  <li>il costo di approvvigionamento di beni e servizi sostitutivi risultanti da beni, dati, informazioni o servizi acquistati o ottenuti o messaggi ricevuti o transazioni effettuate tramite o dai servizi;</li>
+  <li>accesso non autorizzato o alterazione delle tue trasmissioni o dei tuoi dati;</li>
+  <li>dichiarazioni o comportamenti di terzi sul servizio;</li>
+  <li>o qualsiasi altra questione relativa ai presenti Termini di servizio o ai servizi, sia come violazione del contratto, illecito civile (compresa la negligenza attiva o passiva) o qualsiasi altra teoria di responsabilità.</li>
   </ol>
   </p>
-<p>This agreement shall be governed by the laws of Italy, and the courts of Italy shall have exclusive jurisdiction to hear and determine all issues that may arise under or in relation to this agreement.</p>
-<p>Last updated: May 1, 2022</p>
+<p>Il presente accordo è regolato dalle leggi italiane e i tribunali italiani hanno giurisdizione esclusiva per ascoltare e determinare tutte le questioni che possono sorgere ai sensi o in relazione al presente accordo.</p>
+<p>Ultimo aggiornamento: 28 Giugno 2022.</p>
 ";
 
 ?>

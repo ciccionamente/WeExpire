@@ -128,11 +128,11 @@ if ($_SESSION['l'] == "en") {
                 <input name="expiration_date" type="date" id="expiration_date" class="form-control" value="<?php
                 // Include the time zone setting
                 include_once 'PHP/internal_libraries/engine/time_zone.php';
-                echo date('Y-m-d', strtotime("+ 7 days"));
+                echo date('Y-m-d', strtotime("+ 8 days"));
                 ?>" min="<?php
                 // Include the time zone setting
                 include_once 'PHP/internal_libraries/engine/time_zone.php';
-                echo date('Y-m-d', strtotime("+ 7 days"));
+                echo date('Y-m-d', strtotime("+ 8 days"));
                 ?>" max="3000-12-31" disabled required>
                 <span class="form-text">
                   <?=$translation["start_page_expiration_input_hint"];?>

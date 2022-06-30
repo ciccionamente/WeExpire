@@ -5,7 +5,7 @@ $('#expiration_date_switch').on('change', function(event, state) {
 });
 // Change the default and minimum values for the expiration date input according to the inactivity time
 $('#inactivity_time_select').on('change', function(event, state) {
-  var days_to_add = $('#inactivity_time_select').children("option:selected").val();
+  var days_to_add = Number($('#inactivity_time_select').children("option:selected").val()) + 1; // Adding +1 day in order to avoid conflicts (e.g. inactivity time = expiration date)
   function addDays(current_date,days) {
     return new Date(current_date.getTime() + days*24*60*60*1000);
   }

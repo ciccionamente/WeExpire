@@ -16,9 +16,14 @@ include_once 'PHP/internal_libraries/engine/starter.php';
 if (($_SERVER["REQUEST_METHOD"] == "POST")) {
 
   // Verify the secure form token in order to avoid any cross-domain POST request.
-  // If it's not verified then remove all the session variables, destroy the sesson
+  // If the relative session variable doesn't exist then redirect to the index.php page
+  if (!isset($_SESSION['csrf_token'])) {
+    header("Location: /index.php");
+    exit();
+  }
+  // If the relative session variable exists but it's not verified then remove all the session variables, destroy the sesson
   // and redirect to the index.php page
-  if($_SESSION['csrf_token'] !== $_POST['csrf_token']){
+  if ($_SESSION['csrf_token'] !== $_POST['csrf_token']){
     session_unset();
     session_destroy();
     header("Location: /index.php");

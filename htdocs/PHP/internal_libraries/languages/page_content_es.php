@@ -35,7 +35,7 @@ $translation["button_get_emergency_note"] = "Descarga el documento";
 
 // Landing page
 $translation["landing_page_headline"] = "Más fácil que un testamento,<br class='d-none d-sm-block'> más seguro que una carta.";
-$translation["landing_page_secondary_headline"] = "WeExpire es una plataforma opensource para crear mensajes de emergencia que pueden leer tus contactos elegidos solo tras tu fallecimiento o en caso de incapacidad irreversible";
+$translation["landing_page_secondary_headline"] = "WeExpire es una plataforma opensource para crear mensajes de emergencia que pueden leer tus contactos elegidos solo tras tu fallecimiento o en caso de incapacidad irreversible.";
 
 $translation["landing_page_section_1_title"] = "Cómo funciona";
 $translation["landing_page_section_1_description"] = "Una vez creado tu mensaje, este viene encriptado y convertido en un código QR que puedes entregar a tu persona de confianza. Cuando este contacto intente acceder a la nota que le has dejado, WeExpire te contactará inmediatamente por email: si no respondes dentro de un límite de tiempo, establecido previamente por tí, tu contacto podrá acceder al mensaje.";
@@ -102,7 +102,7 @@ $translation["access_page_access_code_input_error"] = "El código de acceso que 
 if (isset($creation_date_time)) {
 $translation["note_page_title"] = "Lee el mensaje";
 $translation["note_page_waiting_message"] = "<p class='text-center'>El código de acceso de este mensaje ha sido verificado correctamente. Para leer el contenido del mismo debes esperar hasta el <b>".date("d/m/Y", strtotime($_SESSION['grant_access']))."</b> (DD/MM/AAAA).</p>
-<p class='text-center'>Este tiempo de espera depende del tiempo de inactividad elegido por quien ha creado el mensaje. Te invitamos a reintentarlo a partir de la fecha indicada, cuando haya vencido el tiempo de inactividad.</p>";
+<p class='text-center'>Este tiempo de espera depende del tiempo de inactividad elegido por quien ha creado el mensaje. Te invitamos a acceder de nuevo a partir de la fecha indicada, cuando haya vencido el tiempo de inactividad.</p>";
 $translation["note_page_blocked_message"] = "<p class='text-center'>El acceso a este mensaje ha sido bloqueado por quien lo ha creado.</p>";
 $translation["note_page_expired_message"] = "<p class='text-center'>Este mensaje ha caducado y no se puede leer.</p>";
 $translation["note_page_allowed_message_no_expiration"] = "

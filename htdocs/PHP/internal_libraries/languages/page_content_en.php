@@ -94,7 +94,7 @@ $translation["done_page_content"] = "
 
 // Access page
 $translation["access_page_title"] = "Read the note";
-$translation["access_page_access_code_input_title"] = "Enter the access code";
+$translation["access_page_access_code_input_title"] = "Please enter the access code";
 $translation["access_page_access_code_input_error"] = "The access code you provided or the note you are trying to access is invalid.";
 
 // Note page
@@ -102,7 +102,7 @@ $translation["access_page_access_code_input_error"] = "The access code you provi
 if (isset($creation_date_time)) {
 $translation["note_page_title"] = "Read the note";
 $translation["note_page_waiting_message"] = "<p class='text-center'>The access code for this note has been successfully verified. However, it is necessary to wait until <b>".date("d/m/Y", strtotime($_SESSION['grant_access']))."</b> (DD/MM/YYYY) in order to read the content of the note.</p>
-<p class='text-center'>This waiting time depends on the inactivity time chosen by the creator of this note. We therefore invite you to try to access the emergency note again on the date indicated, i.e. when the inactivity time has been exceeded.</p>";
+<p class='text-center'>This waiting time depends on the inactivity time chosen by the creator of this note. We therefore invite you to try to access the emergency note again on the date indicated above, which is when the inactivity time will be over.</p>";
 $translation["note_page_blocked_message"] = "<p class='text-center'>The access to this note has been temporarily blocked by the author of the note.</p>";
 $translation["note_page_expired_message"] = "<p class='text-center'>This note has expired and can no longer be read.</p>";
 $translation["note_page_allowed_message_no_expiration"] = "

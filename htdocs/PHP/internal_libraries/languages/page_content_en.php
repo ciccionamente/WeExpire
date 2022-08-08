@@ -162,7 +162,7 @@ $translation["privacy_page_content"] = "<p>Our guiding principle is to deeply re
 // Terms of Service page
 $translation["terms_page_title"] = "Terms of Service";
 $translation["terms_page_content"] = "
-<p>When we say 'WeExpire', 'We Expire', 'we', 'our', 'us', 'service' or 'services' in this document, we are referring to WeExpire.org. WeExpire.org is an opensource and non-profit service built and maintained by <a href='https://francescocalabretta.com' target='_blank'>Francesco Calabretta</a> as a side project.</p>
+<p>When we say 'WeExpire', 'We Expire', 'we', 'our', 'us', 'service' or 'services' in this document, we are referring to WeExpire.org. WeExpire.org is an opensource and non-profit service.</p>
 <p>The following Terms of Service apply to WeExpire.org and to any document or emergency note generated via our service. These Terms of Service might be updated in the future. If you do not agree to these Terms of Service, please do not use this service.</p>
 <p>When using our service, now or in the future, you are agreeing to the latest Terms of Service. This is also true for any of our existing and future products or features that we will be added to our service.</p>
 <p>We do not offer any official or legally recognized will writing services. We do not guarantee that the emergency notes generated via our service will be always accessible and readable.</p>
@@ -187,7 +187,7 @@ $translation["terms_page_content"] = "
   </ol>
   </p>
 <p>This agreement shall be governed by the laws of Italy, and the courts of Italy shall have exclusive jurisdiction to hear and determine all issues that may arise under or in relation to this agreement.</p>
-<p>Last updated: June 28th, 2022.</p>
+<p>Last updated: August 8th, 2022.</p>
 ";
 
 ?>

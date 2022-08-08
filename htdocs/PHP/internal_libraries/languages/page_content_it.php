@@ -162,7 +162,7 @@ $translation["privacy_page_content"] = "<p>Il nostro obiettivo principale è ris
 // Terms of Service page
 $translation["terms_page_title"] = "Termini e condizioni d'uso";
 $translation["terms_page_content"] = "
-<p>Quando diciamo 'WeExpire', 'We Expire', 'noi', 'nostro', 'noi', 'servizio' o 'servizi' in questo documento, ci riferiamo a WeExpire.org. WeExpire.org è un servizio opensource e senza scopo di lucro sviluppato e mantenuto da <a href='https://francescocalabretta.com' target='_blank'>Francesco Calabretta</a> durante il tempo libero.</p>
+<p>Quando diciamo 'WeExpire', 'We Expire', 'noi', 'nostro', 'noi', 'servizio' o 'servizi' in questo documento, ci riferiamo a WeExpire.org. WeExpire.org è un servizio opensource e senza scopo di lucro.</p>
 <p>I seguenti Termini di servizio si applicano a WeExpire.org e a qualsiasi documento o nota di emergenza generata tramite il nostro servizio. Questi Termini di servizio potrebbero essere aggiornati in futuro. Se non accetti questi Termini di servizio, ti preghiamo di non utilizzare questo servizio.</p>
 <p>Quando utilizzi il nostro servizio, ora o in futuro, accetti i Termini di servizio più recenti. Questo vale anche per tutti i nostri prodotti o funzionalità esistenti e future che verranno aggiunti al nostro servizio.</p>
 <p>Non offriamo servizi di scrittura di testamenti ufficiali o legalmente riconosciuti. Non garantiamo che le note di emergenza generate tramite il nostro servizio siano sempre accessibili e leggibili.</p>
@@ -187,7 +187,7 @@ $translation["terms_page_content"] = "
   </ol>
   </p>
 <p>Il presente accordo è regolato dalle leggi italiane e i tribunali italiani hanno giurisdizione esclusiva per ascoltare e determinare tutte le questioni che possono sorgere ai sensi o in relazione al presente accordo.</p>
-<p>Ultimo aggiornamento: 28 Giugno 2022.</p>
+<p>Ultimo aggiornamento: 8 Agosto 2022.</p>
 ";
 
 ?>

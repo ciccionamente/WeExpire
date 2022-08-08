@@ -38,16 +38,16 @@ $translation["landing_page_headline"] = "Simpler than a will,<br class='d-none d
 $translation["landing_page_secondary_headline"] = "WeExpire is an opensource tool for creating emergency notes that can be read by your trusted contacts only after your death or if you are seriously injured.";
 
 $translation["landing_page_section_1_title"] = "How it works";
-$translation["landing_page_section_1_description"] = "Soon after your note is written, this will be encrypted and converted into a QR code which you can give to the person you trust. When this person tries to access the message you left, WeExpire will try to contact you via email as soon as possible: if you do not reply within a certain period of time previously defined by you, your note will become visible.";
+$translation["landing_page_section_1_description"] = "Soon after you write your note, it will be encrypted and converted into a QR code which you can give to a person you trust. When this person tries to access your message, WeExpire will try to contact you via email as soon as possible; if you do not reply within the period of time you previously defined, your note will become visible to your trusted person.";
 
 $translation["landing_page_section_2_title"] = "Why should I use it?";
-$translation["landing_page_section_2_description"] = "Regardless of age, health, social status or whether you live in a conflict zone, one day we will all die or be severely ill. Leaving a note to the people you trust will allow you to give them your last message and possibly fulfill your last wills.";
+$translation["landing_page_section_2_description"] = "Regardless of age, health, social status, or geographical location, one day we will all die or be severely ill. Leaving a note to the people you trust will allow you to give them your last message and possibly fulfill your last wills.";
 
 $translation["landing_page_section_3_title"] = "We don't store your data";
-$translation["landing_page_section_3_description"] = "Unlike other platforms, there is no need to register any account on WeExpire. In fact, your data stays only in the QR code that is generated and eventually printed. If you don't believe us, <a href='https://github.com/ciccionamente/WeExpire' target='_blank'>you can take a look at the source code</a>.";
+$translation["landing_page_section_3_description"] = "Unlike other platforms, there is no need to register an account on WeExpire. In fact, your data stays only in the QR code that is generated and eventually printed. If you don't believe us, <a href='https://github.com/ciccionamente/WeExpire' target='_blank'>you can take a look at the source code</a>.";
 
 $translation["landing_page_section_4_title"] = "Safe";
-$translation["landing_page_section_4_description"] = "Your note is encrypted using the <a href='https://wikipedia.org/wiki/Advanced_Encryption_Standard' target='_blank'>AES-256-CTR algorithm</a> and its access code is randomly generated. And even if WeExpire gets hacked, no notes can be obtained because once they are generated they are not stored on WeExpire.";
+$translation["landing_page_section_4_description"] = "Your note is encrypted using the <a href='https://wikipedia.org/wiki/Advanced_Encryption_Standard' target='_blank'>AES-256-CTR algorithm</a> and its access code is randomly generated. And even if WeExpire gets hacked, your notes cannot be accessed because once they are generated they are not stored on WeExpire.";
 
 $translation["landing_page_section_5_title"] = "Non-profit";
 $translation["landing_page_section_5_description"] = "WeExpire is a non-profit project and is completely free. If you feel like helping the project, you can still contribute with a <a href='https://www.buymeacoffee.com/ciccionamente' target='_blank'>donation</a>.";

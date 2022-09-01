@@ -1,7 +1,6 @@
+<a href="https://weexpire.org"><img src="https://weexpire.org/img/logo.svg" alt="WeExpire" width="200px"></a>
 
-
-# WeExpire.org
-WeExpire is an opensource tool for creating emergency notes that can be read by your trusted contacts only after your death or if you are seriously injured.
+[WeExpire.org](https://weexpire.org) is the first opensource tool for creating emergency notes that can be read by your trusted contacts only after your death or if you are seriously injured.
 
 ## Running the project locally
  1. Clone the repo
@@ -28,8 +27,8 @@ Contributions that are not time-consuming and made for improving WeExpire's secu
 Distributed under the GPLv3 License. See `LICENSE` for more information.
 
 ## Credits
-A special thanks goes to the following people who helped this project:
-- [Rebeca Dieguez Merayo](https://www.linkedin.com/in/rebecadieguez/), Spanish translations
+A special thanks goes to the following people who have contributed to this project:
+- [Rebeca Dieguez Merayo](https://www.linkedin.com/in/rebecadieguez/), Spanish content
 
 Another special thanks goes to these opensource third-party libraries and frameworks that have been used in this project:
  - [PHPMailer](https://github.com/PHPMailer/PHPMailer)

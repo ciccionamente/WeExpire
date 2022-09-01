@@ -1,5 +1,9 @@
 <?php
 
+/**
+* Logic for handling the maintenance mode and the session as soon as a page is loaded
+*/
+
 // Check first if the maintenance mode is enabled and redirect accordingly
 require_once '../underwear/environment_variables/configuration.php';
 global $maintenance_mode;

@@ -10,7 +10,7 @@
 <meta name="description" content="<?=$translation["meta_description"];?>">
 <meta name="author" content="WeExpire">
 
-<meta name="title" property="og:title" content="WeExpire">
+<meta property="og:title" content="WeExpire">
 <meta property="og:site_name" content="WeExpire">
 <meta property="og:url" content="https://www.weexpire.org/">
 <meta property="og:description" content="<?=$translation["social_media_description"];?>">

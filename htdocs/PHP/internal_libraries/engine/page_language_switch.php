@@ -1,5 +1,9 @@
 <?php
 
+/**
+* Logic for detecting and switching the user language
+*/
+
 // Check if there is already an active session, if not start a new one
 include_once 'PHP/internal_libraries/engine/starter.php';
 

@@ -29,7 +29,7 @@ $translation["footer_terms"] = "Termini";
 $translation["button_get_started"] = "Crea la tua nota";
 $translation["button_create_another_one"] = "Crea un'altra nota";
 $translation["button_create_your_emergency_note"] = "Crea la tua nota d'emergenza";
-$translation["button_next"] = "Avanti";
+$translation["button_next"] = "Continua";
 $translation["button_confirm"] = "Conferma";
 $translation["button_get_emergency_note"] = "Scarica il documento";
 
@@ -98,8 +98,8 @@ $translation["access_page_access_code_input_title"] = "Inserisci il codice di ac
 $translation["access_page_access_code_input_error"] = "Il codice di accesso che hai inserito o la nota a cui stai provando ad accedere non sono validi.";
 
 // Note page
-// Avoid warning errors when visiting a page different than the note page by just checking first if the creation date time variable exists
-if (isset($creation_date_time)) {
+// Avoid warning errors when visiting a page different than the note page by just checking first if the creation date time or grant access variables exist
+if (isset($creation_date_time) or isset($_SESSION['grant_access'])) {
 $translation["note_page_title"] = "Leggi la nota";
 $translation["note_page_waiting_message"] = "<p class='text-center'>Il codice d'accesso per questa nota è stato verificato correttamente. Tuttavia per leggerne il contenuto è necessario attendere il <b>".date("d/m/Y", strtotime($_SESSION['grant_access']))."</b> (GG/MM/AAAA).</p>
 <p class='text-center'>Questo tempo di attesa dipende dal tempo di inattività scelto da chi ha creato questa nota. Ti invitiamo dunque a riprovare ad accedere nuovamente nella data indicata, ovvero quando il tempo di inattività sarà stato superato.</p>";

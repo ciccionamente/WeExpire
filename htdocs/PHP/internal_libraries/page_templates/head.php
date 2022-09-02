@@ -17,6 +17,7 @@
 <meta property="og:locale" content="en_us">
 <meta property="og:locale:alternate" content="es_es">
 <meta property="og:locale:alternate" content="it_it">
+<meta property="og:locale:alternate" content="fr_fr">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://www.weexpire.org/img/social.jpg">
 <meta property="og:image:width" content="1200">

@@ -11,7 +11,7 @@ include_once 'PHP/internal_libraries/engine/starter.php';
 if(isset($_GET['l']))
 {
   $page_language = $_GET['l'];
-  $accepted_languages = ['it', 'en', 'es'];
+  $accepted_languages = ['it', 'en', 'es', 'fr'];
   $page_language = in_array($page_language, $accepted_languages) ? $page_language : 'en';
 
   // Store the language variable in session but not in case the current page is the pdf.php page (where the emergency note PDF is generated)
@@ -32,7 +32,7 @@ else if(isset($_SESSION['l']))
 else
 {
   $page_language = isset($_SERVER["HTTP_ACCEPT_LANGUAGE"]) ? substr($_SERVER["HTTP_ACCEPT_LANGUAGE"],0,2) : '';
-  $accepted_languages = ['it', 'en', 'es'];
+  $accepted_languages = ['it', 'en', 'es', 'fr'];
   $page_language = in_array($page_language, $accepted_languages) ? $page_language : 'en';
   $_SESSION['l'] = $page_language;
 }
@@ -49,6 +49,10 @@ switch ($page_language) {
 
   case 'it':
   $page_language_file = 'PHP/internal_libraries/languages/page_content_it.php';
+  break;
+
+  case 'fr':
+  $page_language_file = 'PHP/internal_libraries/languages/page_content_fr.php';
   break;
 
   default:

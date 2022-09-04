@@ -25,15 +25,15 @@ $translation["footer_donate"] = "Dons";
 $translation["footer_contact"] = "Contact";
 $translation["footer_legal"] = "Légal";
 $translation["footer_privacy"] = "Vie privée";
-$translation["footer_terms"] = "Termes et conditions";
+$translation["footer_terms"] = "Termes";
 
 // Buttons
 $translation["button_get_started"] = "Commencer";
-$translation["button_create_another_one"] = "Créer une aute note";
+$translation["button_create_another_one"] = "Créer une autre note";
 $translation["button_create_your_emergency_note"] = "Créer une note d'urgence";
 $translation["button_next"] = "Continuer";
 $translation["button_confirm"] = "Confirmer";
-$translation["button_get_emergency_note"] = "Obtenir une note d'urgence";
+$translation["button_get_emergency_note"] = "Obtenir la note d'urgence";
 
 // Landing page
 $translation["landing_page_headline"] = "Plus simple qu'un testament,<br class='d-none d-sm-block'> plus sûr qu'une note.";
@@ -80,8 +80,8 @@ $translation["review_page_information_1"] = "L'objet de votre note d'urgence est
 $translation["review_page_information_2"] = "Le contenu de votre note d'urgence est <b>'{$_SESSION["note"]}'</b>.";
 $translation["review_page_information_3_a"] = "Dès que votre contact de confiance tentera d'accéder à cette note, WeExpire vous enverra une notification par courrier électronique à <b>{$_SESSION["primary_email"]}</b> et <b>{$_SESSION["secondary_email"]}</b>.";
 $translation["review_page_information_3_b"] = "Dès que votre contact de confiance tentera d'accéder à cette note, WeExpire vous enverra une notification par courrier électronique à <b>{$_SESSION["primary_email"]}</b>.";
-$translation["review_page_information_4_a"] = "Si aucune action n'est entreprise par vous dans les <b>{$_SESSION["inactivity_time"]} day</b>, votre contact de confiance pourra alors lire le contenu de la note.";
-$translation["review_page_information_4_b"] = "Si aucune action n'est entreprise par vous dans les <b>{$_SESSION["inactivity_time"]} days</b>, votre contact de confiance pourra alors lire le contenu de la note.";
+$translation["review_page_information_4_a"] = "Si aucune action n'est entreprise par vous dans <b>{$_SESSION["inactivity_time"]} jour</b>, votre contact de confiance pourra alors lire le contenu de la note.";
+$translation["review_page_information_4_b"] = "Si aucune action n'est entreprise par vous dans les <b>{$_SESSION["inactivity_time"]} jours</b>, votre contact de confiance pourra alors lire le contenu de la note.";
 $translation["review_page_information_5_a"] = "Cette note n'expirera jamais.";
 $translation["review_page_information_5_b"] = "Cette note expirera le <b>".date("d/m/Y", strtotime($_SESSION["expiration_date"]))."</b> (DD/MM/YYYY) et après cela, personne ne pourra jamais lire son contenu.";
 $translation["review_page_information_6"] = "Cette note ne pourra pas être modifiée à l'avenir.";
@@ -162,7 +162,7 @@ $translation["privacy_page_content"] = "<p>Notre philosophie est de respecter pr
 <p>Dernière mise à jour : 28 juin 2022.</p>";
 
 // Terms of Service page
-$translation["terms_page_title"] = "Conditions d'utilisation";
+$translation["terms_page_title"] = "Termes et conditions";
 $translation["terms_page_content"] = "
 <p>Lorsque nous disons 'WeExpire', 'We Expire', 'nous', 'notre', 'nous', 'service' ou 'services' dans ce document, nous faisons référence à WeExpire.org. WeExpire.org est un service à sources ouvertes et à but non lucratif.</p>
 <p>Les conditions de service suivantes s'appliquent à WeExpire.org et à tout document ou note d'urgence généré via notre service. Ces conditions de service peuvent être mises à jour à l'avenir. Si vous n'acceptez pas ces conditions de service, veuillez ne pas utiliser ce service.</p>

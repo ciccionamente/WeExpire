@@ -81,6 +81,7 @@ if ($_SESSION['l'] == "en") {
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="/pdf.php?l=en" target="_blank">English</a></li>
                   <li><a class="dropdown-item" href="/pdf.php?l=es" target="_blank">Español</a></li>
+                  <li><a class="dropdown-item" href="/pdf.php?l=fr" target="_blank">Français</a></li>
                   <li><a class="dropdown-item" href="/pdf.php?l=it" target="_blank">Italiano</a></li>
                 </ul>
               </div>

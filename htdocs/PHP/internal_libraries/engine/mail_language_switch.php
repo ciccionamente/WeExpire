@@ -18,7 +18,11 @@ switch ($mail_language) {
   case 'it':
   $mail_language_file = 'PHP/internal_libraries/languages/mail_content_it.php';
   break;
-
+  
+  case 'fr':
+  $mail_language_file = 'PHP/internal_libraries/languages/mail_content_fr.php';
+  break;
+  
   default:
   $mail_language_file = 'PHP/internal_libraries/languages/mail_content_en.php';
 

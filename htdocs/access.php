@@ -46,6 +46,8 @@ if ($_SESSION['l'] == "en") {
   echo "es";
 } if ($_SESSION['l'] == "it") {
   echo "it";
+} if ($_SESSION['l'] == "fr") {
+  echo "fr";
 }
 ?>">
 <head>

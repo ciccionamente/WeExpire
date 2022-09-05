@@ -20,12 +20,15 @@
             echo "Español";
           } if ($_SESSION['l'] == "it") {
             echo "Italiano";
+          } if ($_SESSION['l'] == "fr") {
+            echo "Français";
           }
           ?>
         </button>
         <ul class="dropdown-menu" aria-label="<?=$translation["footer_language"];?>">
           <li><a class="dropdown-item" href="index.php?l=en">English</a></li>
           <li><a class="dropdown-item" href="index.php?l=es">Español</a></li>
+          <li><a class="dropdown-item" href="index.php?l=fr">Français</a></li>
           <li><a class="dropdown-item" href="index.php?l=it">Italiano</a></li>
         </ul>
       </div>

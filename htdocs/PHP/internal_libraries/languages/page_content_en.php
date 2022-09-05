@@ -11,7 +11,7 @@ $translation = array();
 $translation["title"] = "WeExpire - Simpler than a will, safer than a note.";
 
 // Description for search engines (max 160 characters)
-$translation["meta_description"] = "WeExpire is a tool for creating emergency notes that can be read by your trusted contacts only after your death or in case you are seriously injured.";
+$translation["meta_description"] = "Create emergency notes that can be read by your trusted contacts only after your death or in case you are seriously injured.";
 
 // Description for social media (max 100 characters)
 $translation["social_media_description"] = "Create emergency notes that can be read by your trusted contacts only after your death.";

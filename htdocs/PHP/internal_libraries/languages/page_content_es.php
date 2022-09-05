@@ -11,7 +11,7 @@ $translation = array();
 $translation["title"] = "WeExpire - Más fácil que un testamento, más seguro que una carta.";
 
 // Description for search engines (max 160 characters)
-$translation["meta_description"] = "WeExpire te permite crear mensajes de emergencia que pueden leer los contactos que tú elijas solo tras tu fallecimiento o en caso de incapacidad irreversible.";
+$translation["meta_description"] = "Crea mensajes de emergencia que pueden leer los contactos que tú elijas solo tras tu fallecimiento o en caso de incapacidad irreversible.";
 
 // Description for social media (max 100 characters)
 $translation["social_media_description"] = "Crea mensajes de emergencia que pueden leer los contactos que tú elijas solo tras tu fallecimiento.";
@@ -180,7 +180,7 @@ $translation["terms_page_content"] = "
 <p>Usted comprende y acepta expresamente que WeExpire.org no será responsable, en derecho o en equidad, ante Usted o cualquier tercero por cualquier daño directo, indirecto, incidental, pérdida de ganancias, especial, consecuente, punitivo o ejemplar, incluyendo, pero sin limitarse a, daños por pérdida de ganancias, buena voluntad, uso, datos u otras pérdidas intangibles (incluso si WeExpire.org ha sido advertido de la posibilidad de tales daños), que resulten de:
   <ol>
   <li>el uso o la imposibilidad de uso de los servicios;</li>
-  <li>el costo de adquisición de bienes y servicios sustitutos que resulten de bienes, datos, información o servicios comprados u obtenidos o mensajes recibidos o transacciones realizadas a través o desde los servicios;</li>
+  <li>el coste de adquisición de bienes y servicios sustitutos que resulten de bienes, datos, información o servicios comprados u obtenidos o mensajes recibidos o transacciones realizadas a través o desde los servicios;</li>
   <li>acceso no autorizado o alteración de sus transmisiones o datos;</li>
   <li>declaraciones o conducta de cualquier tercero en el servicio;</li>
   <li>o cualquier otro asunto relacionado con estos Términos de servicio o los servicios, ya sea como incumplimiento de contrato, agravio (incluida la negligencia, ya sea activa o pasiva), o cualquier otra teoría de responsabilidad.</li>

@@ -2,10 +2,10 @@
   <hr class="mt-4 mt-sm-5 mb-3 mb-sm-5"/>
   <div class="row flex-fill d-block d-sm-none">
     <div class="col">
-      <span class="px-2"><a class="link-secondary" href="mailto:support@weexpire.org"><?=$translation["footer_contact"];?></a></span>
-      <span class="px-2"><a class="link-secondary" href="https://www.buymeacoffee.com/ciccionamente"><?=$translation["footer_donate"];?></a></span>
-      <span class="px-2"><a class="link-secondary" href="privacy.php"><?=$translation["footer_privacy"];?></a></span>
-      <span class="px-2"><a class="link-secondary" href="terms.php"><?=$translation["footer_terms"];?></a></span>
+      <span class="px-2 text-nowrap"><a class="link-secondary" href="mailto:support@weexpire.org"><?=$translation["footer_contact"];?></a></span>
+      <span class="px-2 text-nowrap"><a class="link-secondary" href="https://www.buymeacoffee.com/ciccionamente"><?=$translation["footer_donate"];?></a></span>
+      <span class="px-2 text-nowrap"><a class="link-secondary" href="privacy.php"><?=$translation["footer_privacy"];?></a></span>
+      <span class="px-2 text-nowrap"><a class="link-secondary" href="terms.php"><?=$translation["footer_terms"];?></a></span>
     </div>
   </div>
   <div class="row flex-fill">

@@ -1,4 +1,10 @@
-<a href="https://weexpire.org"><img src="https://weexpire.org/img/logo.svg" alt="WeExpire" width="200px"></a>
+<a href="https://weexpire.org">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://weexpire.org/img/logo_white.png">
+  <source media="(prefers-color-scheme: light)" srcset="https://weexpire.org/img/logo.png">
+  <img alt="WeExpire" src="https://weexpire.org/img/logo.png" width="200px">
+</picture>
+</a>
 
 [WeExpire.org](https://weexpire.org) is the first opensource tool for creating emergency notes that can be read by your trusted contacts only after your death or if you are seriously injured.
 

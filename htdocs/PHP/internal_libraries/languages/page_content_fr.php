@@ -12,7 +12,7 @@ $translation["title"] = "WeExpire - Plus simple qu'un testament, plus sûr qu'un
 
 // Description for search engines (max 160 characters)
 // The following string is exactly 160 chars
-$translation["meta_description"] = "WeExpire est un outil permettant de créer des notes d'urgence qui ne pourront être lues par vos contacts de confiance qu'après votre décès ou en cas de blessure.";
+$translation["meta_description"] = "Créez des notes d'urgence qui ne pourront être lues par vos contacts de confiance qu'après votre décès ou en cas de blessure.";
 
 // Description for social media (max 100 characters)
 // The following string is exactly 98 chars

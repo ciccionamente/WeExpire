@@ -9,6 +9,7 @@
 <title><?=$translation["title"];?></title>
 <meta name="description" content="<?=$translation["meta_description"];?>">
 <meta name="author" content="WeExpire">
+<meta name="thumbnail" content="https://weexpire.org/img/icons/search-engines.png"/>
 
 <meta property="og:title" content="WeExpire">
 <meta property="og:site_name" content="WeExpire">

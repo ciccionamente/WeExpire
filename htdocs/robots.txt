@@ -1,0 +1,9 @@
+User-Agent: *
+
+Disallow: /start
+Disallow: /terms
+Disallow: /privacy
+
+Sitemap: https://weexpire.org/sitemap.xml
+
+Allow: /

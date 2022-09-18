@@ -1,3 +1,8 @@
+<?php
+// Load the environment variables needed for the process and set them as global
+require_once '../underwear/environment_variables/configuration.php';
+global $base_path;
+?>
 <footer class="d-print-none pt-3 pb-3 text-center">
   <hr class="mt-4 mt-sm-5 mb-3 mb-sm-5"/>
   <div class="row flex-fill d-block d-sm-none">
@@ -26,10 +31,10 @@
           ?>
         </button>
         <ul class="dropdown-menu" aria-label="<?=$translation["footer_language"];?>">
-          <li><a class="dropdown-item" href="index.php?l=en">English</a></li>
-          <li><a class="dropdown-item" href="index.php?l=es">Español</a></li>
-          <li><a class="dropdown-item" href="index.php?l=fr">Français</a></li>
-          <li><a class="dropdown-item" href="index.php?l=it">Italiano</a></li>
+          <li><a class="dropdown-item" href="<?=$base_path;?>/en">English</a></li>
+          <li><a class="dropdown-item" href="<?=$base_path;?>/es">Español</a></li>
+          <li><a class="dropdown-item" href="<?=$base_path;?>/fr">Français</a></li>
+          <li><a class="dropdown-item" href="<?=$base_path;?>/it">Italiano</a></li>
         </ul>
       </div>
     </div>

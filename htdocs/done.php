@@ -87,6 +87,11 @@ if ($_SESSION['l'] == "en") {
               </div>
             </div>
           </div>
+          <div class="row">
+            <div class="col-12 col-md-8 offset-md-2 mt-3 text-break">
+              <?=$translation["done_page_donate_message"];?>
+            </div>
+          </div>
         </div>
       </div>
     </div>

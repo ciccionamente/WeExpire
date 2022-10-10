@@ -49,8 +49,8 @@ $translation["landing_page_section_3_description"] = "A direfencia de otras plat
 $translation["landing_page_section_4_title"] = "Seguro";
 $translation["landing_page_section_4_description"] = "Tu mensaje será encriptado usando <a href='https://wikipedia.org/wiki/Advanced_Encryption_Standard' target='_blank'>el algoritmo AES-256-CTR</a> y el relativo código de acceso se genera aleatoriamente. Aunque WeExpire fuese hackeado, no se podrá obtener ningún mensaje porque una vez que se generan nunca se archivan en WeExpire.";
 
-$translation["landing_page_section_5_title"] = "Sin lucro";
-$translation["landing_page_section_5_description"] = "WeExpire es un proyecto sin ánimo de lucro y es completamente gratuito. Si crees en esta plataforma, puedes ayudarnos haciendo una <a href='https://www.buymeacoffee.com/ciccionamente' target='_blank'>donación</a>.";
+$translation["landing_page_section_5_title"] = "Rápido y sin lucro";
+$translation["landing_page_section_5_description"] = "En WeExpire puedes crear tu mensaje de emergencia en menos de 3 minutos, gratis. Creemos que escribir un último mensaje digital tiene que ser algo fácil y asequible para cualquier persona en el mundo. Si crees en esta plataforma, puedes ayudarnos haciendo una <a href='https://www.buymeacoffee.com/ciccionamente' target='_blank'>donación</a>.";
 
 // Start page
 $translation["start_page_title"] = "Crea tu mensaje de emergencia";
@@ -91,6 +91,7 @@ $translation["done_page_title"] = "Ya está!";
 $translation["done_page_content"] = "
 <p class='text-center'>Tu mensaje de emergencia se ha creado. Puedes descargarlo en el botón de abajo e imprimirlo para entregárselo a tu contacto de confianza.</p>
 <p class='text-center'><b><mark>¡Muy importante!</mark></b> Incluye la dirección <b>support@weexpire.org</b> en tu lista de contacto seguros para evitar que cualquier notificación relativa al mensaje que acabas de crear termine en el spam.</p>";
+$translation["done_page_donate_message"] = "<p class='text-center'><small>Apoya a WeExpire con una <a href='https://www.buymeacoffee.com/ciccionamente' target='_blank'>donación</a>.</small></p>";
 
 // Access page
 $translation["access_page_title"] = "Lee el mensaje";
@@ -168,7 +169,7 @@ $translation["terms_page_content"] = "
 <p>No ofrecemos ningún servicio oficial o legalmente reconocido de redacción de testamentos. No garantizamos que las notas de emergencia generadas a través de nuestro servicio estén siempre accesibles y legibles.</p>
 <p>Usted o los demás propietarios de los mensajes de emergencia son responsables de mantener la seguridad de los mismos. No podemos y no seremos responsables de ninguna pérdida o daño por su incumplimiento de esta obligación de seguridad.</p>
 <p>Usted es responsable de cualquier actividad que ocurra con sus mensajes de emergencia, incluso por parte de los demás propietarios de los mensajes de emergencia.</p>
-<p> Usted es responsable del contenido de sus mensajes de emergencia.</p>
+<p>Usted es responsable del contenido de sus mensajes de emergencia.</p>
 <p>Usted es responsable de la corrección y propiedad de las direcciones de correo electrónico que proporcione durante la creación del mensaje de emergencia.</p>
 <p>No puede usar nuestro servicio para ningún propósito ilegal o para violar las leyes de su jurisdicción.</p>
 <p>Debes ser un ser humano. No se permiten notas de emergencia generadas por bots u otros métodos automatizados.</p>

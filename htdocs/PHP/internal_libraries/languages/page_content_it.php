@@ -49,8 +49,8 @@ $translation["landing_page_section_3_description"] = "A differenza di altre piat
 $translation["landing_page_section_4_title"] = "Sicuro";
 $translation["landing_page_section_4_description"] = "La tua nota viene criptata usando <a href='https://wikipedia.org/wiki/Advanced_Encryption_Standard' target='_blank'>l'algoritmo AES-256-CTR</a> e il relativo codice di accesso è generato in modo casuale. E anche se WeExpire venisse hackerato, nessuna nota può essere ottenuta perchè una volta che sono state generate non vengono archiviate su WeExpire.";
 
-$translation["landing_page_section_5_title"] = "Non profit";
-$translation["landing_page_section_5_description"] = "WeExpire è un progetto non profit ed è completamente gratuito. Se hai comunque voglia di aiutare il progetto, puoi contribuire con una <a href='https://www.buymeacoffee.com/ciccionamente' target='_blank'>donazione</a>.";
+$translation["landing_page_section_5_title"] = "Veloce e non profit";
+$translation["landing_page_section_5_description"] = "Su WeExpire puoi creare la tua nota di emergenza in meno di 3 minuti, gratuitamente. Crediamo che scrivere un ultimo messaggio digitale debba essere qualcosa di facile e alla portata di chiunque nel mondo. Se hai voglia di aiutare il progetto, puoi contribuire con una semplice <a href='https://www.buymeacoffee.com/ciccionamente' target='_blank'>donazione</a>.";
 
 // Start page
 $translation["start_page_title"] = "Crea la tua nota d'emergenza";
@@ -91,6 +91,7 @@ $translation["done_page_title"] = "Tutto fatto";
 $translation["done_page_content"] = "
 <p class='text-center'>La tua nota d'emergenza è stata creata. Puoi scaricarla attraverso il pulsante sottostante e successivamente stamparla e consegnarla alla tua persona fidata.</p>
 <p class='text-center'><b><mark>Molto importante!</mark></b> Aggiungi l'indirizzo <b>support@weexpire.org</b> nella lista dei mittenti sicuri del tuo email provider per evitare che qualsiasi nostra notifica in riferimento alla nota che hai appena creato finisca erroneamente nello spam.</p>";
+$translation["done_page_donate_message"] = "<p class='text-center'><small>Supporta WeExpire con una <a href='https://www.buymeacoffee.com/ciccionamente' target='_blank'>donazione</a>.</small></p>";
 
 // Access page
 $translation["access_page_title"] = "Leggi la nota";
@@ -168,7 +169,7 @@ $translation["terms_page_content"] = "
 <p>Non offriamo servizi di scrittura di testamenti ufficiali o legalmente riconosciuti. Non garantiamo che le note di emergenza generate tramite il nostro servizio siano sempre accessibili e leggibili.</p>
 <p>Tu o gli altri che possiedono note di emergenza siete i responsabili del mantenimento della sicurezza delle vostre note di emergenza. Non possiamo e non saremo responsabili per eventuali perdite o danni derivanti dal mancato rispetto di questo obbligo di sicurezza.</p>
 <p>Sei responsabile di qualsiasi attività che si verifica con le tue note di emergenza, anche da parte di chi riceve le tue note di emergenza.</p>
-<p> Sei responsabile del contenuto delle tue note di emergenza.</p>
+<p>Sei responsabile del contenuto delle tue note di emergenza.</p>
 <p>Sei responsabile della correttezza e della proprietà degli indirizzi e-mail forniti durante la creazione della nota di emergenza.</p>
 <p>Non puoi utilizzare il nostro servizio per scopi illegali o per violare le leggi nella tua giurisdizione.</p>
 <p>Devi essere un essere umano. Non sono consentite note di emergenza generate da bot o da altri metodi automatizzati.</p>

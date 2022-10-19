@@ -67,6 +67,8 @@ $translation["start_page_inactivity_input_title"] = "Tempo di inattività";
 $translation["start_page_inactivity_input_hint"] = "Dopo quanto tempo dalla tua inattività il tuo contatto fidato potrà avere accesso alla tua nota?";
 $translation["start_page_inactivity_input_day"] = "giorno";
 $translation["start_page_inactivity_input_days"] = "giorni";
+$translation["start_page_inactivity_input_month"] = "mese";
+$translation["start_page_inactivity_input_months"] = "mesi";
 $translation["start_page_expiration_input_title"] = "Scadenza della nota (opzionale)";
 $translation["start_page_expiration_input_hint"] = "Quando questa nota deve scadere e diventare totalmente inaccessibile?";
 

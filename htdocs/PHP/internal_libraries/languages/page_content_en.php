@@ -67,6 +67,8 @@ $translation["start_page_inactivity_input_title"] = "Inactivity time";
 $translation["start_page_inactivity_input_hint"] = "How long after your inactivity shall your trusted contact be able to access your note?";
 $translation["start_page_inactivity_input_day"] = "day";
 $translation["start_page_inactivity_input_days"] = "days";
+$translation["start_page_inactivity_input_month"] = "month";
+$translation["start_page_inactivity_input_months"] = "months";
 $translation["start_page_expiration_input_title"] = "Note expiration date (optional)";
 $translation["start_page_expiration_input_hint"] = "When should this note expire and become totally inaccessible?";
 

@@ -110,7 +110,12 @@ if ($_SESSION['l'] == "en") {
                   <option value="27">27 <?=$translation["start_page_inactivity_input_days"];?></option>
                   <option value="28">28 <?=$translation["start_page_inactivity_input_days"];?></option>
                   <option value="29">29 <?=$translation["start_page_inactivity_input_days"];?></option>
-                  <option value="30">30 <?=$translation["start_page_inactivity_input_days"];?></option>
+                  <option value="30">30 <?=$translation["start_page_inactivity_input_days"];?> (1 <?=$translation["start_page_inactivity_input_month"];?>)</option>
+                  <option value="60">60 <?=$translation["start_page_inactivity_input_days"];?> (2 <?=$translation["start_page_inactivity_input_months"];?>)</option>
+                  <option value="90">90 <?=$translation["start_page_inactivity_input_days"];?> (3 <?=$translation["start_page_inactivity_input_months"];?>)</option>
+                  <option value="120">120 <?=$translation["start_page_inactivity_input_days"];?> (4 <?=$translation["start_page_inactivity_input_months"];?>)</option>
+                  <option value="150">150 <?=$translation["start_page_inactivity_input_days"];?> (5 <?=$translation["start_page_inactivity_input_months"];?>)</option>
+                  <option value="180">180 <?=$translation["start_page_inactivity_input_days"];?> (6 <?=$translation["start_page_inactivity_input_months"];?>)</option>
                 </select>
                 <span class="form-text">
                   <?=$translation["start_page_inactivity_input_hint"];?>

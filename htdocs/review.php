@@ -71,7 +71,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   // Unset all the session variables, destroy the session and redirect to the start.php page
   // in case the inactivity time varialble doesn't match the presets values
-  if (!($inactivity_time >= 1 && $inactivity_time <= 30)) {
+  if (!($inactivity_time >= 1 && $inactivity_time <= 180)) {
     session_unset();
     session_destroy();
     header("Location: /start.php");

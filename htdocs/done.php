@@ -97,19 +97,13 @@ if ($_SESSION['l'] == "en") {
     </div>
     <?php if ($test_mode == true) { ?>
       <!-- Display test information in case the test mode is enabled -->
-      <div class="position-fixed bottom-0 end-0 p-3">
-        <div id="testModeToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
-          <div class="toast-header">
-            <strong class="me-auto">Test mode helper</strong>
-            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-          </div>
-          <div class="toast-body">
-            <p><a href="<?=$base_path;?>/access.php?l=<?=$_SESSION["l"];?>&m=<?=$_SESSION['encrypted_note'];?>&v=<?=$current_note_version;?>" target="_blank"><b>Note direct link</b></a></p>
-            <p><b>Access code:</b> <?=$_SESSION["initialization_vector"];?></p>
+      <div class="row">
+        <div class="col-6 offset-md-3 text-break">
+          <div class="alert alert-warning text-center" role="alert">
+            <a href="<?=$base_path;?>/access.php?l=<?=$_SESSION["l"];?>&m=<?=$_SESSION['encrypted_note'];?>&v=<?=$current_note_version;?>" target="_blank"><b>Note direct link</b></a> | <b>Access code:</b> <?=$_SESSION["initialization_vector"];?>
           </div>
         </div>
       </div>
-      <script src="js/test_mode_toast.js"></script>
     <?php } ?>
     <?php include 'PHP/internal_libraries/page_templates/footer.php';?>
   </main>

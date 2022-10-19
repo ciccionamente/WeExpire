@@ -67,6 +67,8 @@ $translation["start_page_inactivity_input_title"] = "Tiempo de inactividad";
 $translation["start_page_inactivity_input_hint"] = "¿Tras cuánto tiempo de inactividad tu persona de confianza podrá acceder a tu mensaje?";
 $translation["start_page_inactivity_input_day"] = "día";
 $translation["start_page_inactivity_input_days"] = "días";
+$translation["start_page_inactivity_input_month"] = "mes";
+$translation["start_page_inactivity_input_months"] = "meses";
 $translation["start_page_expiration_input_title"] = "Caducidad del mensaje (opcional)";
 $translation["start_page_expiration_input_hint"] = "¿Cuándo debería caducar este mensaje y volverse inaccesible?";
 

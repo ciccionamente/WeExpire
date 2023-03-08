@@ -50,7 +50,7 @@ $translation["landing_page_section_4_title"] = "Seguro";
 $translation["landing_page_section_4_description"] = "Tu mensaje será encriptado usando <a href='https://wikipedia.org/wiki/Advanced_Encryption_Standard' target='_blank'>el algoritmo AES-256-CTR</a> y el relativo código de acceso se genera aleatoriamente. Aunque WeExpire fuese hackeado, no se podrá obtener ningún mensaje porque una vez que se generan nunca se archivan en WeExpire.";
 
 $translation["landing_page_section_5_title"] = "Rápido y sin lucro";
-$translation["landing_page_section_5_description"] = "En WeExpire puedes crear tu mensaje de emergencia en menos de 3 minutos, gratis. Creemos que escribir un último mensaje digital tiene que ser algo fácil y asequible para cualquier persona en el mundo. Si crees en esta plataforma, puedes ayudarnos haciendo una <a href='https://www.buymeacoffee.com/ciccionamente' target='_blank'>donación</a>.";
+$translation["landing_page_section_5_description"] = "En WeExpire puedes crear tu mensaje de emergencia en menos de 3 minutos, gratis. Creemos que escribir un último mensaje digital tiene que ser algo fácil y asequible para cualquier persona en el mundo. Si crees en esta plataforma, puedes ayudarnos haciendo una <a href='donate.php' target='_blank'>donación</a>.";
 
 // Start page
 $translation["start_page_title"] = "Crea tu mensaje de emergencia";
@@ -93,7 +93,7 @@ $translation["done_page_title"] = "Ya está!";
 $translation["done_page_content"] = "
 <p class='text-center'>Tu mensaje de emergencia se ha creado. Puedes descargarlo en el botón de abajo e imprimirlo para entregárselo a tu contacto de confianza.</p>
 <p class='text-center'><b><mark>¡Muy importante!</mark></b> Incluye la dirección <b>support@weexpire.org</b> en tu lista de contacto seguros para evitar que cualquier notificación relativa al mensaje que acabas de crear termine en el spam.</p>";
-$translation["done_page_donate_message"] = "<p class='text-center'><small>Apoya a WeExpire con una <a href='https://www.buymeacoffee.com/ciccionamente' target='_blank'>donación</a>.</small></p>";
+$translation["done_page_donate_message"] = "<p class='text-center'><small>Apoya a WeExpire con una <a href='donate.php' target='_blank'>donación</a>.</small></p>";
 
 // Access page
 $translation["access_page_title"] = "Lee el mensaje";

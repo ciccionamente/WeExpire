@@ -52,7 +52,7 @@ $translation["landing_page_section_4_title"] = "Sûr";
 $translation["landing_page_section_4_description"] = "Votre note est chifrée en utilisant le <a href='https://wikipedia.org/wiki/Advanced_Encryption_Standard' target='_blank'>l'algorithme AES-256-CTR</a> et son code d'accès est généré de manière aléatoire. Et même si WeExpire est piraté, il est impossible d'accéder à vos notes car une fois générées, elles ne sont pas stockées sur WeExpire.";
 
 $translation["landing_page_section_5_title"] = "Rapide et à but non lucratif";
-$translation["landing_page_section_5_description"] = "Sur WeExpire vous pouvez créer votre note d'urgence en moins de 3 minutes, gratuitement. Nous croyons que l'écriture d'un dernier message numérique doit être quelque chose de facile et abordable pour n'importe qui dans le monde. Si vous avez envie d'aider le projet, vous pouvez tout de même contribuer avec un <a href='https://www.buymeacoffee.com/ciccionamente' target='_blank'>don</a>.";
+$translation["landing_page_section_5_description"] = "Sur WeExpire vous pouvez créer votre note d'urgence en moins de 3 minutes, gratuitement. Nous croyons que l'écriture d'un dernier message numérique doit être quelque chose de facile et abordable pour n'importe qui dans le monde. Si vous avez envie d'aider le projet, vous pouvez tout de même contribuer avec un <a href='donate.php' target='_blank'>don</a>.";
 
 // Start page
 $translation["start_page_title"] = "Créez votre note d'urgence";
@@ -95,7 +95,7 @@ $translation["done_page_title"] = "Tout est prêt";
 $translation["done_page_content"] = "
 <p class='text-center'>Votre note d'urgence a été créée. Vous pouvez le télécharger en cliquant sur le bouton ci-dessous, puis l'imprimer et la remettre à votre personne de confiance.</p>
 <p class='text-center'><b><mark>Très important !</mark></b> Ajoutez l'adresse e-mail <b>support@weexpire.org</b> à la liste des expéditeurs sûrs de votre fournisseur de mails pour éviter que toute notification de notre part concernant la note que vous venez de créer ne se retrouve par erreur dans les spams.</p>";
-$translation["done_page_donate_message"] = "<p class='text-center'><small>Soutenez WeExpire avec un <a href='https://www.buymeacoffee.com/ciccionamente' target='_blank'>don</a>.</small></p>";
+$translation["done_page_donate_message"] = "<p class='text-center'><small>Soutenez WeExpire avec un <a href='donate.php' target='_blank'>don</a>.</small></p>";
 
 // Access page
 $translation["access_page_title"] = "Lire la note";

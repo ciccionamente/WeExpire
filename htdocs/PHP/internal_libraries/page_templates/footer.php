@@ -4,7 +4,7 @@ require_once '../underwear/environment_variables/configuration.php';
 global $base_path;
 ?>
 <footer class="d-print-none pt-3 pb-3 text-center">
-  <hr class="mt-4 mt-sm-5 mb-3 mb-sm-5"/>
+  <hr class="mt-4 mt-sm-5 mb-3 mb-sm-5">
   <div class="row flex-fill d-block d-sm-none">
     <div class="col">
       <span class="px-2 text-nowrap"><a class="link-secondary" href="mailto:support@weexpire.org"><?=$translation["footer_contact"];?></a></span>
@@ -42,7 +42,7 @@ global $base_path;
       <h5><?=$translation["footer_about"];?></h5>
       <ul class="list-unstyled text-small">
         <li><a class="link-secondary" href="mailto:support@weexpire.org"><?=$translation["footer_contact"];?></a></li>
-        <li><a class="link-secondary" href="https://www.buymeacoffee.com/ciccionamente" target="_blank"><?=$translation["footer_donate"];?></a></li>
+        <li><a class="link-secondary" href="donate.php" target="_blank"><?=$translation["footer_donate"];?></a></li>
       </ul>
     </div>
     <div class="col mb-4 d-none d-sm-block">

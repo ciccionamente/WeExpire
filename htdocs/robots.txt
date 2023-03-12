@@ -3,6 +3,7 @@ User-Agent: *
 Disallow: /start
 Disallow: /terms
 Disallow: /privacy
+Disallow: /donate
 
 Sitemap: https://weexpire.org/sitemap.xml
 

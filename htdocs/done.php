@@ -12,8 +12,11 @@ include_once 'PHP/internal_libraries/engine/starter.php';
 require_once '../underwear/environment_variables/configuration.php';
 global $base_path, $current_note_version, $test_mode;
 
-// Check if there is a POST request and if the user is coming from the review.php page
-if (($_SERVER["REQUEST_METHOD"] == "POST") and ($_SESSION["page_token"] == "review_page")) {
+// Check if there is a POST request and if there is a page token set
+if (($_SERVER["REQUEST_METHOD"] == "POST") and isset($_SESSION["page_token"])) {
+
+  // Verify if the user is coming from the review page
+  if ($_SESSION["page_token"] == "review_page") {
 
   // Encrypt the emergency note
   require 'PHP/internal_libraries/engine/note_encryption.php';
@@ -26,9 +29,20 @@ if (($_SERVER["REQUEST_METHOD"] == "POST") and ($_SESSION["page_token"] == "revi
   // Set the page token
   $_SESSION["page_token"] = "done_page";
 
+  }
+
+  // If the user is not coming from the review.php page,
+  // then remove all the session variables, destroy the session and redirect to the index.php page
+  else {
+    session_unset();
+    session_destroy();
+    header("Location: /index.php");
+    exit();
+  }
+
 }
 
-// If there is no POST request and the user is not coming from the review.php page,
+// If there is no POST request and no page token set,
 // then remove all the session variables, destroy the session and redirect to the index.php page
 else {
   session_unset();

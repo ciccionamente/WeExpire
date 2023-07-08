@@ -31,10 +31,10 @@ global $base_path;
           ?>
         </button>
         <ul class="dropdown-menu" aria-label="<?=$translation["footer_language"];?>">
-          <li><a class="dropdown-item" href="<?=$base_path;?>/en">English</a></li>
-          <li><a class="dropdown-item" href="<?=$base_path;?>/es">Español</a></li>
-          <li><a class="dropdown-item" href="<?=$base_path;?>/fr">Français</a></li>
-          <li><a class="dropdown-item" href="<?=$base_path;?>/it">Italiano</a></li>
+          <li><a class="dropdown-item" href="<?=$base_path;?>/?l=en">English</a></li>
+          <li><a class="dropdown-item" href="<?=$base_path;?>/?l=es">Español</a></li>
+          <li><a class="dropdown-item" href="<?=$base_path;?>/?l=fr">Français</a></li>
+          <li><a class="dropdown-item" href="<?=$base_path;?>/?l=it">Italiano</a></li>
         </ul>
       </div>
     </div>

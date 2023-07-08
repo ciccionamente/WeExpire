@@ -7,7 +7,6 @@
 <link rel="alternate" hreflang="fr" href="https://weexpire.org/fr">
 <link rel="alternate" hreflang="it" href="https://weexpire.org/it">
 
-
 <title><?=$translation["title"];?></title>
 <meta name="description" content="<?=$translation["meta_description"];?>">
 <meta name="author" content="WeExpire">
@@ -32,9 +31,9 @@
 <meta name="twitter:image" content="https://www.weexpire.org/img/social.jpg">
 <meta name="twitter:image:alt" content="WeExpire">
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 <link href="/css/main.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous" async></script>
+<script async src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 <link rel="apple-touch-icon" sizes="180x180" href="/img/icons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/img/icons/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/img/icons/favicon-16x16.png">
@@ -43,4 +42,8 @@
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="theme-color" content="#ffffff">
 
+<?php 
+// Include Plausible Analytics only if server name is weexpire.org
+if ($_SERVER['SERVER_NAME'] = 'weexpire.org') { ?>
 <script defer data-domain="weexpire.org" src="https://plausible.io/js/plausible.js"></script>
+<?php } ?>

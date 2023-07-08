@@ -101,8 +101,8 @@ $translation["access_page_access_code_input_title"] = "Introduce el código de a
 $translation["access_page_access_code_input_error"] = "El código de acceso que has introducido o el mensaje al que estás intentando acceder no son válidos.";
 
 // Note page
-// Avoid warning errors when visiting a page different than the note page by just checking first if the creation date time or grant access variables exist
-if (isset($creation_date_time) or isset($_SESSION['grant_access'])) {
+// Avoid warning errors when visiting a page different than the note page by just checking first if the creation date time and the grant access variables exist
+if (isset($creation_date_time) and isset($_SESSION['grant_access'])) {
 $translation["note_page_title"] = "Lee el mensaje";
 $translation["note_page_waiting_message"] = "<p class='text-center'>El código de acceso de este mensaje ha sido verificado correctamente. Para leer el contenido del mismo debes esperar hasta el <b>".date("d/m/Y", strtotime($_SESSION['grant_access']))."</b> (DD/MM/AAAA).</p>
 <p class='text-center'>Este tiempo de espera depende del tiempo de inactividad elegido por quien ha creado el mensaje. Te invitamos a acceder de nuevo a partir de la fecha indicada, cuando haya vencido el tiempo de inactividad.</p>";

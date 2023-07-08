@@ -7,14 +7,14 @@
 // Base URL
 $base_path = 'http://localhost:8888';
 
-// Database variables used for temporarily verifying the information regarding
-// the emergency note that needs to be processed
+// Database variables used for temporarily verifying the information regarding the emergency note that needs to be processed
 $db_host = 'localhost';
 $db_user = 'root';
 $db_password = 'root';
 $db_db = 'we_expire';
 
 // SMTP variables used for sending email notifications
+// Make sure the SMTP configuration is compliant with PHPMailer documentation (https://github.com/PHPMailer/PHPMailer)
 $SMTP_host        = '';
 $SMTP_username    = '';
 $SMTP_password    = '';

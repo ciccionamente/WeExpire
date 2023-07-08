@@ -101,8 +101,8 @@ $translation["access_page_access_code_input_title"] = "Please enter the access c
 $translation["access_page_access_code_input_error"] = "The access code you provided or the note you are trying to access is invalid.";
 
 // Note page
-// Avoid warning errors when visiting a page different than the note page by just checking first if the creation date time or grant access variables exist
-if (isset($creation_date_time) or isset($_SESSION['grant_access'])) {
+// Avoid warning errors when visiting a page different than the note page by just checking first if the creation date time and the grant access variables exist
+if (isset($creation_date_time) and isset($_SESSION['grant_access'])) {
 $translation["note_page_title"] = "Read the note";
 $translation["note_page_waiting_message"] = "<p class='text-center'>The access code for this note has been successfully verified. However, it is necessary to wait until <b>".date("d/m/Y", strtotime($_SESSION['grant_access']))."</b> (DD/MM/YYYY) in order to read the content of the note.</p>
 <p class='text-center'>This waiting time depends on the inactivity time chosen by the creator of this note. We therefore invite you to try to access the emergency note again on the date indicated above, which is when the inactivity time will be over.</p>";

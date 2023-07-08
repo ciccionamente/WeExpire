@@ -4,6 +4,7 @@ Disallow: /start
 Disallow: /terms
 Disallow: /privacy
 Disallow: /donate
+Disallow: /*?*
 
 Sitemap: https://weexpire.org/sitemap.xml
 

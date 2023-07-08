@@ -64,6 +64,12 @@ and ($_SESSION["page_token"] == "done_page")) {
   $pdf->SetHeaderMargin(PDF_MARGIN_HEADER);
   $pdf->SetFooterMargin(PDF_MARGIN_FOOTER);
 
+  // set auto page breaks
+  $pdf->SetAutoPageBreak(TRUE, PDF_MARGIN_BOTTOM);
+
+  // Set display mode
+  $pdf->SetDisplayMode('fullpage', 'SinglePage', 'UseNone');
+  
   // Set auto page breaks
   $pdf->SetAutoPageBreak(TRUE, PDF_MARGIN_BOTTOM);
 
@@ -74,7 +80,7 @@ and ($_SESSION["page_token"] == "done_page")) {
   $pdf->SetFont('helvetica', '', 11);
 
   // Add a page
-  $pdf->AddPage('L');
+  $pdf->AddPage('L','A4');
 
   // Print HTML content
   if ($_SESSION["expiration_date"] == "None") {
@@ -101,6 +107,8 @@ and ($_SESSION["page_token"] == "done_page")) {
   // QRCODE,H : QR-CODE Best error correction
   // Include in the QR code the encrypted URL that allows the user to access the relative emergency note
   $pdf->write2DBarcode("{$base_path}/access.php?m={$_SESSION['encrypted_note']}&v={$current_note_version}", 'QRCODE', 180, 33, 100, 100, $style, 'N');
+
+  $pdf->lastPage();
 
   // Close and output the PDF document
   $pdf->Output('WeExpire_document.pdf', 'I');

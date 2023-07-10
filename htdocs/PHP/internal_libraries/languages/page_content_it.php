@@ -101,13 +101,15 @@ $translation["access_page_access_code_input_title"] = "Inserisci il codice di ac
 $translation["access_page_access_code_input_error"] = "Il codice di accesso che hai inserito o la nota a cui stai provando ad accedere non sono validi.";
 
 // Note page
-// Avoid warning errors when visiting a page different than the note page by just checking first if the creation date time and the grant access variables exist
-if (isset($creation_date_time) and isset($_SESSION['grant_access'])) {
 $translation["note_page_title"] = "Leggi la nota";
-$translation["note_page_waiting_message"] = "<p class='text-center'>Il codice d'accesso per questa nota è stato verificato correttamente. Tuttavia per leggerne il contenuto è necessario attendere il <b>".date("d/m/Y", strtotime($_SESSION['grant_access']))."</b> (GG/MM/AAAA).</p>
-<p class='text-center'>Questo tempo di attesa dipende dal tempo di inattività scelto da chi ha creato questa nota. Ti invitiamo dunque a riprovare ad accedere nuovamente nella data indicata, ovvero quando il tempo di inattività sarà stato superato.</p>";
 $translation["note_page_blocked_message"] = "<p class='text-center'>L'accesso a questa nota è stato temporaneamente bloccato da chi la ha creata.</p>";
 $translation["note_page_expired_message"] = "<p class='text-center'>Questa nota è scaduta e non può più essere letta.</p>";
+
+// Avoid warning errors when visiting a page different than the note page by just checking first if the creation date time and the grant access variables exist
+if (isset($creation_date_time) and isset($_SESSION['grant_access'])) {
+$translation["note_page_waiting_message"] = "<p class='text-center'>Il codice d'accesso per questa nota è stato verificato correttamente. Tuttavia per leggerne il contenuto è necessario attendere il <b>".date("d/m/Y", strtotime($_SESSION['grant_access']))."</b> (GG/MM/AAAA).</p>
+<p class='text-center'>Questo tempo di attesa dipende dal tempo di inattività scelto da chi ha creato questa nota. Ti invitiamo dunque a riprovare ad accedere nuovamente nella data indicata, ovvero quando il tempo di inattività sarà stato superato.</p>";
+
 $translation["note_page_allowed_message_no_expiration"] = "
 <p>Questa nota è stata creata il ".date("d/m/Y H:i:s", strtotime($creation_date_time))." (GG/MM/AAAA, UTC+1).</p>
 <p>Perfavore salva o stampa questa nota in quanto se chiudi questa pagina dovrai nuovamente effettuare l'accesso e attendere il periodo di inattività scelto da chi ha creato questa nota.</p>

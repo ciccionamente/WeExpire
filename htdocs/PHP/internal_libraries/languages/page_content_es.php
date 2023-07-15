@@ -105,8 +105,8 @@ $translation["note_page_title"] = "Lee el mensaje";
 $translation["note_page_blocked_message"] = "<p class='text-center'>El acceso a este mensaje ha sido bloqueado por quien lo ha creado.</p>";
 $translation["note_page_expired_message"] = "<p class='text-center'>Este mensaje ha caducado y no se puede leer.</p>";
 
-// Avoid warning errors when visiting a page different than the note page by just checking first if the creation date time and the grant access variables exist
-if (isset($creation_date_time) and isset($_SESSION['grant_access'])) {
+// Avoid warning errors when visiting a page different than the note page by just checking if the grant access variable exists
+if (isset($_SESSION['grant_access'])) {
 $translation["note_page_waiting_message"] = "<p class='text-center'>El código de acceso de este mensaje ha sido verificado correctamente. Para leer el contenido del mismo debes esperar hasta el <b>".date("d/m/Y", strtotime($_SESSION['grant_access']))."</b> (DD/MM/AAAA).</p>
 <p class='text-center'>Este tiempo de espera depende del tiempo de inactividad elegido por quien ha creado el mensaje. Te invitamos a acceder de nuevo a partir de la fecha indicada, cuando haya vencido el tiempo de inactividad.</p>";
 

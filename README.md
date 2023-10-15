@@ -19,6 +19,14 @@
  5. Set the `htdocs` folder as the main root directory for your server configuration
  6. Run the project!
 
+## Running the project with Docker
+1. Clone the repo
+   ```sh
+   git clone https://github.com/ciccionamente/WeExpire.git
+   ```
+2. Modify the `docker-compose.yml` file's environment variables for the `we_expire` container/service
+3. Run `docker-compose up -d`
+
 ## Contribute
 Contributions that are not time-consuming and made for improving WeExpire's security, efficiency or accessibility are **greatly appreciated**.
 

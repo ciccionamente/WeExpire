@@ -1,0 +1,35 @@
+version: '3'
+services:
+
+  db:
+    image: mysql:8.0.28
+    container_name: db
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./we_expire.example.sql:/docker-entrypoint-initdb.d/1-dump.sql
+    environment:
+      - MYSQL_ROOT_PASSWORD=Password123
+      - MYSQL_DATABASE=we_expire
+      - MYSQL_PASSWORD=Password123
+      - MYSQL_USER=we_expire
+    restart: always
+
+  we_expire:
+    image: ghcr.io/ciccionamente/weexpire/weexpire:latest
+    container_name: we_expire
+    environment:
+      - MYSQL_HOST=db
+      - MYSQL_DATABASE=we_expire
+      - MYSQL_PASSWORD=Password123
+      - MYSQL_USER=we_expire
+      - SMTP_HOST=
+      - SMTP_NAME=
+      - SMTP_PASSWORD=
+      - SMTP_PORT=
+      - SMTP_USER=
+    ports:
+      - "80:80"
+    restart: unless-stopped
+
+volumes:
+  db_data: {}

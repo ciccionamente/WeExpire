@@ -44,6 +44,7 @@ Distributed under the GPLv3 License. See `LICENSE` for more information.
 A special thanks goes to the following people who have contributed to this project:
 - [Rebeca Dieguez Merayo](https://www.linkedin.com/in/rebecadieguez/), Spanish content
 - [Hugo Blanc](https://github.com/eze-kiel), French content
+- [Robert Thomas](https://github.com/wolveix), Docker support + SQL schema simplification
 
 Another special thanks goes to these opensource third-party libraries and frameworks that have been used in this project:
  - [PHPMailer](https://github.com/PHPMailer/PHPMailer)

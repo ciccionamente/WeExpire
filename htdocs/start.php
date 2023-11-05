@@ -4,6 +4,12 @@
 * This is the page where the user starts the process of creating their emergency note
 */
 
+// Set an upper bound of 45 minutes on the default PHP session duration (24 minutes)
+// In this way users can safely write their emergency notes without the risk of loosing their changes if the session
+// Writing an emergency note, even of 1000 characters, can take a considerable amount of time
+ini_set('session.gc_maxlifetime', 2700);
+session_set_cookie_params(2700);
+
 // Include the session initializer
 include_once 'PHP/internal_libraries/engine/starter.php';
 

@@ -29,7 +29,7 @@ services:
       - SMTP_USER=
       - URL=http://your.domain.com
     ports:
-      - "80:80"
+      - 80:80
     volumes:
       - ./logs:/var/www/underwear/error_logs
     restart: unless-stopped

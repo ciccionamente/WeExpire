@@ -1,6 +1,10 @@
 FROM php:8.0-apache
 
-RUN docker-php-ext-install mysqli
+RUN apt-get update \
+ && apt-get -y install libpng-dev zlib1g-dev \
+ && apt-get clean
+
+RUN docker-php-ext-install gd mysqli
 
 COPY htdocs/ /var/www/html/
 COPY underwear /var/www/underwear

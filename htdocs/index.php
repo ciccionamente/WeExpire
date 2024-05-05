@@ -67,6 +67,12 @@ if ($_SESSION['l'] == "en") {
               <p><?=$translation["landing_page_section_5_description"];?></p>
             </div>
           </div>
+          <div class="row mt-4 mb-4 mt-sm-5">
+            <div class="col-12 col-md-8 offset-md-2">
+              <h1><?=$translation["landing_page_section_6_title"];?></h1>
+              <p><?=$translation["landing_page_section_6_description"];?></p>
+            </div>
+          </div>
           <div class="row mt-4 mt-sm-5 d-inline d-md-none text-center">
             <div class="col-12 col-md-8 offset-md-2 text-center">
               <a class="btn btn-primary btn-lg" href="start.php"><?=$translation["button_get_started"];?></a>

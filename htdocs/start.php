@@ -127,30 +127,6 @@ if ($_SESSION['l'] == "en") {
                   <?=$translation["start_page_inactivity_input_hint"];?>
                 </span>
               </div>
-              <div class="col-12 col-md-8 offset-md-2 mt-3 mb-md-4">
-                <div class="row g-0">
-                  <div class="col-auto">
-                    <div class="form-check form-switch">
-                      <input name="expiration_date_switch" class="form-check-input" type="checkbox" role="switch" id="expiration_date_switch">
-                    </div>
-                  </div>
-                  <div class="col-auto">
-                    <label for="expiration_date_switch" class="form-label"><?=$translation["start_page_expiration_input_title"];?></label>
-                  </div>
-                </div>
-                <input name="expiration_date" type="date" id="expiration_date" class="form-control" value="<?php
-                // Include the time zone setting
-                include_once 'PHP/internal_libraries/engine/time_zone.php';
-                echo date('Y-m-d', strtotime("+ 8 days"));
-                ?>" min="<?php
-                // Include the time zone setting
-                include_once 'PHP/internal_libraries/engine/time_zone.php';
-                echo date('Y-m-d', strtotime("+ 8 days"));
-                ?>" max="3000-12-31" disabled required>
-                <span class="form-text">
-                  <?=$translation["start_page_expiration_input_hint"];?>
-                </span>
-              </div>
             </div>
             <div class="row pt-5 text-center">
               <div class="col">

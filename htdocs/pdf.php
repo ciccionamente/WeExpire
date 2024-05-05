@@ -83,11 +83,7 @@ and ($_SESSION["page_token"] == "done_page")) {
   $pdf->AddPage('L','A4');
 
   // Print HTML content
-  if ($_SESSION["expiration_date"] == "None") {
-    $html = $translation["pdf_document_no_expiration"];
-  } else {
-    $html = $translation["pdf_document_with_expiration"];
-  }
+  $html = $translation["pdf_document"];
 
   // Print text using writeHTMLCell()
   $pdf->setCellPaddings(1, 5, 150, 0);

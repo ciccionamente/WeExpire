@@ -49,8 +49,11 @@ $translation["landing_page_section_3_description"] = "A differenza di altre piat
 $translation["landing_page_section_4_title"] = "Sicuro";
 $translation["landing_page_section_4_description"] = "La tua nota viene criptata usando <a href='https://wikipedia.org/wiki/Advanced_Encryption_Standard' target='_blank'>l'algoritmo AES-256-CTR</a> e il relativo codice di accesso è generato in modo casuale. E anche se WeExpire venisse hackerato, nessuna nota può essere ottenuta perchè una volta che sono state generate non vengono archiviate su WeExpire.";
 
-$translation["landing_page_section_5_title"] = "Veloce e non profit";
-$translation["landing_page_section_5_description"] = "Su WeExpire puoi creare la tua nota di emergenza in meno di 3 minuti, gratuitamente. Crediamo che scrivere un ultimo messaggio digitale debba essere qualcosa di facile e alla portata di chiunque nel mondo. Se hai voglia di aiutare il progetto, puoi contribuire con una semplice <a href='donate.php' target='_blank'>donazione</a>.";
+$translation["landing_page_section_5_title"] = "Affidabile";
+$translation["landing_page_section_5_description"] = "Su WeExpire, ogni nota d'emergenza che crei scade automaticamente dopo 365 giorni. Questo ti consente di mantenere sempre aggiornate le tue note d'emergenza ogni anno e rimanere al corrente di eventuali modifiche ai nostri servizi. È come quando stipuli un'assicurazione auto: lo fai per un massimo di un anno, poiché i prezzi e le coperture possono cambiare nel tempo.";
+
+$translation["landing_page_section_6_title"] = "Veloce e non profit";
+$translation["landing_page_section_6_description"] = "Su WeExpire puoi creare la tua nota di emergenza in meno di 3 minuti, gratuitamente. Crediamo che scrivere un ultimo messaggio digitale debba essere qualcosa di facile e alla portata di chiunque nel mondo. Se hai voglia di aiutare il progetto, puoi contribuire con una semplice <a href='donate.php' target='_blank'>donazione</a>.";
 
 // Start page
 $translation["start_page_title"] = "Crea la tua nota d'emergenza";
@@ -69,8 +72,6 @@ $translation["start_page_inactivity_input_day"] = "giorno";
 $translation["start_page_inactivity_input_days"] = "giorni";
 $translation["start_page_inactivity_input_month"] = "mese";
 $translation["start_page_inactivity_input_months"] = "mesi";
-$translation["start_page_expiration_input_title"] = "Scadenza della nota (opzionale)";
-$translation["start_page_expiration_input_hint"] = "Quando questa nota deve scadere e diventare totalmente inaccessibile?";
 
 // Review page
 // Avoid warning errors when visiting a page different than the review page by just checking first if the subject variable exists
@@ -82,8 +83,7 @@ $translation["review_page_information_3_a"] = "Non appena il tuo contatto fidato
 $translation["review_page_information_3_b"] = "Non appena il tuo contatto fidato proverà ad accedere a questa nota, WeExpire ti invierà una notifica email a <b>{$_SESSION["primary_email"]}</b>.";
 $translation["review_page_information_4_a"] = "Se nessuna azione verrà intrapresa da te entro <b>{$_SESSION["inactivity_time"]} giorno</b>, il tuo contatto fidato potrà successivamente leggere il contenuto della nota.";
 $translation["review_page_information_4_b"] = "Se nessuna azione verrà intrapresa da te entro <b>{$_SESSION["inactivity_time"]} giorni</b>, il tuo contatto fidato potrà successivamente leggere il contenuto della nota.";
-$translation["review_page_information_5_a"] = "Questa nota non scadrà mai.";
-$translation["review_page_information_5_b"] = "Questa nota scadrà il <b>".date("d/m/Y", strtotime($_SESSION["expiration_date"]))."</b> (GG/MM/AAAA) e dopodiché nessuna persona potrà mai leggerne il contenuto.";
+$translation["review_page_information_5"] = "Questa nota scadrà il <b>".date("d/m/Y", strtotime($_SESSION["expiration_date"]))."</b> (GG/MM/AAAA) e dopodiché nessuna persona potrà mai leggerne il contenuto.";
 $translation["review_page_information_6"] = "Questa nota non potrà essere cambiata in futuro.";
 $translation["review_page_information_7"] = "Accetti i <a href='/terms.php' target='_blank'>termini e le condizioni d'uso</a>.";
 }
@@ -132,18 +132,7 @@ $translation["error_page_title"] = "Qualcosa è andato storto";
 $translation["error_page_content"] = "Si è verificato un errore. Per favore contattaci qualora questo problema dovesse persistere.";
 
 // PDF document
-// Avoid warning errors when visiting a page different than the pdf document by just checking first if the creation date time variable exists
-if (isset($_SESSION['creation_date_time'])) {
-$translation["pdf_document_no_expiration"] = "
-<p>Questo documento è stato creato su WeExpire.org, una piattaforma per creare note di emergenza che possono essere lette dai contatti fidati solo dopo la propria morte o se si è stati gravemente compromessi.</p>
-<p>Per leggere la seguente nota d'emergenza, scannerizza il codice QR e successivamente inserisci questo codice d'accesso: <b>{$_SESSION["initialization_vector"]}</b></p>
-<p>Oggetto della nota: <b>{$_SESSION["subject"]}</b>
-<p>Data di creazione della nota: <b>".date("d/m/Y H:i:s", strtotime($_SESSION["creation_date_time"]))."</b> (GG/MM/AAAA, UTC+1)</p>
-<p></p><p></p>
-<p>Spazio per altri commenti e/o firma:<br>
-___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________</p>";
-
-$translation["pdf_document_with_expiration"] = "
+$translation["pdf_document"] = "
 <p>Questo documento è stato creato su WeExpire.org, una piattaforma per creare note di emergenza che possono essere lette dai contatti fidati solo dopo la propria morte o se si è stati gravemente compromessi.</p>
 <p>Per leggere la seguente nota d'emergenza, scannerizza il codice QR e successivamente inserisci questo codice d'accesso: <b>{$_SESSION["initialization_vector"]}</b></p>
 <p>Oggetto della nota: <b>{$_SESSION["subject"]}</b>
@@ -152,7 +141,6 @@ $translation["pdf_document_with_expiration"] = "
 <p></p><p></p>
 <p>Spazio per altri commenti e/o firma:<br>
 ___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________</p>";
-}
 
 // Privacy Policy page
 $translation["privacy_page_title"] = "Privacy";

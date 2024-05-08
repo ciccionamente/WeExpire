@@ -49,8 +49,11 @@ $translation["landing_page_section_3_description"] = "A direfencia de otras plat
 $translation["landing_page_section_4_title"] = "Seguro";
 $translation["landing_page_section_4_description"] = "Tu mensaje será encriptado usando <a href='https://wikipedia.org/wiki/Advanced_Encryption_Standard' target='_blank'>el algoritmo AES-256-CTR</a> y el relativo código de acceso se genera aleatoriamente. Aunque WeExpire fuese hackeado, no se podrá obtener ningún mensaje porque una vez que se generan nunca se archivan en WeExpire.";
 
-$translation["landing_page_section_5_title"] = "Rápido y sin lucro";
-$translation["landing_page_section_5_description"] = "En WeExpire puedes crear tu mensaje de emergencia en menos de 3 minutos, gratis. Creemos que escribir un último mensaje digital tiene que ser algo fácil y asequible para cualquier persona en el mundo. Si crees en esta plataforma, puedes ayudarnos haciendo una <a href='donate.php' target='_blank'>donación</a>.";
+$translation["landing_page_section_5_title"] = "Fiable";
+$translation["landing_page_section_5_description"] = "En WeExpire, cualquier nota de emergencia que hagas caduca automáticamente después de 365 días. Esto te permite mantener tus notas de emergencia siempre actualizadas cada año y mantenerte al tanto de cualquier cambio en nuestros servicios. Es como cuando te inscribes en un seguro de automóvil: lo haces por un máximo de un año, ya que los precios y coberturas pueden cambiar con el tiempo.";
+
+$translation["landing_page_section_6_title"] = "Rápido y sin lucro";
+$translation["landing_page_section_6_description"] = "En WeExpire puedes crear tu mensaje de emergencia en menos de 3 minutos, gratis. Creemos que escribir un último mensaje digital tiene que ser algo fácil y asequible para cualquier persona en el mundo. Si crees en esta plataforma, puedes ayudarnos haciendo una <a href='donate.php' target='_blank'>donación</a>.";
 
 // Start page
 $translation["start_page_title"] = "Crea tu mensaje de emergencia";
@@ -69,8 +72,6 @@ $translation["start_page_inactivity_input_day"] = "día";
 $translation["start_page_inactivity_input_days"] = "días";
 $translation["start_page_inactivity_input_month"] = "mes";
 $translation["start_page_inactivity_input_months"] = "meses";
-$translation["start_page_expiration_input_title"] = "Caducidad del mensaje (opcional)";
-$translation["start_page_expiration_input_hint"] = "¿Cuándo debería caducar este mensaje y volverse inaccesible?";
 
 // Review page
 // Avoid warning errors when visiting a page different than the review page by just checking first if the subject variable exists
@@ -82,8 +83,7 @@ $translation["review_page_information_3_a"] = "En cuanto tu contacto de confianz
 $translation["review_page_information_3_b"] = "En cuanto tu contacto de confianza intente acceder al mensaje, WeExpire te enviará inmediatamente una notificación al email a <b>{$_SESSION["primary_email"]}</b>.";
 $translation["review_page_information_4_a"] = "Si no tomas ninguna medida antes del <b>{$_SESSION["inactivity_time"]} día</b>, tu persona de confianza podrá acceder al contenido de tu mensaje.";
 $translation["review_page_information_4_b"] = "Si no tomas ninguna medida antes del <b>{$_SESSION["inactivity_time"]} días</b>, tu persona de confianza podrá acceder al contenido de tu mensaje.";
-$translation["review_page_information_5_a"] = "Este mensaje no caduca nunca.";
-$translation["review_page_information_5_b"] = "Este mensaje caduca el <b>".date("d/m/Y", strtotime($_SESSION["expiration_date"]))."</b> (DD/MM/AAAA) y nadie podrá leer el contenido de tu mensaje nunca.";
+$translation["review_page_information_5"] = "Este mensaje caduca el <b>".date("d/m/Y", strtotime($_SESSION["expiration_date"]))."</b> (DD/MM/AAAA) y nadie podrá leer el contenido de tu mensaje nunca.";
 $translation["review_page_information_6"] = "Este mensaje no podrá cambiarse en el futuro.";
 $translation["review_page_information_7"] = "Aceptas los <a href='/terms.php' target='_blank'>términos y condiciones de uso</a>.";
 }
@@ -132,18 +132,7 @@ $translation["error_page_title"] = "Algo ha ido mal";
 $translation["error_page_content"] = "Error. Por favor contáctanos si este fallo persiste.";
 
 // PDF document
-// Avoid warning errors when visiting a page different than the pdf document by just checking first if the creation date time variable exists
-if (isset($_SESSION['creation_date_time'])) {
-$translation["pdf_document_no_expiration"] = "
-<p>Este documento se ha creado en WeExpire.org, una plataforma para crear mensajes de emergencia que las personas de confianza podrán leer solo tras el fallecimiento o incapacidad irreversible.</p>
-<p>Para leer el siguiente mensaje de emergencia, escanea el código QR y a continuación introduce este código de acceso: <b>{$_SESSION["initialization_vector"]}</b></p>
-<p>Título del mensaje: <b>{$_SESSION["subject"]}</b>
-<p>Fecha de creación del mensaje: <b>".date("d/m/Y H:i:s", strtotime($_SESSION["creation_date_time"]))."</b> (DD/MM/AAAA, UTC+1)</p>
-<p></p><p></p>
-<p>Espacio para otros comentarios y/o firma:<br>
-___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________</p>";
-
-$translation["pdf_document_with_expiration"] = "
+$translation["pdf_document"] = "
 <p>Este documento se ha creado en WeExpire.org, una plataforma para crear mensajes de emergencia que las personas de confianza podrán leer solo tras el fallecimiento o incapacidad irreversible.</p>
 <p>Para leer el siguiente mensaje de emergencia, escanea el código QR y a continuación introduce este código de acceso: <b>{$_SESSION["initialization_vector"]}</b></p>
 <p>Título del mensaje: <b>{$_SESSION["subject"]}</b>
@@ -152,7 +141,6 @@ $translation["pdf_document_with_expiration"] = "
 <p></p><p></p>
 <p>Espacio para otros comentarios y/o firma:<br>
 ___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________</p>";
-}
 
 // Privacy Policy page
 $translation["privacy_page_title"] = "Privacidad";

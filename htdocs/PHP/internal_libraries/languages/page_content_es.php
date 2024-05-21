@@ -132,6 +132,8 @@ $translation["error_page_title"] = "Algo ha ido mal";
 $translation["error_page_content"] = "Error. Por favor contáctanos si este fallo persiste.";
 
 // PDF document
+// Avoid warning errors when visiting a page different than the pdf document by just checking first if the creation date time variable exists
+if (isset($_SESSION['creation_date_time'])) {
 $translation["pdf_document"] = "
 <p>Este documento se ha creado en WeExpire.org, una plataforma para crear mensajes de emergencia que las personas de confianza podrán leer solo tras el fallecimiento o incapacidad irreversible.</p>
 <p>Para leer el siguiente mensaje de emergencia, escanea el código QR y a continuación introduce este código de acceso: <b>{$_SESSION["initialization_vector"]}</b></p>
@@ -141,6 +143,7 @@ $translation["pdf_document"] = "
 <p></p><p></p>
 <p>Espacio para otros comentarios y/o firma:<br>
 ___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________</p>";
+}
 
 // Privacy Policy page
 $translation["privacy_page_title"] = "Privacidad";

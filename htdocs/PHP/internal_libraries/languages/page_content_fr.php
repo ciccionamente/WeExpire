@@ -134,6 +134,8 @@ $translation["error_page_title"] = "Erreur";
 $translation["error_page_content"] = "Une erreur s'est produite. Veuillez nous contacter si ce problème persiste.";
 
 // PDF document
+// Avoid warning errors when visiting a page different than the pdf document by just checking first if the creation date time variable exists
+if (isset($_SESSION['creation_date_time'])) {
 $translation["pdf_document"] = "
 <p>Ce document a été créé sur WeExpire.org, une plateforme permettant de créer des notes d'urgence qui ne peuvent être lues que par des contacts de confiance après un décès ou une blessure grave.</p>
 <p>Pour lire la note d'urgence suivante, scannez le code QR et entrez ensuite ce code d'accès : <b>{$_SESSION["initialization_vector"]}</b></p>
@@ -143,6 +145,7 @@ $translation["pdf_document"] = "
 <p></p><p></p>
 <p>Espace pour d'autres commentaires et/ou signature :<br>
 ___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________</p>";
+}
 
 // Privacy Policy page
 $translation["privacy_page_title"] = "Vie privée";

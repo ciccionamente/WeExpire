@@ -83,7 +83,8 @@ $translation["review_page_information_3_a"] = "En cuanto tu contacto de confianz
 $translation["review_page_information_3_b"] = "En cuanto tu contacto de confianza intente acceder al mensaje, WeExpire te enviará inmediatamente una notificación al email a <b>{$_SESSION["primary_email"]}</b>.";
 $translation["review_page_information_4_a"] = "Si no tomas ninguna medida antes del <b>{$_SESSION["inactivity_time"]} día</b>, tu persona de confianza podrá acceder al contenido de tu mensaje.";
 $translation["review_page_information_4_b"] = "Si no tomas ninguna medida antes del <b>{$_SESSION["inactivity_time"]} días</b>, tu persona de confianza podrá acceder al contenido de tu mensaje.";
-$translation["review_page_information_5"] = "Este mensaje caduca el <b>".date("d/m/Y", strtotime($_SESSION["expiration_date"]))."</b> (DD/MM/AAAA) y nadie podrá leer el contenido de tu mensaje nunca.";
+$translation["review_page_information_5_a"] = "Por motivos de seguridad adicionales, cada nota caduca automáticamente 365 días después de su fecha de creación. Dado que el tiempo de inactividad es de {$_SESSION['inactivity_time']} día, el último día en que alguien puede solicitar acceso a tu nota es el <b>" . date('d/m/Y', strtotime($_SESSION['expiration_date'] . " - {$_SESSION['inactivity_time']} day")) . "</b> (365 días a partir de hoy, menos {$_SESSION['inactivity_time']} día). Te recomendamos tener una nueva nota de emergencia lista para el " . date('d/m/Y', strtotime($_SESSION['expiration_date'] . " - {$_SESSION['inactivity_time']} day")) . " (DD/MM/AAAA).";
+$translation["review_page_information_5_b"] = "Por motivos de seguridad adicionales, cada nota caduca automáticamente 365 días después de su fecha de creación. Dado que el tiempo de inactividad es de {$_SESSION['inactivity_time']} días, el último día en que alguien puede solicitar acceso a tu nota es el <b>" . date('d/m/Y', strtotime($_SESSION['expiration_date'] . " - {$_SESSION['inactivity_time']} day")) . "</b> (365 días a partir de hoy, menos {$_SESSION['inactivity_time']} días). Te recomendamos tener una nueva nota de emergencia lista para el " . date('d/m/Y', strtotime($_SESSION['expiration_date'] . " - {$_SESSION['inactivity_time']} day")) . " (DD/MM/AAAA).";
 $translation["review_page_information_6"] = "Este mensaje no podrá cambiarse en el futuro.";
 $translation["review_page_information_7"] = "Aceptas los <a href='/terms.php' target='_blank'>términos y condiciones de uso</a>.";
 }
@@ -105,8 +106,8 @@ $translation["note_page_title"] = "Lee el mensaje";
 $translation["note_page_blocked_message"] = "<p class='text-center'>El acceso a este mensaje ha sido bloqueado por quien lo ha creado.</p>";
 $translation["note_page_expired_message"] = "<p class='text-center'>Este mensaje ha caducado y no se puede leer.</p>";
 
-// Avoid warning errors when visiting a page different than the note page by just checking if the grant access variable exists
-if (isset($_SESSION['grant_access'])) {
+// Avoid warning errors when visiting a page different than the note page by just checking if the grant access variable exists and if the curent page is note.php
+if (isset($_SESSION['grant_access']) && (basename($_SERVER['SCRIPT_NAME']) == 'note.php')) {
 $translation["note_page_waiting_message"] = "<p class='text-center'>El código de acceso de este mensaje ha sido verificado correctamente. Para leer el contenido del mismo debes esperar hasta el <b>".date("d/m/Y", strtotime($_SESSION['grant_access']))."</b> (DD/MM/AAAA).</p>
 <p class='text-center'>Este tiempo de espera depende del tiempo de inactividad elegido por quien ha creado el mensaje. Te invitamos a acceder de nuevo a partir de la fecha indicada, cuando haya vencido el tiempo de inactividad.</p>";
 
@@ -117,7 +118,7 @@ $translation["note_page_allowed_message_no_expiration"] = "
 <p><b>Mensaje:</b> {$note}</p>";
 
 $translation["note_page_allowed_message_with_expiration"] = "
-<p>Este mensaje fue creado el ".date("d/m/Y H:i:s", strtotime($creation_date_time))." (DD/MM/AAAA, UTC+1) e il suo accesso scadrà definitivamente il ".date("d/m/Y", strtotime($expiration_date))." (DD/MM/YYYY).</p>
+<p>Este mensaje fue creado el ".date("d/m/Y H:i:s", strtotime($creation_date_time))." (DD/MM/AAAA, UTC+1) e il suo accesso scadrà definitivamente il ".date("d/m/Y", strtotime($expiration_date))." (DD/MM/AAAA).</p>
 <p>Por favor guarda o imprime esta nota ya que cuando cierres esta página deberás acceder de nuevo y esperar el tiempo de inactividad elegido por quien ha creado el mensaje.</p>
 <p><b>Título:</b> {$subject}</p>
 <p><b>Mensaje:</b> {$note}</p>";

@@ -143,7 +143,13 @@ if ($_SESSION['l'] == "en") {
                     <p><?=$translation["review_page_information_4_b"];?></p>
                   <?php } ?>
                 </li>
-                <li><p><?=$translation["review_page_information_5"];?></p></li>
+                <li>
+                  <?php if ($_SESSION["inactivity_time"] == 1) { ?>
+                    <p><?=$translation["review_page_information_5_a"];?></p>
+                  <?php } else { ?>
+                    <p><?=$translation["review_page_information_5_b"];?></p>
+                  <?php } ?>
+                </li>
                 <li><p><?=$translation["review_page_information_6"];?></p></li>
                 <li><p><?=$translation["review_page_information_7"];?></p></li>
               </ul>

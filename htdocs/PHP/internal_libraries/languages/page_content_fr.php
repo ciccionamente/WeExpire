@@ -85,7 +85,8 @@ $translation["review_page_information_3_a"] = "Dès que votre contact de confian
 $translation["review_page_information_3_b"] = "Dès que votre contact de confiance tentera d'accéder à cette note, WeExpire vous enverra une notification par courrier électronique à <b>{$_SESSION["primary_email"]}</b>.";
 $translation["review_page_information_4_a"] = "Si aucune action n'est entreprise par vous dans <b>{$_SESSION["inactivity_time"]} jour</b>, votre contact de confiance pourra alors lire le contenu de la note.";
 $translation["review_page_information_4_b"] = "Si aucune action n'est entreprise par vous dans les <b>{$_SESSION["inactivity_time"]} jours</b>, votre contact de confiance pourra alors lire le contenu de la note.";
-$translation["review_page_information_5"] = "Cette note expirera le <b>".date("d/m/Y", strtotime($_SESSION["expiration_date"]))."</b> (DD/MM/YYYY) et après cela, personne ne pourra jamais lire son contenu.";
+$translation["review_page_information_5_a"] = "Pour des raisons de sécurité supplémentaires, chaque note expire automatiquement 365 jours après sa date de création. Étant donné que la période d'inactivité est de {$_SESSION['inactivity_time']} jour, le dernier jour où quelqu'un peut potentiellement demander l'accès à votre note est le <b>" . date('d/m/Y', strtotime($_SESSION['expiration_date'] . " - {$_SESSION['inactivity_time']} day")) . "</b> (365 jours à partir d'aujourd'hui, moins {$_SESSION['inactivity_time']} jour). Nous vous recommandons de préparer une nouvelle note d'urgence d'ici le " . date('d/m/Y', strtotime($_SESSION['expiration_date'] . " - {$_SESSION['inactivity_time']} day")) . " (JJ/MM/AAAA).";
+$translation["review_page_information_5_b"] = "Pour des raisons de sécurité supplémentaires, chaque note expire automatiquement 365 jours après sa date de création. Étant donné que la période d'inactivité est de {$_SESSION['inactivity_time']} jours, le dernier jour où quelqu'un peut potentiellement demander l'accès à votre note est le <b>" . date('d/m/Y', strtotime($_SESSION['expiration_date'] . " - {$_SESSION['inactivity_time']} day")) . "</b> (365 jours à partir d'aujourd'hui, moins {$_SESSION['inactivity_time']} jours). Nous vous recommandons de préparer une nouvelle note d'urgence d'ici le " . date('d/m/Y', strtotime($_SESSION['expiration_date'] . " - {$_SESSION['inactivity_time']} day")) . " (JJ/MM/AAAA).";
 $translation["review_page_information_6"] = "Cette note ne pourra pas être modifiée à l'avenir.";
 $translation["review_page_information_7"] = "Vous acceptez nos <a href='/terms.php' target='_blank'>termes et conditions</a>.";
 }
@@ -107,8 +108,8 @@ $translation["note_page_title"] = "Lire la note";
 $translation["note_page_blocked_message"] = "<p class='text-center'>L'accès à cette note a été temporairement bloqué par l'auteur de la note.</p>";
 $translation["note_page_expired_message"] = "<p class='text-center'>Cette note a expiré et ne peut plus être lue.</p>";
 
-// Avoid warning errors when visiting a page different than the note page by just checking if the grant access variable exists
-if (isset($_SESSION['grant_access'])) {
+// Avoid warning errors when visiting a page different than the note page by just checking if the grant access variable exists and if the curent page is note.php
+if (isset($_SESSION['grant_access']) && (basename($_SERVER['SCRIPT_NAME']) == 'note.php')) {
 $translation["note_page_waiting_message"] = "<p class='text-center'>Le code d'accès à cette note a été vérifié avec succès. Cependant, il est nécessaire d'attendre jusqu'au <b>".date("d/m/Y", strtotime($_SESSION['grant_access']))."</b> (DD/MM/YYYY) afin de lire le contenu de la note.</p>
 <p class='text-center'>Ce temps d'attente dépend de la durée d'inactivité choisie par le créateur de cette note. Nous vous invitons donc à réessayer d'accéder à la note d'urgence à la date indiquée ci-dessus, date à laquelle le temps d'inactivité sera passé.</p>";
 

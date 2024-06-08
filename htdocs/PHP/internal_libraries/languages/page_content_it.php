@@ -72,6 +72,8 @@ $translation["start_page_inactivity_input_day"] = "giorno";
 $translation["start_page_inactivity_input_days"] = "giorni";
 $translation["start_page_inactivity_input_month"] = "mese";
 $translation["start_page_inactivity_input_months"] = "mesi";
+$translation["start_page_terms_and_conditions_title"] = "Termini e condizioni d'uso";
+$translation["start_page_terms_and_conditions_description"] = "Accetti i <a href='/terms.php' target='_blank'>termini e le condizioni d'uso</a>";
 
 // Review page
 // Avoid warning errors when visiting a page different than the review page by just checking first if the subject variable exists
@@ -86,7 +88,6 @@ $translation["review_page_information_4_b"] = "Se nessuna azione verrà intrapre
 $translation["review_page_information_5_a"] = "Per motivi di sicurezza aggiuntivi, ogni nota scade automaticamente 365 giorni dopo la sua data di creazione. Dato che il periodo di inattività è di {$_SESSION['inactivity_time']} giorno, l'ultimo giorno in cui qualcuno può potenzialmente richiedere l'accesso alla tua nota è il <b>" . date('d/m/Y', strtotime($_SESSION['expiration_date'] . " - {$_SESSION['inactivity_time']} day")) . "</b> (365 giorni da oggi, meno {$_SESSION['inactivity_time']} giorno). Ti consigliamo di preparare una nuova nota di emergenza entro il " . date('d/m/Y', strtotime($_SESSION['expiration_date'] . " - {$_SESSION['inactivity_time']} day")) . " (GG/MM/AAAA).";
 $translation["review_page_information_5_b"] = "Per motivi di sicurezza aggiuntivi, ogni nota scade automaticamente 365 giorni dopo la sua data di creazione. Dato che il periodo di inattività è di {$_SESSION['inactivity_time']} giorni, l'ultimo giorno in cui qualcuno può potenzialmente richiedere l'accesso alla tua nota è il <b>" . date('d/m/Y', strtotime($_SESSION['expiration_date'] . " - {$_SESSION['inactivity_time']} day")) . "</b> (365 giorni da oggi, meno {$_SESSION['inactivity_time']} giorni). Ti consigliamo di preparare una nuova nota di emergenza entro il " . date('d/m/Y', strtotime($_SESSION['expiration_date'] . " - {$_SESSION['inactivity_time']} day")) . " (GG/MM/AAAA).";
 $translation["review_page_information_6"] = "Questa nota non potrà essere cambiata in futuro.";
-$translation["review_page_information_7"] = "Accetti i <a href='/terms.php' target='_blank'>termini e le condizioni d'uso</a>.";
 }
 
 // Done page

@@ -127,6 +127,13 @@ if ($_SESSION['l'] == "en") {
                   <?=$translation["start_page_inactivity_input_hint"];?>
                 </span>
               </div>
+              <div class="col-12 col-md-8 offset-md-2 mt-3 mb-3">
+              <label class="form-label"><?=$translation["start_page_terms_and_conditions_title"];?></label>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="termsCheckbox" required>
+                  <label class="form-check-label" for="termsCheckbox"> <?=$translation["start_page_terms_and_conditions_description"];?></label>
+                </div>
+              </div>
             </div>
             <div class="row pt-5 text-center">
               <div class="col">

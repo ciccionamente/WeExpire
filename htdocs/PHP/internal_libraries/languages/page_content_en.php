@@ -72,6 +72,8 @@ $translation["start_page_inactivity_input_day"] = "day";
 $translation["start_page_inactivity_input_days"] = "days";
 $translation["start_page_inactivity_input_month"] = "month";
 $translation["start_page_inactivity_input_months"] = "months";
+$translation["start_page_terms_and_conditions_title"] = "Terms of service";
+$translation["start_page_terms_and_conditions_description"] = "You accept our <a href='/terms.php' target='_blank'>terms of service</a>";
 
 // Review page
 // Avoid warning errors when visiting a page different than the review page by just checking first if the subject variable exists
@@ -86,7 +88,6 @@ $translation["review_page_information_4_b"] = "If no action is taken by you with
 $translation["review_page_information_5_a"] = "For additional security, every note automatically expires 365 days after its creation date. Given that the inactivity time is {$_SESSION['inactivity_time']} day, the last day someone can potentially request access to your note is <b>" . date('d/m/Y', strtotime($_SESSION['expiration_date'] . " - {$_SESSION['inactivity_time']} day")) . "</b> (365 days from today, minus {$_SESSION['inactivity_time']} day). We recommend preparing a new emergency note by " . date('d/m/Y', strtotime($_SESSION['expiration_date'] . " - {$_SESSION['inactivity_time']} day")) . " (DD/MM/YYYY).";
 $translation["review_page_information_5_b"] = "For additional security, every note automatically expires 365 days after its creation date. Given that the inactivity time is {$_SESSION['inactivity_time']} days, the last day someone can potentially request access to your note is <b>" . date('d/m/Y', strtotime($_SESSION['expiration_date'] . " - {$_SESSION['inactivity_time']} days")) . "</b> (365 days from today, minus {$_SESSION['inactivity_time']} days). We recommend preparing a new emergency note by " . date('d/m/Y', strtotime($_SESSION['expiration_date'] . " - {$_SESSION['inactivity_time']} days")) . " (DD/MM/YYYY).";
 $translation["review_page_information_6"] = "This note can't be edited in the future.";
-$translation["review_page_information_7"] = "You accept our <a href='/terms.php' target='_blank'>terms of service</a>.";
 }
 
 // Done page

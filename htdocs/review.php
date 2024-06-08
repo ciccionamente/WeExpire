@@ -151,7 +151,6 @@ if ($_SESSION['l'] == "en") {
                   <?php } ?>
                 </li>
                 <li><p><?=$translation["review_page_information_6"];?></p></li>
-                <li><p><?=$translation["review_page_information_7"];?></p></li>
               </ul>
             </div>
           </div>

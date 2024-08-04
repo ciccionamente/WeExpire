@@ -18,6 +18,7 @@ $translation["social_media_description"] = "Crea note di emergenza che possono e
 
 // Footer section
 $translation["footer_language"] = "Lingua";
+$translation["footer_press_kit"] = "Press kit";
 $translation["footer_about"] = "Su di noi";
 $translation["footer_donate"] = "Dona";
 $translation["footer_contact"] = "Contattaci";
@@ -54,6 +55,8 @@ $translation["landing_page_section_5_description"] = "Su WeExpire, ogni nota d'e
 
 $translation["landing_page_section_6_title"] = "Veloce e non profit";
 $translation["landing_page_section_6_description"] = "Su WeExpire puoi creare la tua nota di emergenza in meno di 3 minuti, gratuitamente. Crediamo che scrivere un ultimo messaggio digitale debba essere qualcosa di facile e alla portata di chiunque nel mondo. Se hai voglia di aiutare il progetto, puoi contribuire con una semplice <a href='donate.php' target='_blank'>donazione</a>.";
+
+$translation["landing_page_section_7_title"] = "Visto su";
 
 // Start page
 $translation["start_page_title"] = "Crea la tua nota d'emergenza";

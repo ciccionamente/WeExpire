@@ -154,7 +154,7 @@ if ($_SESSION['l'] == "en") {
               </ul>
             </div>
           </div>
-          <div class="row pt-5 text-center">
+          <div class="row pt-5 pb-4 text-center">
             <div class="col">
               <form action="done.php" method="POST">
                 <button class="btn btn-primary btn-lg" type="submit"><?=$translation["button_confirm"];?></button>

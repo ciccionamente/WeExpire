@@ -135,7 +135,7 @@ if ($_SESSION['l'] == "en") {
                 </div>
               </div>
             </div>
-            <div class="row pt-5 text-center">
+            <div class="row pt-5 pb-4 text-center">
               <div class="col">
                 <button class="btn btn-primary btn-lg" type="submit"><?=$translation["button_next"];?></button>
               </div>

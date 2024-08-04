@@ -18,6 +18,7 @@ $translation["social_media_description"] = "Crea mensajes de emergencia que pued
 
 // Footer section
 $translation["footer_language"] = "Idioma";
+$translation["footer_press_kit"] = "Press kit";
 $translation["footer_about"] = "Sobre nosotros";
 $translation["footer_donate"] = "Dona";
 $translation["footer_contact"] = "Contáctanos";
@@ -54,6 +55,8 @@ $translation["landing_page_section_5_description"] = "En WeExpire, cualquier not
 
 $translation["landing_page_section_6_title"] = "Rápido y sin lucro";
 $translation["landing_page_section_6_description"] = "En WeExpire puedes crear tu mensaje de emergencia en menos de 3 minutos, gratis. Creemos que escribir un último mensaje digital tiene que ser algo fácil y asequible para cualquier persona en el mundo. Si crees en esta plataforma, puedes ayudarnos haciendo una <a href='donate.php' target='_blank'>donación</a>.";
+
+$translation["landing_page_section_7_title"] = "Visto en";
 
 // Start page
 $translation["start_page_title"] = "Crea tu mensaje de emergencia";

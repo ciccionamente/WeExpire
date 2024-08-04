@@ -20,6 +20,7 @@ $translation["social_media_description"] = "Créez des notes d'urgence qui ne po
 
 // Footer section
 $translation["footer_language"] = "Langue";
+$translation["footer_press_kit"] = "Press kit";
 $translation["footer_about"] = "À propos";
 $translation["footer_donate"] = "Dons";
 $translation["footer_contact"] = "Contact";
@@ -56,6 +57,8 @@ $translation["landing_page_section_5_description"] = "Sur WeExpire, toute note d
 
 $translation["landing_page_section_6_title"] = "Rapide et à but non lucratif";
 $translation["landing_page_section_6_description"] = "Sur WeExpire vous pouvez créer votre note d'urgence en moins de 3 minutes, gratuitement. Nous croyons que l'écriture d'un dernier message numérique doit être quelque chose de facile et abordable pour n'importe qui dans le monde. Si vous avez envie d'aider le projet, vous pouvez tout de même contribuer avec un <a href='donate.php' target='_blank'>don</a>.";
+
+$translation["landing_page_section_7_title"] = "Vu sur";
 
 // Start page
 $translation["start_page_title"] = "Créez votre note d'urgence";

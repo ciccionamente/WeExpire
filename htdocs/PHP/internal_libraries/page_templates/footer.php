@@ -3,12 +3,15 @@
 require_once '../underwear/environment_variables/configuration.php';
 global $base_path;
 ?>
-<footer class="d-print-none pt-3 pb-3 text-center">
-  <hr class="mt-4 mt-sm-5 mb-3 mb-sm-5">
+<footer class="d-print-none pt-2 pb-3 text-center">
+  <hr class="mt-4 mt-sm-4 mb-3 mb-sm-5">
   <div class="row flex-fill d-block d-sm-none">
     <div class="col">
+      <span class="px-2 text-nowrap"><a class="link-secondary" href="/WeExpire_press_kit.zip"><?=$translation["footer_press_kit"];?></a></span>
       <span class="px-2 text-nowrap"><a class="link-secondary" href="mailto:support@weexpire.org"><?=$translation["footer_contact"];?></a></span>
       <span class="px-2 text-nowrap"><a class="link-secondary" href="https://www.buymeacoffee.com/ciccionamente"><?=$translation["footer_donate"];?></a></span>
+    </div>
+    <div class="col">
       <span class="px-2 text-nowrap"><a class="link-secondary" href="privacy.php"><?=$translation["footer_privacy"];?></a></span>
       <span class="px-2 text-nowrap"><a class="link-secondary" href="terms.php"><?=$translation["footer_terms"];?></a></span>
     </div>
@@ -41,6 +44,7 @@ global $base_path;
     <div class="col mb-4 d-none d-sm-block">
       <h5><?=$translation["footer_about"];?></h5>
       <ul class="list-unstyled text-small">
+        <li><a class="link-secondary" href="/WeExpire_press_kit.zip"><?=$translation["footer_press_kit"];?></a></li>
         <li><a class="link-secondary" href="mailto:support@weexpire.org"><?=$translation["footer_contact"];?></a></li>
         <li><a class="link-secondary" href="donate.php" target="_blank"><?=$translation["footer_donate"];?></a></li>
       </ul>

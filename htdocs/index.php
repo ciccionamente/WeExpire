@@ -61,13 +61,13 @@ if ($_SESSION['l'] == "en") {
               <p><?=$translation["landing_page_section_4_description"];?></p>
             </div>
           </div>
-          <div class="row mt-4 mb-4 mt-sm-5">
+          <div class="row mt-4 mb-4 mt-sm-5 mb-sm-5">
             <div class="col-12 col-md-8 offset-md-2">
               <h1><?=$translation["landing_page_section_5_title"];?></h1>
               <p><?=$translation["landing_page_section_5_description"];?></p>
             </div>
           </div>
-          <div class="row mt-4 mb-4 mt-sm-5">
+          <div class="row mt-4 mb-4 mt-sm-5 mb-sm-5">
             <div class="col-12 col-md-8 offset-md-2">
               <h1><?=$translation["landing_page_section_6_title"];?></h1>
               <p><?=$translation["landing_page_section_6_description"];?></p>
@@ -76,6 +76,22 @@ if ($_SESSION['l'] == "en") {
           <div class="row mt-4 mt-sm-5 d-inline d-md-none text-center">
             <div class="col-12 col-md-8 offset-md-2 text-center">
               <a class="btn btn-primary btn-lg" href="start.php"><?=$translation["button_get_started"];?></a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-12 offset-md-16 text-center">
+              <div class="row justify-content-center align-items-center mt-4 g-4">
+                <div class="col-3 col-sm"><hr></div>
+                <div class="col-6 col-sm"><h4><?=$translation["landing_page_section_7_title"];?></h4></div>
+                <div class="col-3 col-sm"><hr></div>
+              </div>
+              <div class="row justify-content-center align-items-center mt-4 g-2">
+                  <div class="col-12 col-sm"><a href="https://carney.co/daily-carnage/cold-calling/" target="_blank" class="featured-logo"><img src="img/featured/carney_logo.svg" alt="Carney"></a></div>
+                  <div class="col-12 col-sm"><a href="https://www.densediscovery.com/issues/286/" target="_blank" class="featured-logo"><img src="img/featured/dense_discovery_logo.svg" alt="Dense Discovery"></a></div>
+                  <div class="col-12 col-sm"><a href="https://www.fastcompany.com/91134587/encrypt-private-messages-in-qr-codes-weexpire" target="_blank" class="featured-logo"><img src="img/featured/fast_company_logo.svg" alt="Fast Company"></a></div>
+                  <div class="col-12 col-sm"><a href="https://www.fm93.com/audio/513743/un-site-web-pour-laisser-un-message-apres-sa-mort" target="_blank" class="featured-logo"><img src="img/featured/fm93_logo.svg" alt="FM93"></a></div>
+                  <div class="col-12 col-sm"><a href="https://www.heise.de/select/ct/2024/17/2419011044304742848" target="_blank" class="featured-logo"><img src="img/featured/heise_online_logo.svg" alt="Heise Online"></a></div>
+                </div>
             </div>
           </div>
         </div>

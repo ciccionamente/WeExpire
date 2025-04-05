@@ -96,8 +96,8 @@ $translation["review_page_information_6"] = "Este mensaje no podrá cambiarse en
 // Done page
 $translation["done_page_title"] = "Ya está!";
 $translation["done_page_content"] = "
-<p class='text-center'>Tu mensaje de emergencia se ha creado. Puedes descargarlo en el botón de abajo e imprimirlo para entregárselo a tu contacto de confianza.</p>
-<p class='text-center'><b><mark>¡Muy importante!</mark></b> Incluye la dirección <b>support@weexpire.org</b> en tu lista de contacto seguros para evitar que cualquier notificación relativa al mensaje que acabas de crear termine en el spam.</p>";
+<p>Tu mensaje de emergencia se ha creado. Puedes descargarlo en el botón de abajo e imprimirlo para entregárselo a tu contacto de confianza.</p>
+<p><b><mark>¡Muy importante!</mark></b> Incluye la dirección <b>support@weexpire.org</b> en tu lista de contacto seguros para evitar que cualquier notificación relativa al mensaje que acabas de crear termine en el spam.</p>";
 $translation["done_page_donate_message"] = "<p class='text-center'><small>Apoya a WeExpire con una <a href='donate.php' target='_blank'>donación</a>.</small></p>";
 
 // Access page
@@ -112,8 +112,8 @@ $translation["note_page_expired_message"] = "<p class='text-center'>Este mensaje
 
 // Avoid warning errors when visiting a page different than the note page by just checking if the grant access variable exists and if the curent page is note.php
 if (isset($_SESSION['grant_access']) && (basename($_SERVER['SCRIPT_NAME']) == 'note.php')) {
-$translation["note_page_waiting_message"] = "<p class='text-center'>El código de acceso de este mensaje ha sido verificado correctamente. Para leer el contenido del mismo debes esperar hasta el <b>".date("d/m/Y", strtotime($_SESSION['grant_access']))."</b> (DD/MM/AAAA).</p>
-<p class='text-center'>Este tiempo de espera depende del tiempo de inactividad elegido por quien ha creado el mensaje. Te invitamos a acceder de nuevo a partir de la fecha indicada, cuando haya vencido el tiempo de inactividad.</p>";
+$translation["note_page_waiting_message"] = "<p>El código de acceso de este mensaje ha sido verificado correctamente. Para leer el contenido del mismo debes esperar hasta el <b>".date("d/m/Y", strtotime($_SESSION['grant_access']))."</b> (DD/MM/AAAA).</p>
+<p>Este tiempo de espera depende del tiempo de inactividad elegido por quien ha creado el mensaje. Te invitamos a acceder de nuevo a partir de la fecha indicada, cuando haya vencido el tiempo de inactividad.</p>";
 
 $translation["note_page_allowed_message_no_expiration"] = "
 <p>Este mensaje fue creado el ".date("d/m/Y H:i:s", strtotime($creation_date_time))." (DD/MM/AAAA, UTC+1).</p>

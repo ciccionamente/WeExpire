@@ -98,8 +98,8 @@ $translation["review_page_information_6"] = "Cette note ne pourra pas être modi
 // Done page
 $translation["done_page_title"] = "Tout est prêt";
 $translation["done_page_content"] = "
-<p class='text-center'>Votre note d'urgence a été créée. Vous pouvez le télécharger en cliquant sur le bouton ci-dessous, puis l'imprimer et la remettre à votre personne de confiance.</p>
-<p class='text-center'><b><mark>Très important !</mark></b> Ajoutez l'adresse e-mail <b>support@weexpire.org</b> à la liste des expéditeurs sûrs de votre fournisseur de mails pour éviter que toute notification de notre part concernant la note que vous venez de créer ne se retrouve par erreur dans les spams.</p>";
+<p>Votre note d'urgence a été créée. Vous pouvez le télécharger en cliquant sur le bouton ci-dessous, puis l'imprimer et la remettre à votre personne de confiance.</p>
+<p><b><mark>Très important !</mark></b> Ajoutez l'adresse e-mail <b>support@weexpire.org</b> à la liste des expéditeurs sûrs de votre fournisseur de mails pour éviter que toute notification de notre part concernant la note que vous venez de créer ne se retrouve par erreur dans les spams.</p>";
 $translation["done_page_donate_message"] = "<p class='text-center'><small>Soutenez WeExpire avec un <a href='donate.php' target='_blank'>don</a>.</small></p>";
 
 // Access page
@@ -114,8 +114,8 @@ $translation["note_page_expired_message"] = "<p class='text-center'>Cette note a
 
 // Avoid warning errors when visiting a page different than the note page by just checking if the grant access variable exists and if the curent page is note.php
 if (isset($_SESSION['grant_access']) && (basename($_SERVER['SCRIPT_NAME']) == 'note.php')) {
-$translation["note_page_waiting_message"] = "<p class='text-center'>Le code d'accès à cette note a été vérifié avec succès. Cependant, il est nécessaire d'attendre jusqu'au <b>".date("d/m/Y", strtotime($_SESSION['grant_access']))."</b> (DD/MM/YYYY) afin de lire le contenu de la note.</p>
-<p class='text-center'>Ce temps d'attente dépend de la durée d'inactivité choisie par le créateur de cette note. Nous vous invitons donc à réessayer d'accéder à la note d'urgence à la date indiquée ci-dessus, date à laquelle le temps d'inactivité sera passé.</p>";
+$translation["note_page_waiting_message"] = "<p>Le code d'accès à cette note a été vérifié avec succès. Cependant, il est nécessaire d'attendre jusqu'au <b>".date("d/m/Y", strtotime($_SESSION['grant_access']))."</b> (DD/MM/YYYY) afin de lire le contenu de la note.</p>
+<p>Ce temps d'attente dépend de la durée d'inactivité choisie par le créateur de cette note. Nous vous invitons donc à réessayer d'accéder à la note d'urgence à la date indiquée ci-dessus, date à laquelle le temps d'inactivité sera passé.</p>";
 
 $translation["note_page_allowed_message_no_expiration"] = "
 <p>Cette note a été créée le ".date("d/m/Y H:i:s", strtotime($creation_date_time))." (DD/MM/YYYY, UTC+1).</p>

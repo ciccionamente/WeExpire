@@ -1,8 +1,8 @@
 <?php
 
 /**
-* This is the page page where the user, coming from the start.php page, can review and confirm the data of their emergency note
-*/
+ * This is the page page where the user, coming from the start.php page, can review and confirm the data of their emergency note
+ */
 
 // Include the session initializer
 include_once 'PHP/internal_libraries/engine/starter.php';
@@ -13,14 +13,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" and isset($_SESSION['csrf_token'])) {
   // Verify the secure form token in order to avoid any cross-domain POST request
   // If it's not verified, then remove all the session variables, destroy the session 
   // and redirect to the index.php page
-  if($_SESSION['csrf_token'] !== $_POST['csrf_token']){
+  if ($_SESSION['csrf_token'] !== $_POST['csrf_token']) {
     session_unset();
     session_destroy();
     header("Location: /index.php");
     exit();
-  }
-
-  else {
+  } else {
     // Set the page token, it will be used in the next page as a verifier
     $_SESSION["page_token"] = "review_page";
 
@@ -79,8 +77,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" and isset($_SESSION['csrf_token'])) {
       // Set the secondary email value to "None" in case the input field was empty
       if (empty($secondary_email)) {
         $_SESSION["secondary_email"] = "None";
-      }
-      else {
+      } else {
         $_SESSION["secondary_email"] = $secondary_email;
       }
     }
@@ -102,69 +99,81 @@ include_once 'PHP/internal_libraries/engine/page_language_switch.php';
 ?>
 <!DOCTYPE html>
 <html lang="<?php
-if ($_SESSION['l'] == "en") {
-  echo "en";
-} if ($_SESSION['l'] == "es") {
-  echo "es";
-} if ($_SESSION['l'] == "it") {
-  echo "it";
-} if ($_SESSION['l'] == "fr") {
-  echo "fr";
-}
-?>">
+            if ($_SESSION['l'] == "en") {
+              echo "en";
+            }
+            if ($_SESSION['l'] == "es") {
+              echo "es";
+            }
+            if ($_SESSION['l'] == "it") {
+              echo "it";
+            }
+            if ($_SESSION['l'] == "fr") {
+              echo "fr";
+            }
+            ?>">
+
 <head>
-  <?php include 'PHP/internal_libraries/page_templates/head.php';?>
+  <?php include 'PHP/internal_libraries/page_templates/head.php'; ?>
 </head>
+
 <body>
-  <?php include 'PHP/internal_libraries/page_templates/header.php';?>
+  <?php include 'PHP/internal_libraries/page_templates/header.php'; ?>
   <main class="container">
     <div class="row align-items-center min-content-height">
       <div class="col">
         <div class="pb-3 pt-3 pt-md-5 mx-auto text-center">
-          <h1 class="display-3"><?=$translation["review_page_title"];?></h1>
+          <h1 class="display-3"><?= $translation["review_page_title"]; ?></h1>
         </div>
         <div class="pb-3">
           <div class="row">
             <div class="col-12 col-md-8 offset-md-2 mt-3 text-break">
               <ul>
-                <li><p><?=$translation["review_page_information_1"];?></p></li>
-                <li><p><?=$translation["review_page_information_2"];?></p></li>
                 <li>
-                  <?php if ($_SESSION["secondary_email"] !== "None") { ?>
-                    <p><?=$translation["review_page_information_3_a"];?></p>
-                  <?php } else { ?>
-                    <p><?=$translation["review_page_information_3_b"];?></p>
-                  <?php } ?>
+                  <p><?= $translation["review_page_information_1"]; ?></p>
+                </li>
+                <li>
+                  <p><?= $translation["review_page_information_2"]; ?></p>
+                </li>
+                <li>
+                  <p>
+                    <?php if ($_SESSION["secondary_email"] !== "None") {
+                      echo $translation["review_page_information_3_a"];
+                    } else {
+                      echo $translation["review_page_information_3_b"];
+                    }
+                    if ($_SESSION["inactivity_time"] == 1) {
+                      echo " " . $translation["review_page_information_4_a"];
+                    } else {
+                      echo " " . $translation["review_page_information_4_b"];
+                    } ?>
+                  </p>
                 </li>
                 <li>
                   <?php if ($_SESSION["inactivity_time"] == 1) { ?>
-                    <p><?=$translation["review_page_information_4_a"];?></p>
+                    <p><?= $translation["review_page_information_5_a"]; ?></p>
                   <?php } else { ?>
-                    <p><?=$translation["review_page_information_4_b"];?></p>
+                    <p><?= $translation["review_page_information_5_b"]; ?></p>
                   <?php } ?>
                 </li>
                 <li>
-                  <?php if ($_SESSION["inactivity_time"] == 1) { ?>
-                    <p><?=$translation["review_page_information_5_a"];?></p>
-                  <?php } else { ?>
-                    <p><?=$translation["review_page_information_5_b"];?></p>
-                  <?php } ?>
+                  <p><?= $translation["review_page_information_6"]; ?></p>
                 </li>
-                <li><p><?=$translation["review_page_information_6"];?></p></li>
               </ul>
             </div>
           </div>
           <div class="row pt-5 pb-4 text-center">
             <div class="col">
               <form action="done.php" method="POST">
-                <button class="btn btn-primary btn-lg" type="submit"><?=$translation["button_confirm"];?></button>
+                <button class="btn btn-primary btn-lg" type="submit"><?= $translation["button_confirm"]; ?></button>
               </form>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <?php include 'PHP/internal_libraries/page_templates/footer.php';?>
+    <?php include 'PHP/internal_libraries/page_templates/footer.php'; ?>
   </main>
 </body>
+
 </html>

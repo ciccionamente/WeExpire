@@ -13,14 +13,14 @@ global $base_path;
    && $_SERVER['PHP_SELF'] != '/access.php'
    && $_SERVER['PHP_SELF'] != '/verify.php'
    && $_SERVER['PHP_SELF'] != '/note.php') { ?>
-    <a class="btn btn-primary btn-lg d-none d-md-inline-block" href="start.php"><?=$translation["button_get_started"];?></a>
+    <a class="btn btn-primary btn-lg d-none d-md-inline-block" href="/start"><?=$translation["button_get_started"];?></a>
   <?php };
   // Show the 'Create another one' button when visitinng the done.php page only
   if ($_SERVER['PHP_SELF'] == '/done.php') { ?>
-    <a class="btn btn-outline-primary btn-lg d-none d-md-inline-block" href="start.php"><?=$translation["button_create_another_one"];?></a>
+    <a class="btn btn-outline-primary btn-lg d-none d-md-inline-block" href="/start"><?=$translation["button_create_another_one"];?></a>
   <?php };
   // Show the 'Create your emergency note' when visiting the note.php page only
   if ($_SERVER['PHP_SELF'] == '/note.php') { ?>
-    <a class="btn btn-outline-primary btn-lg d-none d-md-inline-block" href="start.php"><?=$translation["button_create_your_emergency_note"];?></a>
+    <a class="btn btn-outline-primary btn-lg d-none d-md-inline-block" href="/start"><?=$translation["button_create_your_emergency_note"];?></a>
   <?php };?>
 </header>

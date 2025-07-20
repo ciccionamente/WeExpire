@@ -7,21 +7,14 @@
 
 $translation = array();
 
-// Title
-$translation["title"] = "WeExpire - Plus simple qu'un testament, plus sûr qu'une note.";
-
-// Description for search engines (max 160 characters)
-// The following string is exactly 160 chars
-$translation["meta_description"] = "Créez des notes d'urgence qui ne pourront être lues par vos contacts de confiance qu'après votre décès ou en cas de blessure.";
-
-// Description for social media (max 100 characters)
-// The following string is exactly 98 chars
-$translation["social_media_description"] = "Créez des notes d'urgence qui ne pourront être lues par vos contacts proches qu'après votre décès.";
+// Description for social media
+$translation["social_media_description"] = "Créez une note d’urgence que vos proches ne liront qu’après votre mort.";
 
 // Footer section
 $translation["footer_language"] = "Langue";
 $translation["footer_press_kit"] = "Press kit";
 $translation["footer_about"] = "À propos";
+$translation["footer_FAQ"] = "FAQ";
 $translation["footer_donate"] = "Dons";
 $translation["footer_contact"] = "Contact";
 $translation["footer_legal"] = "Légal";
@@ -37,31 +30,37 @@ $translation["button_confirm"] = "Confirmer";
 $translation["button_get_emergency_note"] = "Obtenir la note d'urgence";
 
 // Landing page
+$translation["landing_page_title"] = "Plus simple qu'un testament, plus sûr qu'une note.";
+$translation["landing_page_meta_description"] = "Créez des messages d'urgence chiffrés avec WeExpire — une alternative gratuite et open source aux testaments numériques, axée sur la confidentialité.";
+
 $translation["landing_page_headline"] = "Plus simple qu'un testament,<br class='d-none d-sm-block'> plus sûr qu'une note.";
-$translation["landing_page_secondary_headline"] = "WeExpire est un outil open source permettant de créer des notes d'urgence qui ne pourront être lues par vos contacts de confiance qu'après votre décès ou si vous êtes gravement blessé.";
+
+$translation["landing_page_secondary_headline"] = "WeExpire est une alternative open source et gratuite aux testaments numériques. Elle permet de créer des notes d’urgence chiffrées, accessibles après votre décès ou une incapacité grave.";
 
 $translation["landing_page_section_1_title"] = "Comment ça marche";
-$translation["landing_page_section_1_description"] = "Peu de temps après avoir écrit votre note, celle-ci sera chiffrée et convertie en un code QR que vous pourrez donner à une personne de confiance. Lorsque cette personne tentera d'accéder à votre message, WeExpire essaiera de vous contacter par e-mail dans les meilleurs délais ; si vous ne répondez pas dans le délai que vous avez préalablement défini, votre note deviendra visible pour votre personne de confiance.";
+$translation["landing_page_section_1_description"] = "Dès que vous écrivez votre note — qu’il s’agisse d’un message d’adieu, d’instructions finales ou d’un indice personnel — elle est chiffrée et transformée en code QR. Vous pouvez l’imprimer ou le remettre à quelqu’un de confiance. Lorsque cette personne essaiera d’y accéder, WeExpire tentera de vous contacter par e-mail. Si vous ne répondez pas dans le délai que vous avez défini, votre note sera automatiquement révélée. C’est une façon simple et sécurisée de transmettre des informations importantes, même sans testament numérique officiel.";
 
 $translation["landing_page_section_2_title"] = "Pourquoi devrais-je l'utiliser ?";
-$translation["landing_page_section_2_description"] = "Quels que soient notre âge, notre état de santé, notre statut social ou notre situation géographique, nous mourrons tous un jour ou serons gravement malades. Laisser un mot aux personnes en qui vous avez confiance vous permettra de leur transmettre votre dernier message et éventuellement d'accomplir vos dernières volontés.";
+$translation["landing_page_section_2_description"] = "Quel que soit notre âge, notre état de santé ou notre lieu de vie, nous mourrons tous un jour ou pourrions devenir gravement diminués. Que vous ayez ou non un testament numérique officiel, WeExpire vous permet de laisser un message de confiance à diffusion différée. Cela peut être une lettre d’adieu, des volontés personnelles ou un moyen sécurisé de transmettre des informations sensibles — comme un indice d’accès, un plan de récupération ou l’endroit où trouver un élément important.";
 
 $translation["landing_page_section_3_title"] = "Nous ne stockons pas vos données";
-$translation["landing_page_section_3_description"] = "Contrairement aux autres plateformes, il n'est pas nécessaire d'ouvrir un compte sur WeExpire. En fait, vos données restent uniquement dans le code QR qui est généré et éventuellement imprimé. Si vous ne nous croyez pas, <a href='https://github.com/ciccionamente/WeExpire' target='_blank'>vous pouvez jeter un coup d'œil au code source</a>.";
+$translation["landing_page_section_3_description"] = "Contrairement à d'autres plateformes, WeExpire ne vous demande pas de créer un compte. Vos données ne sont jamais enregistrées en ligne sous forme lisible, elles restent uniquement dans le code QR que vous générez et gardez avec vous. C’est une approche centrée sur la confidentialité. Si vous avez des doutes, <a href='https://github.com/ciccionamente/WeExpire' target='_blank'>jetez un œil au code source</a>.";
 
 $translation["landing_page_section_4_title"] = "Sûr";
-$translation["landing_page_section_4_description"] = "Votre note est chifrée en utilisant le <a href='https://wikipedia.org/wiki/Advanced_Encryption_Standard' target='_blank'>l'algorithme AES-256-CTR</a> et son code d'accès est généré de manière aléatoire. Et même si WeExpire est piraté, il est impossible d'accéder à vos notes car une fois générées, elles ne sont pas stockées sur WeExpire.";
+$translation["landing_page_section_4_description"] = "Votre note est chiffrée à l’aide de <a href='https://wikipedia.org/wiki/Advanced_Encryption_Standard' target='_blank'>l’algorithme AES-256-CTR</a> et protégée par une clé d’accès générée aléatoirement. Même si WeExpire était piraté, votre message ne pourrait pas être consulté sans le code QR et la clé. Contrairement à de nombreuses applications gratuites de testament numérique, WeExpire ne stocke rien : il n’y a rien à voler.";
 
 $translation["landing_page_section_5_title"] = "Fiable";
-$translation["landing_page_section_5_description"] = "Sur WeExpire, toute note d'urgence que vous créez expire automatiquement après 365 jours. Cela vous permet de maintenir vos notes d'urgence toujours à jour chaque année et de rester informé de tout changement concernant nos services. C'est un peu comme lorsque vous souscrivez une assurance auto : vous le faites pour une durée maximale d'un an, car les prix et les garanties peuvent évoluer avec le temps.";
+$translation["landing_page_section_5_description"] = "Sur WeExpire, chaque note d’urgence que vous créez expire automatiquement après 365 jours. Cela vous permet de les garder à jour et de rester informé des éventuels changements. C’est comme une assurance auto : vous la renouvelez chaque année, car les garanties peuvent évoluer.";
 
-$translation["landing_page_section_6_title"] = "Rapide et à but non lucratif";
-$translation["landing_page_section_6_description"] = "Sur WeExpire vous pouvez créer votre note d'urgence en moins de 3 minutes, gratuitement. Nous croyons que l'écriture d'un dernier message numérique doit être quelque chose de facile et abordable pour n'importe qui dans le monde. Si vous avez envie d'aider le projet, vous pouvez tout de même contribuer avec un <a href='donate.php' target='_blank'>don</a>.";
+$translation["landing_page_section_6_title"] = "Rapide et sans but lucratif";
+$translation["landing_page_section_6_description"] = "Avec WeExpire, vous pouvez créer une note d’urgence en moins de 3 minutes, gratuitement. Nous pensons que laisser un dernier message numérique doit être simple et accessible à tous, partout dans le monde. Nous ne sommes ni une startup ni un cabinet juridique : nous sommes un projet open source qui propose une alternative simple aux services de testament numérique. Si vous souhaitez soutenir le projet, vous pouvez faire un <a href='/donate' target='_blank'>don</a>.";
 
 $translation["landing_page_section_7_title"] = "Vu sur";
 
 // Start page
+$translation["start_page_meta_description"] = "Créez une note d’urgence chiffrée que vos contacts de confiance pourront lire uniquement après votre décès ou en cas d’incapacité grave.";
 $translation["start_page_title"] = "Créez votre note d'urgence";
+$translation["start_page_secondary_headline"] = "C’est ici que vous rédigez votre message — quoi dire, comment et quand il doit être accessible. N’oubliez pas : ce n’est pas un testament légal, mais une manière sûre et personnelle de transmettre votre héritage numérique en cas d’urgence. Vous pourrez tout relire à l’étape suivante, avant que le message ne soit chiffré.";
 $translation["start_page_subject_input_title"] = "Objet";
 $translation["start_page_subject_input_hint"] = "N'écrivez pas de données sensibles dans ce champ, mais seulement un résumé de votre note.";
 $translation["start_page_note_input_title"] = "Note d'urgence";
@@ -100,7 +99,7 @@ $translation["done_page_title"] = "Tout est prêt";
 $translation["done_page_content"] = "
 <p>Votre note d'urgence a été créée. Vous pouvez le télécharger en cliquant sur le bouton ci-dessous, puis l'imprimer et la remettre à votre personne de confiance.</p>
 <p><b><mark>Très important !</mark></b> Ajoutez l'adresse e-mail <b>support@weexpire.org</b> à la liste des expéditeurs sûrs de votre fournisseur de mails pour éviter que toute notification de notre part concernant la note que vous venez de créer ne se retrouve par erreur dans les spams.</p>";
-$translation["done_page_donate_message"] = "<p class='text-center'><small>Soutenez WeExpire avec un <a href='donate.php' target='_blank'>don</a>.</small></p>";
+$translation["done_page_donate_message"] = "<p class='text-center'><small>Soutenez WeExpire avec un <a href='/donate' target='_blank'>don</a>.</small></p>";
 
 // Access page
 $translation["access_page_title"] = "Lire la note";
@@ -153,6 +152,7 @@ ________________________________________________________________________________
 }
 
 // Privacy Policy page
+$translation["privacy_page_meta_description"] = "Apprenez comment WeExpire protège votre vie privée.";
 $translation["privacy_page_title"] = "Vie privée";
 $translation["privacy_page_content"] = "<p>Notre philosophie est de respecter profondément la vie privée des utilisateurs. WeExpire ne collecte pas de données personnelles ou d'informations personnellement identifiables (PII), ce qui peut être vérifié en consultant notre <a href='https://github.com/ciccionamente/WeExpire' target='_blank'>code en sources libres</a>.</p>
 <p>Nous utilisons <a href='https://plausible.io/data-policy' target='_blank'>Plausible Analytics</a> qui est un service d'analyse de site conforme au RGPD, au CCPA et à la législation sur les cookies. Ce service ne collecte aucune donnée personnelle ou information personnellement identifiable (PII), n'utilise pas de cookies et respecte la vie privée des visiteurs du site.</p>
@@ -163,12 +163,16 @@ $translation["privacy_page_content"] = "<p>Notre philosophie est de respecter pr
 <p>Dernière mise à jour : 28 juin 2022.</p>";
 
 // Terms of Service page
+$translation["terms_page_meta_description"] = "Lisez les conditions d’utilisation de WeExpire, la plateforme open-source pour créer des notes d’urgence et gérer votre héritage numérique.";
 $translation["terms_page_title"] = "Termes et conditions";
 $translation["terms_page_content"] = "
 <p>Lorsque nous disons 'WeExpire', 'We Expire', 'nous', 'notre', 'nous', 'service' ou 'services' dans ce document, nous faisons référence à WeExpire.org. WeExpire.org est un service à sources ouvertes et à but non lucratif.</p>
 <p>Les conditions de service suivantes s'appliquent à WeExpire.org et à tout document ou note d'urgence généré via notre service. Ces conditions de service peuvent être mises à jour à l'avenir. Si vous n'acceptez pas ces conditions de service, veuillez ne pas utiliser ce service.</p>
 <p>En utilisant notre service, maintenant ou à l'avenir, vous acceptez les dernières conditions de service. Cela s'applique également à tous nos produits ou fonctionnalités existants et futurs qui seront ajoutés à notre service.</p>
-<p>Nous ne proposons pas de services de rédaction de testaments officiels ou reconnus par la loi. Nous ne garantissons pas que les notes d'urgence générées via notre service seront toujours accessibles et lisibles.</p>
+<p>WeExpire n'est pas un service de rédaction de testament et ne fournit aucun service juridique, de planification successorale ou de documents à valeur légale.</p>
+<p>Nous ne proposons pas de testaments numériques, de testaments en ligne, de “last will and testament” ni aucun autre document juridiquement reconnu.</p>
+<p>Toute note générée via WeExpire doit être considérée comme un message personnel sans valeur juridique, et ne peut en aucun cas remplacer un document officiel rédigé conformément à la législation en vigueur.</p>
+<p>Nous ne garantissons pas que les notes d'urgence générées via notre service seront toujours accessibles et lisibles.</p>
 <p>Vous ou les autres personnes qui possèdent des notes d'urgence êtes responsables du maintien de la sécurité de vos notes d'urgence. Nous ne pouvons et ne voulons pas être tenus responsables de toute perte ou de tout dommage résultant de votre manquement à cette obligation de sécurité.</p>
 <p>Vous êtes responsable de toute activité réalisée avec vos notes d'urgence, même par les autres propriétaires de vos notes d'urgence.</p>
 <p>Vous êtes responsable du contenu de vos notes d'urgence.</p>
@@ -190,7 +194,42 @@ $translation["terms_page_content"] = "
   </ol>
   </p>
 <p>Le présent accord est régi par les lois de l'Italie, et les tribunaux italiens ont la compétence exclusive pour entendre et déterminer tous les problèmes qui peuvent survenir dans le cadre de cet accord ou en relation avec celui-ci.</p>
-<p>Dernière mise à jour : 8 août 2022.</p>
+<p>Dernière mise à jour : 20 juillet 2025.</p>
 ";
+
+//FAQ page
+$translation["FAQ_page_meta_description"] = "Découvrez comment fonctionne WeExpire, comment nous protégeons votre vie privée et comment créer des notes d’urgence pour votre héritage numérique.";
+
+$translation["FAQ_page_title"] = "FAQ";
+
+$translation["FAQ_page_section_1_title"] = "1. Que se passe-t-il si un contact tente d’accéder à ma note ?";
+$translation["FAQ_page_section_1_description"] = "S’il scanne le QR code et saisit le bon code d’accès, WeExpire vérifie si la période d’inactivité est écoulée. Si ce n’est pas le cas, la note reste verrouillée. Sinon, elle devient visible sauf si vous avez bloqué l’accès.";
+
+$translation["FAQ_page_section_2_title"] = "2. Puis-je bloquer l’accès à la note ?";
+$translation["FAQ_page_section_2_description"] = "Oui. Si quelqu’un tente d’y accéder, vous recevez une notification par email. Si vous ne réagissez pas, la note sera visible après le délai prévu. Si vous bloquez l’accès, la tentative est bloquée pendant 60 jours.";
+
+$translation["FAQ_page_section_3_title"] = "3. Pourquoi le blocage dure-t-il seulement 60 jours ?";
+$translation["FAQ_page_section_3_description"] = "Par souci de confidentialité, nous ne stockons pas les notes sur nos serveurs. Seules des empreintes numériques temporaires (hashes) sont utilisées pour bloquer les accès. Après 60 jours, la tentative doit être renouvelée, déclenchant une nouvelle notification.";
+
+$translation["FAQ_page_section_4_title"] = "4. Puis-je renouveler ou modifier une note ?";
+$translation["FAQ_page_section_4_description"] = "Non. Pour rester simple et sécurisé, WeExpire ne permet pas de modifier une note. Si vous souhaitez la mettre à jour, créez-en une nouvelle et partagez à nouveau le QR code.";
+
+$translation["FAQ_page_section_5_title"] = "5. La note est-elle vraiment enregistrée dans le QR code ?";
+$translation["FAQ_page_section_5_description"] = "Oui. Lorsque vous créez une note, elle est chiffrée dans une URL, encodée dans un QR code. Les données ne sont jamais stockées sur nos serveurs, uniquement dans le QR code.";
+
+$translation["FAQ_page_section_6_title"] = "6. Comment WeExpire protège-t-il ma vie privée ?";
+$translation["FAQ_page_section_6_description"] = "Aucun compte requis, aucune donnée personnelle stockée. Seule la personne disposant du QR code et du code d’accès peut lire la note. C’est une approche centrée sur la confidentialité.";
+
+$translation["FAQ_page_section_7_title"] = "7. Qu’est-ce qu’un hash et à quoi sert-il ?";
+$translation["FAQ_page_section_7_description"] = "Un hash est une empreinte numérique unique générée à partir de données. Il nous permet de détecter les tentatives répétées sans révéler le contenu original.";
+
+$translation["FAQ_page_section_8_title"] = "8. Comment mon contact saura-t-il quand accéder à la note ?";
+$translation["FAQ_page_section_8_description"] = "Lors d’une tentative d’accès, votre contact est informé du délai d’attente avant de pouvoir lire la note. Il devra revenir après ce délai pour vérifier si la note est visible.";
+
+$translation["FAQ_page_section_9_title"] = "9. Peut-on faire fonctionner WeExpire sur la blockchain ?";
+$translation["FAQ_page_section_9_description"] = "WeExpire a été conçu pour être simple, accessible et open-source. Une version décentralisée est envisagée, mais aujourd’hui, notre priorité est de proposer un service simple et accessible à tous.";
+
+$translation["FAQ_page_section_10_title"] = "10. Où puis-je consulter le code ?";
+$translation["FAQ_page_section_10_description"] = "WeExpire est entièrement open source. Vous pouvez consulter et analyser le code sur GitHub <a href='https://github.com/ciccionamente/WeExpire' target='_blank'>ici</a>.";
 
 ?>

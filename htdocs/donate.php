@@ -25,7 +25,13 @@ if ($_SESSION['l'] == "en") {
 }
 ?>">
 <head>
-<script data-domain="weexpire.org" src="https://plausible.io/js/plausible.js"></script>
+  <?php 
+// Include Plausible Analytics only if server name is weexpire.org
+if ($_SERVER['SERVER_NAME'] == 'weexpire.org') { ?>
+<script defer data-domain="weexpire.org" src="https://plausible.io/js/plausible.js"></script>
+<?php } ?>
+<title>WeExpire</title>
+<meta name="robots" content="noindex, nofollow">
 </head>
 <body>
 <script defer>

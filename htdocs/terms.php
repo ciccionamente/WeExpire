@@ -22,13 +22,20 @@ if ($_SESSION['l'] == "en") {
 ?>">
 <head>
   <?php include 'PHP/internal_libraries/page_templates/head.php';?>
+  <title>WeExpire - <?=$translation["terms_page_title"];?></title>
+  <meta name="description" content="<?=$translation["terms_page_meta_description"];?>">
+  <link rel="canonical" href="https://weexpire.org/terms">
+  <link rel="alternate" hreflang="en" href="https://weexpire.org/en/terms">
+  <link rel="alternate" hreflang="es" href="https://weexpire.org/es/terms">
+  <link rel="alternate" hreflang="fr" href="https://weexpire.org/fr/terms">
+  <link rel="alternate" hreflang="it" href="https://weexpire.org/it/terms">
 </head>
 <body>
   <?php include 'PHP/internal_libraries/page_templates/header.php';?>
   <main class="container">
     <div class="row align-items-center min-content-height">
       <div class="col">
-        <div class="pb-3 pt-3 pt-md-5 mx-auto text-center">
+        <div class="pb-4 pt-3 pt-md-5 mx-auto text-center">
           <h1 class="display-3"><?=$translation["terms_page_title"];?></h1>
         </div>
         <div class="pb-3">

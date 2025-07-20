@@ -129,9 +129,9 @@ function database_read_and_write(){
         fwrite($log_file, $log);
         fclose($log_file);
 
-        // Store the error token in session and redirect to the error.php page in case of email error
+        // Store the error token in session and redirect to the error page in case of email error
         $_SESSION['error_token'] = 1;
-        header("Location: error.php");
+        header("Location: /error");
         exit();
       }
 

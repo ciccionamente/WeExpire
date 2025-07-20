@@ -12,11 +12,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" and isset($_SESSION['csrf_token'])) {
 
   // Verify the secure form token in order to avoid any cross-domain POST request
   // If it's not verified, then remove all the session variables, destroy the session 
-  // and redirect to the index.php page
+  // and redirect to the index page
   if ($_SESSION['csrf_token'] !== $_POST['csrf_token']) {
     session_unset();
     session_destroy();
-    header("Location: /index.php");
+    header("Location: /");
     exit();
   } else {
     // Set the page token, it will be used in the next page as a verifier
@@ -112,11 +112,11 @@ include_once 'PHP/internal_libraries/engine/page_language_switch.php';
               echo "fr";
             }
             ?>">
-
 <head>
   <?php include 'PHP/internal_libraries/page_templates/head.php'; ?>
+  <title>WeExpire - <?=$translation["review_page_title"];?></title>
+  <meta name="robots" content="noindex, nofollow">
 </head>
-
 <body>
   <?php include 'PHP/internal_libraries/page_templates/header.php'; ?>
   <main class="container">
@@ -164,7 +164,7 @@ include_once 'PHP/internal_libraries/engine/page_language_switch.php';
           </div>
           <div class="row pt-5 pb-4 text-center">
             <div class="col">
-              <form action="done.php" method="POST">
+              <form action="/done" method="POST">
                 <button class="btn btn-primary btn-lg" type="submit"><?= $translation["button_confirm"]; ?></button>
               </form>
             </div>

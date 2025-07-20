@@ -112,11 +112,11 @@ and ($_SESSION["page_token"] == "done_page")) {
 }
 
 // If there is no encrypted note stored in the session and the user is not coming from the done.php page,
-// then remove all the session variables, destroy the session and redirect to the index.php page
+// then remove all the session variables, destroy the session and redirect to the index page
 else {
   session_unset();
   session_destroy();
-  header("Location: /index.php");
+  header("Location: /");
   exit();
 }
 

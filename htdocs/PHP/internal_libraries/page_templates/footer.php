@@ -7,13 +7,14 @@ global $base_path;
   <hr class="mt-4 mt-sm-4 mb-3 mb-sm-5">
   <div class="row flex-fill d-block d-sm-none">
     <div class="col">
+      <span class="px-2 text-nowrap"><a class="link-secondary" href="/FAQ"><?=$translation["footer_FAQ"];?></a></span>
       <span class="px-2 text-nowrap"><a class="link-secondary" href="/WeExpire_press_kit.zip"><?=$translation["footer_press_kit"];?></a></span>
       <span class="px-2 text-nowrap"><a class="link-secondary" href="mailto:support@weexpire.org"><?=$translation["footer_contact"];?></a></span>
-      <span class="px-2 text-nowrap"><a class="link-secondary" href="https://www.buymeacoffee.com/ciccionamente"><?=$translation["footer_donate"];?></a></span>
+      <span class="px-2 text-nowrap"><a class="link-secondary" href="/donate" target="_blank"><?=$translation["footer_donate"];?></a></span>
     </div>
     <div class="col">
-      <span class="px-2 text-nowrap"><a class="link-secondary" href="privacy.php"><?=$translation["footer_privacy"];?></a></span>
-      <span class="px-2 text-nowrap"><a class="link-secondary" href="terms.php"><?=$translation["footer_terms"];?></a></span>
+      <span class="px-2 text-nowrap"><a class="link-secondary" href="/privacy"><?=$translation["footer_privacy"];?></a></span>
+      <span class="px-2 text-nowrap"><a class="link-secondary" href="/terms"><?=$translation["footer_terms"];?></a></span>
     </div>
   </div>
   <div class="row flex-fill">
@@ -34,26 +35,27 @@ global $base_path;
           ?>
         </button>
         <ul class="dropdown-menu" aria-label="<?=$translation["footer_language"];?>">
-          <li><a class="dropdown-item" href="<?=$base_path;?>/?l=en">English</a></li>
-          <li><a class="dropdown-item" href="<?=$base_path;?>/?l=es">Español</a></li>
-          <li><a class="dropdown-item" href="<?=$base_path;?>/?l=fr">Français</a></li>
-          <li><a class="dropdown-item" href="<?=$base_path;?>/?l=it">Italiano</a></li>
+          <li><a class="dropdown-item" href="<?=$base_path;?>/en">English</a></li>
+          <li><a class="dropdown-item" href="<?=$base_path;?>/es">Español</a></li>
+          <li><a class="dropdown-item" href="<?=$base_path;?>/fr">Français</a></li>
+          <li><a class="dropdown-item" href="<?=$base_path;?>/it">Italiano</a></li>
         </ul>
       </div>
     </div>
     <div class="col mb-4 d-none d-sm-block">
       <h5><?=$translation["footer_about"];?></h5>
       <ul class="list-unstyled text-small">
+        <li><a class="link-secondary" href="/FAQ"><?=$translation["footer_FAQ"];?></a></li>
         <li><a class="link-secondary" href="/WeExpire_press_kit.zip"><?=$translation["footer_press_kit"];?></a></li>
         <li><a class="link-secondary" href="mailto:support@weexpire.org"><?=$translation["footer_contact"];?></a></li>
-        <li><a class="link-secondary" href="donate.php" target="_blank"><?=$translation["footer_donate"];?></a></li>
+        <li><a class="link-secondary" href="/donate" target="_blank"><?=$translation["footer_donate"];?></a></li>
       </ul>
     </div>
     <div class="col mb-4 d-none d-sm-block">
       <h5><?=$translation["footer_legal"];?></h5>
       <ul class="list-unstyled text-small">
-        <li><a class="link-secondary" href="privacy.php"><?=$translation["footer_privacy"];?></a></li>
-        <li><a class="link-secondary" href="terms.php"><?=$translation["footer_terms"];?></a></li>
+        <li><a class="link-secondary" href="/privacy"><?=$translation["footer_privacy"];?></a></li>
+        <li><a class="link-secondary" href="/terms"><?=$translation["footer_terms"];?></a></li>
       </ul>
     </div>
   </div>

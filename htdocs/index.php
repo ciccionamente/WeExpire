@@ -25,13 +25,20 @@ if ($_SESSION['l'] == "en") {
 ?>">
 <head>
   <?php include 'PHP/internal_libraries/page_templates/head.php';?>
+  <title>WeExpire - <?=$translation["landing_page_title"];?></title>
+  <meta name="description" content="<?=$translation["landing_page_meta_description"];?>">
+  <link rel="canonical" href="https://weexpire.org">
+  <link rel="alternate" hreflang="en" href="https://weexpire.org/en">
+  <link rel="alternate" hreflang="es" href="https://weexpire.org/es">
+  <link rel="alternate" hreflang="fr" href="https://weexpire.org/fr">
+  <link rel="alternate" hreflang="it" href="https://weexpire.org/it">
 </head>
 <body>
   <?php include 'PHP/internal_libraries/page_templates/header.php';?>
   <main class="container">
     <div class="row align-items-center min-content-height">
       <div class="col">
-        <div class="pb-3 pt-3 pt-md-5 pb-5 mx-auto text-center">
+        <div class="pb-5 pt-3 pt-md-5 mx-auto text-center">
           <h1 class="display-3"><?=$translation["landing_page_headline"];?></h1>
           <p class="lead"><b><?=$translation["landing_page_secondary_headline"];?></b></p>
           <a class="btn btn-primary btn-lg d-inline-block d-md-none mt-4" href="start.php"><?=$translation["button_get_started"];?></a>

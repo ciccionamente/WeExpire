@@ -8,8 +8,10 @@
 require_once '../underwear/environment_variables/configuration.php';
 global $maintenance_mode;
 if ($maintenance_mode == true) {
-  header("Location: maintenance.php");
-  exit();
+  http_response_code(503);
+    header('Retry-After: 3600');
+    include 'maintenance.php';
+    exit();
 }
 
 // Check if there is already an active session, if not start a new one

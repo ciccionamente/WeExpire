@@ -15,7 +15,7 @@ $token = md5(uniqid(rand(), TRUE));
 $_SESSION['csrf_token'] = $token;
 
 // Check if the note and the note version variables have been passed in the URL and check if the note variable lenght is higher than 30 characters
-if ((strlen($_GET["m"]) > 30) and (strlen($_GET["v"]) == 1)) {
+if (isset($_GET["m"], $_GET["v"]) && strlen($_GET["m"]) > 30 && strlen($_GET["v"]) == 1) {
 
   // Store the note variable in session and strip HTML/PHP tags
   $_SESSION["note_to_decrypt"] = strip_tags($_GET["m"]);
@@ -26,11 +26,11 @@ if ((strlen($_GET["m"]) > 30) and (strlen($_GET["v"]) == 1)) {
 }
 
 // If the note variable hasn't been passed in the URL or its lenght is lower than 30 characters,
-// then remove all the session variables, destroy the session and redirect to the index.php page
+// then remove all the session variables, destroy the session and redirect to the index page
 else {
   session_unset();
   session_destroy();
-  header("Location: /index.php");
+  header("Location: /");
   exit();
 }
 
@@ -52,6 +52,8 @@ if ($_SESSION['l'] == "en") {
 ?>">
 <head>
   <?php include 'PHP/internal_libraries/page_templates/head.php';?>
+  <title>WeExpire - <?=$translation["access_page_title"];?></title>
+  <meta name="robots" content="noindex, nofollow">
 </head>
 <body>
   <?php include 'PHP/internal_libraries/page_templates/header.php';?>
@@ -62,7 +64,7 @@ if ($_SESSION['l'] == "en") {
           <h1 class="display-3"><?=$translation["access_page_title"];?></h1>
         </div>
         <div class="pb-3">
-          <form action="note.php" method="POST">
+          <form action="/note" method="POST">
             <input type="hidden" name="csrf_token" value="<?=$token;?>">
             <div class="row">
               <div class="col-12 col-md-4 offset-md-4 mt-4">

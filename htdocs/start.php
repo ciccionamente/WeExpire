@@ -40,17 +40,25 @@ if ($_SESSION['l'] == "en") {
 ?>">
 <head>
   <?php include 'PHP/internal_libraries/page_templates/head.php';?>
+  <title>WeExpire - <?=$translation["start_page_title"];?></title>
+  <meta name="description" content="<?=$translation["start_page_meta_description"];?>">
+  <link rel="canonical" href="https://weexpire.org/start">
+  <link rel="alternate" hreflang="en" href="https://weexpire.org/en/start">
+  <link rel="alternate" hreflang="es" href="https://weexpire.org/es/start">
+  <link rel="alternate" hreflang="fr" href="https://weexpire.org/fr/start">
+  <link rel="alternate" hreflang="it" href="https://weexpire.org/it/start">
 </head>
 <body>
   <?php include 'PHP/internal_libraries/page_templates/header.php';?>
   <main class="container">
     <div class="row align-items-center min-content-height">
       <div class="col">
-        <div class="pb-3 pt-3 pt-md-5 mx-auto text-center">
+        <div class="pb-4 pt-3 pt-md-5 mx-auto text-center">
           <h1 class="display-3"><?=$translation["start_page_title"];?></h1>
+          <p class="lead"><b><?=$translation["start_page_secondary_headline"];?></b></p>
         </div>
         <div class="pb-3">
-          <form action="review.php" method="POST">
+          <form action="/review" method="POST">
             <input type="hidden" name="csrf_token" value="<?=$token;?>">
             <div class="row">
               <div class="col-12 col-md-8 offset-md-2 mt-3 mb-3 text-break">

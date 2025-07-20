@@ -32,22 +32,22 @@ if (($_SERVER["REQUEST_METHOD"] == "POST") and isset($_SESSION["page_token"])) {
   }
 
   // If the user is not coming from the review.php page,
-  // then remove all the session variables, destroy the session and redirect to the index.php page
+  // then remove all the session variables, destroy the session and redirect to the index page
   else {
     session_unset();
     session_destroy();
-    header("Location: /index.php");
+    header("Location: /");
     exit();
   }
 
 }
 
 // If there is no POST request and no page token set,
-// then remove all the session variables, destroy the session and redirect to the index.php page
+// then remove all the session variables, destroy the session and redirect to the index page
 else {
   session_unset();
   session_destroy();
-  header("Location: /index.php");
+  header("Location: /");
   exit();
 }
 
@@ -69,6 +69,8 @@ if ($_SESSION['l'] == "en") {
 ?>">
 <head>
   <?php include 'PHP/internal_libraries/page_templates/head.php';?>
+  <title>WeExpire - <?=$translation["done_page_title"];?></title>
+  <meta name="robots" content="noindex, nofollow">
 </head>
 <body>
   <?php include 'PHP/internal_libraries/page_templates/header.php';?>
@@ -93,10 +95,10 @@ if ($_SESSION['l'] == "en") {
                 <button type="button" class="btn btn-lg btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
                 </button>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="/pdf.php?l=en" target="_blank">English</a></li>
-                  <li><a class="dropdown-item" href="/pdf.php?l=es" target="_blank">Español</a></li>
-                  <li><a class="dropdown-item" href="/pdf.php?l=fr" target="_blank">Français</a></li>
-                  <li><a class="dropdown-item" href="/pdf.php?l=it" target="_blank">Italiano</a></li>
+                  <li><a class="dropdown-item" href="/en/pdf" target="_blank">English</a></li>
+                  <li><a class="dropdown-item" href="/es/pdf" target="_blank">Español</a></li>
+                  <li><a class="dropdown-item" href="/fr/pdf" target="_blank">Français</a></li>
+                  <li><a class="dropdown-item" href="/it/pdf" target="_blank">Italiano</a></li>
                 </ul>
               </div>
             </div>

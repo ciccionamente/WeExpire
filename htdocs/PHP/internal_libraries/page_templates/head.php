@@ -19,7 +19,7 @@
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="WeExpire">
-<meta name="twitter:description" content="<?=$translation["meta_description"];?>">
+<meta name="twitter:description" content="<?=$translation["social_media_description"];?>">
 <meta name="twitter:image" content="https://www.weexpire.org/img/social.jpg">
 <meta name="twitter:image:alt" content="WeExpire">
 

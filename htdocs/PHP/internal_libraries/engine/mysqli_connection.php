@@ -24,9 +24,9 @@ if ($mysqli->connect_error) {
   fwrite($log_file, $log);
   fclose($log_file);
 
-  // Store the error token in session and redirect to the error.php page
+  // Store the error token in session and redirect to the error page
   $_SESSION['error_token'] = 1;
-  header("Location: error.php");
+  header("Location: /error");
   exit();
 }
 

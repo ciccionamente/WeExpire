@@ -31,11 +31,11 @@ if ((isset($_GET["m"])) and (strlen($_GET["m"]) == 64)) {
     }
 
     // If there is no hashed note stored in the database,
-    // then remove all the session variables, destroy the session and redirect to the index.php page
+    // then remove all the session variables, destroy the session and redirect to the index page
     else {
       session_unset();
       session_destroy();
-      header("Location: /index.php");
+      header("Location: /");
       exit();
     }
 
@@ -44,11 +44,11 @@ if ((isset($_GET["m"])) and (strlen($_GET["m"]) == 64)) {
 }
 
 // If the note variable hasn't been passed in the URL or its lenght is lower than 30 characters,
-// then remove all the session variables, destroy the session and redirect to the index.php page
+// then remove all the session variables, destroy the session and redirect to the index page
 else {
   session_unset();
   session_destroy();
-  header("Location: /index.php");
+  header("Location: /");
   exit();
 }
 
@@ -70,6 +70,8 @@ if ($_SESSION['l'] == "en") {
 ?>">
 <head>
   <?php include 'PHP/internal_libraries/page_templates/head.php';?>
+  <title>WeExpire - <?=$translation["block_page_title"];?></title>
+  <meta name="robots" content="noindex, nofollow">
 </head>
 <body>
   <?php include 'PHP/internal_libraries/page_templates/header.php';?>

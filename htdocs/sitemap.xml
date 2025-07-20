@@ -1,10 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://weexpire.org/</loc>
+    <loc>https://weexpire.org</loc>
+    <lastmod>2025-07-20</lastmod>
     <xhtml:link rel="alternate" hreflang="it" href="https://weexpire.org/it"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://weexpire.org/es"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://weexpire.org/fr"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://weexpire.org/en"/>
+  </url>
+  <url>
+    <loc>https://weexpire.org/start</loc>
+    <lastmod>2025-07-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://weexpire.org/it/start"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://weexpire.org/es/start"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://weexpire.org/fr/start"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://weexpire.org/en/start"/>
+  </url>
+  <url>
+    <loc>https://weexpire.org/FAQ</loc>
+    <lastmod>2025-07-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://weexpire.org/it/FAQ"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://weexpire.org/es/FAQ"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://weexpire.org/fr/FAQ"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://weexpire.org/en/FAQ"/>
+  </url>
+  <url>
+    <loc>https://weexpire.org/privacy</loc>
+    <lastmod>2025-07-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://weexpire.org/it/privacy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://weexpire.org/es/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://weexpire.org/fr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://weexpire.org/en/privacy"/>
+  </url>
+  <url>
+    <loc>https://weexpire.org/terms</loc>
+    <lastmod>2025-07-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://weexpire.org/it/terms"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://weexpire.org/es/terms"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://weexpire.org/fr/terms"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://weexpire.org/en/terms"/>
   </url>
 </urlset>

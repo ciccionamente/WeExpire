@@ -16,17 +16,17 @@ include_once 'PHP/internal_libraries/engine/starter.php';
 if (($_SERVER["REQUEST_METHOD"] == "POST")) {
 
   // Verify the secure form token in order to avoid any cross-domain POST request.
-  // If the relative session variable doesn't exist then redirect to the index.php page
+  // If the relative session variable doesn't exist then redirect to the index page
   if (!isset($_SESSION['csrf_token'])) {
-    header("Location: /index.php");
+    header("Location: /");
     exit();
   }
   // If the relative session variable exists but it's not verified then remove all the session variables, destroy the sesson
-  // and redirect to the index.php page
+  // and redirect to the index page
   if ($_SESSION['csrf_token'] !== $_POST['csrf_token']){
     session_unset();
     session_destroy();
-    header("Location: /index.php");
+    header("Location: /");
     exit();
   }
 
@@ -55,11 +55,11 @@ if (($_SERVER["REQUEST_METHOD"] == "POST")) {
 }
 
 // If there is no POST request then remove all the session variables, destroy the session
-// and redirect to the index.php page
+// and redirect to the index page
 else {
   session_unset();
   session_destroy();
-  header("Location: /index.php");
+  header("Location: /");
   exit();
 }
 
@@ -81,6 +81,7 @@ if ($_SESSION['l'] == "en") {
 ?>">
 <head>
   <?php include 'PHP/internal_libraries/page_templates/head.php';?>
+  <title>WeExpire - <?=$translation["note_page_title"];?></title>
 </head>
 <body>
   <?php include 'PHP/internal_libraries/page_templates/header.php';?>

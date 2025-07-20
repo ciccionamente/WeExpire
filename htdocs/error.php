@@ -8,7 +8,7 @@
 include_once 'PHP/internal_libraries/engine/starter.php';
 
 // Verify that the user is coming for a real error, otherwise remove all the session variables,
-// destroy the session and redirect to the index.php page
+// destroy the session and redirect to the index page
 if(isset($_SESSION['error_token'])){
   // Remove all the session variables and destroy the session so the user can't refresh the page
   // or load it again without any real error
@@ -18,7 +18,7 @@ if(isset($_SESSION['error_token'])){
 else {
   session_unset();
   session_destroy();
-  header("Location: /index.php");
+  header("Location: /");
   exit();
 }
 
@@ -40,6 +40,8 @@ if ($_SESSION['l'] == "en") {
 ?>">
 <head>
   <?php include 'PHP/internal_libraries/page_templates/head.php';?>
+  <title>WeExpire - <?=$translation["error_page_title"];?></title>
+  <meta name="robots" content="noindex, nofollow">
 </head>
 <body>
   <?php include 'PHP/internal_libraries/page_templates/header.php';?>

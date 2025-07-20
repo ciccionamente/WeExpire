@@ -1,14 +1,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="alternate" hreflang="x-default" href="https://weexpire.org">
-<link rel="alternate" hreflang="en" href="https://weexpire.org/en">
-<link rel="alternate" hreflang="es" href="https://weexpire.org/es">
-<link rel="alternate" hreflang="fr" href="https://weexpire.org/fr">
-<link rel="alternate" hreflang="it" href="https://weexpire.org/it">
-
-<title><?=$translation["title"];?></title>
-<meta name="description" content="<?=$translation["meta_description"];?>">
 <meta name="author" content="WeExpire">
 <meta name="thumbnail" content="https://weexpire.org/img/icons/search-engines.png">
 
@@ -41,6 +33,8 @@
 <link rel="mask-icon" href="/img/icons/safari-pinned-tab.svg">
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="theme-color" content="#ffffff">
+
+<link rel="alternate" hreflang="x-default" href="https://weexpire.org">
 
 <?php 
 // Include Plausible Analytics only if server name is weexpire.org

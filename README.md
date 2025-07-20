@@ -19,6 +19,40 @@
  5. Set the `htdocs` folder as the main root directory for your server configuration
  6. Run the project!
 
+## Apache Configuration (.htaccess)
+If you are using Apache (locally or in production), include the following `.htaccess` file inside the `htdocs` folder to enable correct routing for all pages:
+
+```apache
+RewriteEngine On
+RewriteBase /
+
+# Remove trailing slash from non-existing files/directories
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)/$ /$1 [R=301,L]
+
+# Redirect .php URLs to clean URLs (e.g., /start.php → /start)
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s([^.]+)\.php[?\s] [NC]
+RewriteRule ^([^.]+)\.php$ /$1 [R=301,L]
+
+# Internally rewrite clean URLs to corresponding .php files if they exist
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^([a-zA-Z0-9/_-]+)$ $1.php [L]
+
+# Redirect /index to root (/)
+RewriteCond %{THE_REQUEST} /index\.php [NC]
+RewriteRule ^index\.php$ / [R=301,L]
+
+# Handle language-prefixed paths (e.g., /it/start → /start.php?l=it)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{DOCUMENT_ROOT}/$2.php -f
+RewriteRule ^(en|es|fr|it)/(.+)$ /$2.php?l=$1 [NC,L]
+
+# Language redirect for root-level language paths (e.g., /en → /?l=en)
+RewriteRule ^(en|es|fr|it)/?$ /?l=$1 [NC,L]
+```
+
 ## Running the project with Docker
 1. Clone the repo
    ```sh

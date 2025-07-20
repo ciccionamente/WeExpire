@@ -4,11 +4,11 @@
 * This page is displayed when the maintenance mode is enabled
 */
 
-// Verify that the maintenance mode is enabled, otherwise redirect to the index.php page
+// Verify that the maintenance mode is enabled, otherwise redirect to the index page
 require_once '../underwear/environment_variables/configuration.php';
 global $maintenance_mode;
 if ($maintenance_mode !== true) {
-  header("Location: index.php");
+  header("Location: /");
   exit();
 }
 ?>
@@ -70,6 +70,7 @@ if ($maintenance_mode !== true) {
   }
   </style>
 <title>WeExpire - Offline for maintenance</title>
+<meta name="robots" content="noindex, nofollow">
 </head>
 <body>
   <header class="text-center">

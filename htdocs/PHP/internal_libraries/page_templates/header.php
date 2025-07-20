@@ -4,7 +4,7 @@ require_once '../underwear/environment_variables/configuration.php';
 global $base_path;
 ?>
 <header class="d-print-none d-flex flex-column flex-md-row align-items-center pt-5 pb-2 p-md-3 px-md-3 mb-3 bg-white sticky-md-top">
-  <p class="my-0 me-md-auto fw-normal"><a href="<?=$base_path;?>"><img src="img/logo.svg" class="logo" alt="WeExpire"></a></p>
+  <p class="my-0 me-md-auto fw-normal"><a href="<?=$base_path;?>"><img src="/img/logo.svg" class="logo" alt="WeExpire"></a></p>
   <?php
   // Hide the 'Get started' button for start.php, review.php, done.php, access.php, verify.php and note.php pages only
   if ($_SERVER['PHP_SELF'] != '/start.php'

@@ -69,7 +69,7 @@ if ($_SESSION['l'] == "en") {
             <div class="row">
               <div class="col-12 col-md-4 offset-md-4 mt-4">
                 <label class="form-label"><?=$translation["access_page_access_code_input_title"];?></label>
-                <input type="text" name="access_code" class="form-control <?php if ((isset($_GET["error"])) and ($_GET["error"] == "true")) { echo "is-invalid"; }; ?>" maxlength="1000" required>
+                <input type="text" autocapitalize="none" autocomplete="off" autocorrect="off" spellcheck="false" name="access_code" class="form-control <?php if ((isset($_GET["error"])) and ($_GET["error"] == "true")) { echo "is-invalid"; }; ?>" maxlength="1000" required>
                 <?php
                 // Show an error message in case the access code or the note provided is invalid
                 if ((isset($_GET["error"])) and ($_GET["error"] == "true")) {

@@ -98,7 +98,7 @@ $translation["review_page_information_6"] = "Este mensaje no podrá cambiarse en
 $translation["done_page_title"] = "Ya está!";
 $translation["done_page_content"] = "
 <p>Tu mensaje de emergencia se ha creado. Puedes descargarlo en el botón de abajo e imprimirlo para entregárselo a tu contacto de confianza.</p>
-<p><b><mark>¡Muy importante!</mark></b> Incluye la dirección <b>support@weexpire.org</b> en tu lista de contacto seguros para evitar que cualquier notificación relativa al mensaje que acabas de crear termine en el spam.</p>";
+<p><b><mark>¡Muy importante!</mark></b> Incluye la dirección <b>support@weexpire.org</b> en tu lista de contacto seguros para evitar que cualquier notificación relativa al mensaje que acabas de crear termine en el spam.<br>Además, verifica que el código QR y su código de acceso estén impresos completos y sean claramente legibles. Si es necesario, ajusta la escala y los márgenes de impresión. Por último, escanea el código QR con la cámara de tu teléfono solo para asegurarte de que abre la página de acceso de tu nota de emergencia, sin continuar.</p>";
 $translation["done_page_donate_message"] = "<p class='text-center'><small>Apoya a WeExpire con una <a href='/donate' target='_blank'>donación</a>.</small></p>";
 
 // Access page

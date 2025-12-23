@@ -100,7 +100,6 @@ and ($_SESSION["page_token"] == "done_page")) {
     'module_height' => 1 // height of a single module in points
   );
 
-  // QRCODE,H : QR-CODE Best error correction
   // Include in the QR code the encrypted URL that allows the user to access the relative emergency note
   $pdf->write2DBarcode("{$base_path}/access.php?m={$_SESSION['encrypted_note']}&v={$current_note_version}", 'QRCODE', 180, 33, 100, 100, $style, 'N');
 

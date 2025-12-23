@@ -97,7 +97,7 @@ $translation["review_page_information_6"] = "This note can’t be edited in the 
 $translation["done_page_title"] = "All done";
 $translation["done_page_content"] = "
 <p>Your emergency note has been created. You can download it by clicking the button below, then print it and deliver it to your trusted person.</p>
-<p><b><mark>Very important!</mark></b> Add the email address <b>support@weexpire.org</b> to your email provider’s safe senders list to prevent any notification from us regarding the note you just created from mistakenly ending up in spam.</p>";
+<p><b><mark>Very important!</mark></b> Add the email address <b>support@weexpire.org</b> to your email provider’s safe senders list to prevent any notification from us regarding the note you just created from mistakenly ending up in spam.<br>Also, make sure the QR code and its access code are printed in full and clearly legible. If needed, adjust the print scale and margins. Finally, scan the QR code with your phone’s camera only to make sure it opens the access page for your emergency note, without going any further.</p>";
 $translation["done_page_donate_message"] = "<p class='text-center'><small>Support WeExpire with a <a href='/donate' target='_blank'>donation</a>.</small></p>";
 
 // Access page

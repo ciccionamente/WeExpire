@@ -98,7 +98,7 @@ $translation["review_page_information_6"] = "Cette note ne pourra pas être modi
 $translation["done_page_title"] = "Tout est prêt";
 $translation["done_page_content"] = "
 <p>Votre note d'urgence a été créée. Vous pouvez le télécharger en cliquant sur le bouton ci-dessous, puis l'imprimer et la remettre à votre personne de confiance.</p>
-<p><b><mark>Très important !</mark></b> Ajoutez l'adresse e-mail <b>support@weexpire.org</b> à la liste des expéditeurs sûrs de votre fournisseur de mails pour éviter que toute notification de notre part concernant la note que vous venez de créer ne se retrouve par erreur dans les spams.</p>";
+<p><b><mark>Très important !</mark></b> Ajoutez l'adresse e-mail <b>support@weexpire.org</b> à la liste des expéditeurs sûrs de votre fournisseur de mails pour éviter que toute notification de notre part concernant la note que vous venez de créer ne se retrouve par erreur dans les spams.<br>De plus, vérifie que le QR code et son code d’accès sont imprimés en entier et bien lisibles. Si nécessaire, ajuste l’échelle d’impression et les marges. Enfin, scanne le QR code avec la caméra de ton téléphone uniquement pour t’assurer qu’il ouvre la page d’accès à ta note d’urgence, sans aller plus loin.</p>";
 $translation["done_page_donate_message"] = "<p class='text-center'><small>Soutenez WeExpire avec un <a href='/donate' target='_blank'>don</a>.</small></p>";
 
 // Access page

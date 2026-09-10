@@ -13,6 +13,10 @@ require_once '../underwear/environment_variables/configuration.php';
 global $base_path,$current_note_version;
 
 // Load the TCPDF library for generating the PDF
+// TCPDF >= 6.11.3 raises an E_USER_DEPRECATED notice on every instantiation.
+// It is already suppressed with @, but this constant also keeps it out of the
+// PHP error log and guarantees it can never leak into the PDF output stream.
+define('TCPDF_SILENCE_DEPRECATION', true);
 require 'PHP/external_libraries/TCPDF/tcpdf.php';
 
 // Check if the encrypted note has been stored in the session

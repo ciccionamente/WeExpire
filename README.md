@@ -26,6 +26,9 @@ If you are using Apache (locally or in production), include the following `.htac
 RewriteEngine On
 RewriteBase /
 
+# Block direct access to the PHP folder (its files are only meant to be included by the pages)
+RewriteRule ^PHP/ - [F,NC,L]
+
 # Remove trailing slash from non-existing files/directories
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d

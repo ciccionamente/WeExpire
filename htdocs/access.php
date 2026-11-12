@@ -9,7 +9,7 @@
 include_once 'PHP/internal_libraries/engine/starter.php';
 
 // Set the secure form token in order to avoid any cross-domain POST request
-$token = md5(uniqid(rand(), TRUE));
+$token = bin2hex(random_bytes(32));
 
 // Assign token to session
 $_SESSION['csrf_token'] = $token;

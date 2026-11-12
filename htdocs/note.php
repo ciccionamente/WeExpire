@@ -23,7 +23,7 @@ if (($_SERVER["REQUEST_METHOD"] == "POST")) {
   }
   // If the relative session variable exists but it's not verified then remove all the session variables, destroy the sesson
   // and redirect to the index page
-  if ($_SESSION['csrf_token'] !== $_POST['csrf_token']){
+  if (!isset($_POST['csrf_token']) or !is_string($_POST['csrf_token']) or !hash_equals($_SESSION['csrf_token'], $_POST['csrf_token'])) {
     session_unset();
     session_destroy();
     header("Location: /");

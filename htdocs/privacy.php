@@ -24,7 +24,8 @@ if ($_SESSION['l'] == "en") {
   <?php include 'PHP/internal_libraries/page_templates/head.php';?>
   <title>WeExpire - <?=$translation["privacy_page_title"];?></title>
   <meta name="description" content="<?=$translation["privacy_page_meta_description"];?>">
-  <link rel="canonical" href="https://weexpire.org/privacy">
+  <link rel="canonical" href="https://weexpire.org<?=$canonical_language_path;?>/privacy">
+  <link rel="alternate" hreflang="x-default" href="https://weexpire.org/privacy">
   <link rel="alternate" hreflang="en" href="https://weexpire.org/en/privacy">
   <link rel="alternate" hreflang="es" href="https://weexpire.org/es/privacy">
   <link rel="alternate" hreflang="fr" href="https://weexpire.org/fr/privacy">

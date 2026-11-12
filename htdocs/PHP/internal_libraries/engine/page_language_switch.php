@@ -37,6 +37,10 @@ else
   $_SESSION['l'] = $page_language;
 }
 
+// Set the language part of the canonical URL: the pages opened with a language in the URL (e.g. /it/FAQ) point to themselves,
+// while the ones without it (where the language is detected automatically) point to the plain URL
+$canonical_language_path = isset($_GET['l']) ? '/' . $page_language : '';
+
 // Select the page content according to the user's or browser language
 switch ($page_language) {
   case 'en':

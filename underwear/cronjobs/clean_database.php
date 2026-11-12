@@ -5,9 +5,9 @@
 * 60 days after the grant date or 60 days after they have been temporarily blocked by the owner of the note
 */
 
-// Load the environment variables needed for the process and set them as global
-$root_directory = realpath($_SERVER["DOCUMENT_ROOT"]);
-require_once "$root_directory/underwear/environment_variables/configuration.php";
+// Load the environment variables needed for the process and set them as global.
+// The path starts from the folder of this file, so the cronjob works no matter where it is launched from
+require_once __DIR__ . '/../environment_variables/configuration.php';
 global $db_host, $db_user, $db_password, $db_db;
 
 // Start the database connection

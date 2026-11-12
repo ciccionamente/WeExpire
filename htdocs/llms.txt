@@ -1,0 +1,34 @@
+# WeExpire
+
+> WeExpire (https://weexpire.org) is a free, open-source and non-profit web tool for creating encrypted emergency notes that your trusted contacts can read only after your death or if you are seriously injured. No account is needed and the content of the notes is never stored on WeExpire's servers.
+
+## How it works
+
+- You write a note (up to 1000 characters) and choose a subject, one or two of your email addresses and an inactivity time (from 1 to 180 days).
+- The note is encrypted with AES-256-CTR and turned into a QR code, delivered as a printable PDF together with a randomly generated access code. The note exists only inside that QR code.
+- You print the document and give it to someone you trust.
+- When that person scans the QR code and enters the access code, WeExpire sends you an email. If you don't react within the inactivity time, the note is revealed to them. If you block the request, access is denied for 60 days.
+- Every note expires 365 days after its creation and can't be edited: to change it, you create a new one.
+
+## Good to know
+
+- It's free and requires no registration. The project is non-profit and supported by donations.
+- WeExpire is not a will and has no legal value: a note is a personal, non-binding message.
+- Typical uses: a last message, final wishes, where to find important documents, a password hint, recovery instructions, digital legacy in general.
+- Available in English, Spanish, French and Italian.
+- The source code is public, under the GPLv3 license.
+
+## Pages
+
+- [Home](https://weexpire.org): what WeExpire is and why to use it
+- [Create your emergency note](https://weexpire.org/start): the form to write and encrypt a note
+- [FAQ](https://weexpire.org/FAQ): how access requests, blocking, expiration and privacy work
+- [Privacy](https://weexpire.org/privacy)
+- [Terms of Service](https://weexpire.org/terms)
+- [Source code](https://github.com/ciccionamente/WeExpire)
+
+## Other languages
+
+- [Español](https://weexpire.org/es)
+- [Français](https://weexpire.org/fr)
+- [Italiano](https://weexpire.org/it)

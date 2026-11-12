@@ -16,6 +16,17 @@ if ($maintenance_mode == true) {
 
 // Check if there is already an active session, if not start a new one
 if (session_status() === PHP_SESSION_NONE) {
+    // Keep the session cookie out of reach of JavaScript and of requests coming from other websites,
+    // and don't accept session IDs that haven't been created by the server
+    ini_set('session.cookie_httponly', '1');
+    ini_set('session.cookie_samesite', 'Lax');
+    ini_set('session.use_strict_mode', '1');
+
+    // Send the session cookie over HTTPS only (skipped when running without HTTPS, e.g. locally)
+    if (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') {
+        ini_set('session.cookie_secure', '1');
+    }
+
     session_start();
 }
 

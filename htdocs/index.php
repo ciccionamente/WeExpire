@@ -10,6 +10,22 @@ include_once 'PHP/internal_libraries/engine/starter.php';
 // Include the page language switch in order to provide translated content
 include_once 'PHP/internal_libraries/engine/page_language_switch.php';
 
+// Describe WeExpire as structured data, so search engines and AI assistants can understand what the service is
+$structured_data = [
+  '@context' => 'https://schema.org',
+  '@type' => 'WebApplication',
+  'name' => 'WeExpire',
+  'url' => 'https://weexpire.org' . $canonical_language_path,
+  'description' => $translation["landing_page_meta_description"],
+  'inLanguage' => $page_language,
+  'applicationCategory' => 'SecurityApplication',
+  'operatingSystem' => 'Any',
+  'isAccessibleForFree' => true,
+  'offers' => ['@type' => 'Offer', 'price' => '0', 'priceCurrency' => 'EUR'],
+  'license' => 'https://www.gnu.org/licenses/gpl-3.0.html',
+  'sameAs' => ['https://github.com/ciccionamente/WeExpire']
+];
+
 ?>
 <!DOCTYPE html>
 <html lang="<?php
@@ -27,11 +43,13 @@ if ($_SESSION['l'] == "en") {
   <?php include 'PHP/internal_libraries/page_templates/head.php';?>
   <title>WeExpire - <?=$translation["landing_page_title"];?></title>
   <meta name="description" content="<?=$translation["landing_page_meta_description"];?>">
-  <link rel="canonical" href="https://weexpire.org">
+  <link rel="canonical" href="https://weexpire.org<?=$canonical_language_path;?>">
+  <link rel="alternate" hreflang="x-default" href="https://weexpire.org">
   <link rel="alternate" hreflang="en" href="https://weexpire.org/en">
   <link rel="alternate" hreflang="es" href="https://weexpire.org/es">
   <link rel="alternate" hreflang="fr" href="https://weexpire.org/fr">
   <link rel="alternate" hreflang="it" href="https://weexpire.org/it">
+  <script type="application/ld+json"><?=json_encode($structured_data, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);?></script>
 </head>
 <body>
   <?php include 'PHP/internal_libraries/page_templates/header.php';?>

@@ -23,7 +23,7 @@ if (isset($_SESSION["access_code_error"])) {
 // Verify that the note decryption is correct by comparing the hash values
 if ($note_verifier !== hash('sha256', $current_note_version.'�'.$subject.'�'.$note.'�'.$primary_email.'�'.$secondary_email.'�'.$inactivity_time.'�'.$expiration_date.'�'.$creation_date_time.'�'.$note_owner_language)) {
   // Encode the note used in the URL before using it as a variable for redirection
-  $_SESSION["message_to_decrypt"] = rawurlencode($_SESSION["note_to_decrypt"]);
+  $_SESSION["note_to_decrypt"] = rawurlencode($_SESSION["note_to_decrypt"]);
 
   // Redirect to the access page and show the error message
   header("Location: /access.php?m={$_SESSION['note_to_decrypt']}&v={$_SESSION['note_version']}&error=true");

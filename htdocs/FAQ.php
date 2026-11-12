@@ -7,6 +7,24 @@
 // Include the page language switch in order to provide translated content
 include_once 'PHP/internal_libraries/engine/page_language_switch.php';
 
+// Describe the questions and answers as structured data, so search engines and AI assistants can read them easily.
+// The list is built from the translations, so it always matches what is shown in the page
+$structured_data_questions = [];
+for ($i = 1; isset($translation["FAQ_page_section_{$i}_title"]); $i++) {
+  $structured_data_questions[] = [
+    '@type' => 'Question',
+    // Remove the number at the beginning of the title (e.g. "1. ")
+    'name' => preg_replace('/^\d+\.\s*/', '', $translation["FAQ_page_section_{$i}_title"]),
+    'acceptedAnswer' => ['@type' => 'Answer', 'text' => strip_tags($translation["FAQ_page_section_{$i}_description"])]
+  ];
+}
+$structured_data = [
+  '@context' => 'https://schema.org',
+  '@type' => 'FAQPage',
+  'inLanguage' => $page_language,
+  'mainEntity' => $structured_data_questions
+];
+
 ?>
 <!DOCTYPE html>
 <html lang="<?php
@@ -24,11 +42,13 @@ if ($_SESSION['l'] == "en") {
   <?php include 'PHP/internal_libraries/page_templates/head.php';?>
   <title>WeExpire - <?=$translation["FAQ_page_title"];?></title>
   <meta name="description" content="<?=$translation["FAQ_page_meta_description"];?>">
-  <link rel="canonical" href="https://weexpire.org/FAQ">
+  <link rel="canonical" href="https://weexpire.org<?=$canonical_language_path;?>/FAQ">
+  <link rel="alternate" hreflang="x-default" href="https://weexpire.org/FAQ">
   <link rel="alternate" hreflang="en" href="https://weexpire.org/en/FAQ">
   <link rel="alternate" hreflang="es" href="https://weexpire.org/es/FAQ">
   <link rel="alternate" hreflang="fr" href="https://weexpire.org/fr/FAQ">
   <link rel="alternate" hreflang="it" href="https://weexpire.org/it/FAQ">
+  <script type="application/ld+json"><?=json_encode($structured_data, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);?></script>
 </head>
 <body>
   <?php include 'PHP/internal_libraries/page_templates/header.php';?>

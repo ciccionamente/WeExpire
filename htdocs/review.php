@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" and isset($_SESSION['csrf_token'])) {
   // Verify the secure form token in order to avoid any cross-domain POST request
   // If it's not verified, then remove all the session variables, destroy the session 
   // and redirect to the index page
-  if ($_SESSION['csrf_token'] !== $_POST['csrf_token']) {
+  if (!isset($_POST['csrf_token']) or !is_string($_POST['csrf_token']) or !hash_equals($_SESSION['csrf_token'], $_POST['csrf_token'])) {
     session_unset();
     session_destroy();
     header("Location: /");
@@ -58,8 +58,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" and isset($_SESSION['csrf_token'])) {
     }
 
     // Unset all the session variables, destroy the session and redirect to the start.php page
-    // in case the inactivity time varialble doesn't match the presets values
-    if (!($inactivity_time >= 1 && $inactivity_time <= 180)) {
+    // in case one of the email addresses is not valid. This is the same check PHPMailer does before sending
+    // the access notification: with an address that doesn't pass it, the note could never be opened
+    if (filter_var($primary_email, FILTER_VALIDATE_EMAIL) === false
+    or (!empty($secondary_email) and filter_var($secondary_email, FILTER_VALIDATE_EMAIL) === false)) {
+      session_unset();
+      session_destroy();
+      header("Location: /start.php");
+      exit();
+    }
+
+    // Unset all the session variables, destroy the session and redirect to the start.php page
+    // in case the inactivity time varialble isn't a whole number or doesn't match the presets values
+    if (!ctype_digit($inactivity_time) or !($inactivity_time >= 1 && $inactivity_time <= 180)) {
       session_unset();
       session_destroy();
       header("Location: /start.php");

@@ -7,11 +7,12 @@
 // Include the session initializer
 include_once 'PHP/internal_libraries/engine/starter.php';
 
-// Check if the note variable has been passed in the URL and check that its lenght is equal to 64 characters (SHA-256)
-if ((isset($_GET["m"])) and (strlen($_GET["m"]) == 64)) {
+// Check if the note variable has been passed in the URL and that it really is a SHA-256 hash (64 hexadecimal characters).
+// Anything else is refused, because this value ends up in the database queries below
+if (isset($_GET["m"]) and is_string($_GET["m"]) and strlen($_GET["m"]) == 64 and ctype_xdigit($_GET["m"])) {
 
-  // Set the note variable and strip HTML/PHP tags
-  $note_to_block = strip_tags($_GET["m"]);
+  // Set the note variable
+  $note_to_block = $_GET["m"];
 
   // Check if the note hasn't been recently blocked in order to avoid unnecessary requests for the block.php page (e.g. page refresh)
   if ((!isset($_SESSION["stop_block_requests"])) or ($_SESSION["stop_block_requests"] != $note_to_block)) {
@@ -43,7 +44,7 @@ if ((isset($_GET["m"])) and (strlen($_GET["m"]) == 64)) {
 
 }
 
-// If the note variable hasn't been passed in the URL or its lenght is lower than 30 characters,
+// If the note variable hasn't been passed in the URL or it's not a valid hash,
 // then remove all the session variables, destroy the session and redirect to the index page
 else {
   session_unset();

@@ -14,7 +14,7 @@ session_set_cookie_params(2700);
 include_once 'PHP/internal_libraries/engine/starter.php';
 
 // Set the secure form token in order to avoid any cross-domain POST request
-$token = md5(uniqid(rand(), TRUE));
+$token = bin2hex(random_bytes(32));
 // Assign token to session
 $_SESSION['csrf_token'] = $token;
 
@@ -42,7 +42,8 @@ if ($_SESSION['l'] == "en") {
   <?php include 'PHP/internal_libraries/page_templates/head.php';?>
   <title>WeExpire - <?=$translation["start_page_title"];?></title>
   <meta name="description" content="<?=$translation["start_page_meta_description"];?>">
-  <link rel="canonical" href="https://weexpire.org/start">
+  <link rel="canonical" href="https://weexpire.org<?=$canonical_language_path;?>/start">
+  <link rel="alternate" hreflang="x-default" href="https://weexpire.org/start">
   <link rel="alternate" hreflang="en" href="https://weexpire.org/en/start">
   <link rel="alternate" hreflang="es" href="https://weexpire.org/es/start">
   <link rel="alternate" hreflang="fr" href="https://weexpire.org/fr/start">
@@ -77,14 +78,14 @@ if ($_SESSION['l'] == "en") {
               </div>
               <div class="col-12 col-md-8 offset-md-2 mt-3 mb-3">
                 <label class="form-label"><?=$translation["start_page_primary_email_input_title"];?></label>
-                <input type="email" name="primary_email" class="form-control" maxlength="254" required id="primary_email_input" value="<?php if ($test_mode == true) { echo $test_mode_primary_email_example; }?>">
+                <input type="email" name="primary_email" class="form-control" maxlength="254" pattern=".+@.+\..+" required id="primary_email_input" value="<?php if ($test_mode == true) { echo $test_mode_primary_email_example; }?>">
                 <span class="form-text">
                   <?=$translation["start_page_primary_email_input_hint"];?>
                 </span>
               </div>
               <div class="col-12 col-md-8 offset-md-2 mt-3 mb-3">
                 <label class="form-label"><?=$translation["start_page_secondary_email_input_title"];?></label>
-                <input type="email" name="secondary_email" class="form-control" maxlength="254" id="secondary_email_input" value="<?php if ($test_mode == true) { echo $test_mode_secondary_email_example; }?>">
+                <input type="email" name="secondary_email" class="form-control" maxlength="254" pattern=".+@.+\..+" id="secondary_email_input" value="<?php if ($test_mode == true) { echo $test_mode_secondary_email_example; }?>">
                 <span class="form-text">
                   <?=$translation["start_page_secondary_email_input_hint"];?>
                 </span>
